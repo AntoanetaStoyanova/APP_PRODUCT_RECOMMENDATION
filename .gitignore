@@ -1,0 +1,10 @@
+.env
+er_produit up
+;d public.produits;
+tests/
+config.py
+mlruns/
+instance/
+getsql/
+app/instance/
+app/README.md

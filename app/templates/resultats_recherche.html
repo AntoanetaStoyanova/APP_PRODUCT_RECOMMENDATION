@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de la recherche</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .resultats-recherche {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .produit-item {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .produit-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .produit-item:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Résultats de la recherche pour "{{ request.form['recherche'] }}"</h1>
+
+    {% if produits %}
+        <div class="resultats-recherche">
+            {% for produit in produits %}
+                <p>{{ produit.nom_produit }}</p>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Aucun produit trouvé pour la saveur "{{ request.form['recherche'] }}".</p>
+    {% endif %}
+</body>
+</html>

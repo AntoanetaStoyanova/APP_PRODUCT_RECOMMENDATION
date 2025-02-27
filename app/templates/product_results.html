@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de la Recommandation</title>
+</head>
+<body>
+    <h1>Résultats de la Recommandation</h1>
+    
+    <p><strong>Réponse brute :</strong></p>
+    <pre>{{ recommendation }}</pre>  <!-- Afficher la réponse brute -->
+
+    <p><strong>Images des produits :</strong></p>
+    <!-- {% for img in img_produit %}
+        {% if img != "Aucune image disponible pour ce produit" %}
+            <img src="{{ img }}" alt="Image du produit">
+        {% else %}
+            <p>{{ img }}</p>
+        {% endif %}
+    {% endfor %} -->
+    {% for img in img_produit %}
+        <div class="product-card">
+            {% if img != "Aucune image disponible pour ce produit" %}
+                <img src="{{ img }}" alt="Image du produit recommandé">
+            {% else %}
+                <p class="no-image">Aucune image disponible</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+</body>
+</html>

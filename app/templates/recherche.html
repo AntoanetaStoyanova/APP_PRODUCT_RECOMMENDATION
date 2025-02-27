@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Produit</title>
+</head>
+<body>
+    <h1>Rechercher un produit similaire</h1>
+
+    <!-- Formulaire de recherche -->
+    <form action="/predict" method="POST">
+        <label for="query">Entrez votre recherche :</label>
+        <input type="text" id="query" name="query" placeholder="Ex. Fruité Vape" required>
+        <button type="submit">Rechercher</button>
+    </form>
+
+    {% if product_name %}
+        <h2>Produit recommandé :</h2>
+        <p>Nom du produit : {{ product_name }}</p>
+        <img src="{{ product_image }}" alt="Image du produit" style="width:200px;">
+    {% endif %}
+</body>
+</html>

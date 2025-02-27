@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélectionnez un goût</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .gout-selection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .gout-item {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gout-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .gout-item:hover {
+            transform: scale(1.1);
+        }
+        .recherche {
+            margin-top: 30px;
+        }
+        .recherche input {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sélectionnez un goût</h1>
+    <div class="gout-selection">
+        <a href="/produit?gout=fruit&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/fruit.png') }}" alt="Fruit">
+            </div>
+        </a>
+        <a href="/produit?gout=boisson&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson">
+            </div>
+        </a>
+        <a href="/produit?gout=classique&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique">
+            </div>
+        </a>
+        <a href="/produit?gout=menthe&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe">
+            </div>
+        </a>
+        <a href="/produit?gout=dessert&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert">
+            </div>
+        </a>
+        <a href="/produit?gout=frais&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais">
+            </div>
+        </a>
+    </div>
+
+    <div class="recherche">
+        <h2>Recherchez un produit par saveur</h2>
+        <form action="/recherche" method="POST">
+            <input type="text" name="saveur" placeholder="Entrez la saveur" required>
+            <button type="submit">Rechercher</button>
+        </form>
+    </div>
+</body>
+</html>

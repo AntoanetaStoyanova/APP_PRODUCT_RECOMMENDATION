@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits de l'utilisateur</title>
+</head>
+<body>
+    <h1>Produits de {{ user.username }}</h1>
+    <ul>
+        {% for img_produit, nom_produit in produits %}
+            <li>
+                <img src="{{ img_produit }}" alt="{{ nom_produit }}">
+                <p>{{ nom_produit }}</p>
+            </li>
+        {% else %}
+            <p>Aucun produit associé.</p>
+        {% endfor %}
+    </ul>
+    
+    <!-- Lien pour rediriger vers la page de confirmation de suppression -->
+    <h2>Supprimer votre compte</h2>
+    <a href="{{ url_for('main.delete_account') }}">Confirmer la suppression de mon compte</a>
+
+</body>
+</html>

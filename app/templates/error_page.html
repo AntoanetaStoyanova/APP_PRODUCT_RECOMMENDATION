@@ -1,0 +1,38 @@
+<!-- error_page.html -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .error-container {
+            padding: 20px;
+            margin: 50px;
+            border: 1px solid #f5c6cb;
+            background-color: #f8d7da;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Une erreur est survenue</h1>
+        <p>{{ error_message }}</p>
+        <a href="/">Retour à la page d'accueil</a>
+    </div>
+</body>
+</html>

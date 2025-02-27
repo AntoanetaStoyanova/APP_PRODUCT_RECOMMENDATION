@@ -1,0 +1,339 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits par catégorie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Styles pour les images cliquables */
+        .gout-selection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;  /* Espacement entre les images */
+            margin-bottom: 30px;
+        }
+
+        .gout-item {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .gout-item:hover {
+            transform: scale(1.1);
+        }
+
+        .gout-item img {
+            width: 120px;  /* Taille réduite des images */
+            height: 120px;  /* Taille réduite des images */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Styles pour les cartes des produits */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 250px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Liste des Produits</h1>
+
+        <!-- Section pour sélectionner le goût en cliquant sur une image -->
+        <!-- <div class="gout-selection">
+            <a href="/produit?gout=fruit">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='/gout_img/fruit.png') }}" alt="Fruit">
+                </div>
+            </a>
+            <a href="/produit?gout=boisson">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson">
+                </div>
+            </a>
+            <a href="/produit?gout=classique">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique">
+                </div>
+            </a>
+            <a href="/produit?gout=menthe">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe">
+                </div>
+            </a>
+            <a href="/produit?gout=dessert">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert">
+                </div>
+            </a>
+            <a href="/produit?gout=frais">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais">
+                </div>
+            </a>
+        </div> -->
+
+        <!-- Affichage des produits sous forme de cartes -->
+        <!-- <div class="card-container">
+            {% if produits %}
+                {% for produit in produits %}
+                    <div class="card">
+                        <img src="{{ produit.img }}" alt="Image de {{ produit.nom }}">
+                        <h3>{{ produit.nom }}</h3>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Aucun produit trouvé pour cette catégorie.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html> --> 
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits par catégorie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Styles pour les images cliquables */
+        .gout-selection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;  /* Espacement entre les images */
+            margin-bottom: 30px;
+        }
+
+        .gout-item {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .gout-item:hover {
+            transform: scale(1.1);
+        }
+
+        .gout-item img {
+            width: 120px;  /* Taille réduite des images */
+            height: 120px;  /* Taille réduite des images */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Styles pour les cartes des produits */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+        width: calc(33.333% - 20px); /* 3 cartes par ligne */
+        margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styles pour la pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: #0056b3;
+        }
+
+        .pagination a.active {
+            background-color: #28a745;
+        }
+
+        .pagination span {
+            padding: 8px 15px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Liste des Produits</h1>
+
+        <!-- Section pour sélectionner le goût en cliquant sur une image -->
+        <div class="gout-selection">
+            <a href="/produit?gout=fruit&page=1">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/fruit.png') }}" alt="Fruit">
+                </div>
+            </a>
+            <a href="/produit?gout=boisson&page=1">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson">
+                </div>
+            </a>
+            <a href="/produit?gout=classique&page=1">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique">
+                </div>
+            </a>
+            <a href="/produit?gout=menthe&page=1">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe">
+                </div>
+            </a>
+            <a href="/produit?gout=dessert&page=1">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert">
+                </div>
+            </a>
+            <a href="/produit?gout=frais&page=1">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais">
+                </div>
+            </a>
+        </div>
+
+        <!-- Affichage des produits sous forme de cartes -->
+        <div class="card-container">
+            {% if produits %}
+                {% for produit in produits %}
+                    <div class="card">
+                        <img src="{{ produit.img_produit }}" alt="Image de {{ produit.nom_produit }}">
+                        <h3>{{ produit.nom_produit }}</h3>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Aucun produit trouvé pour cette catégorie.</p>
+            {% endif %}
+        </div>
+        <!-- Pagination -->
+        <div class="pagination">
+            {% if page > 1 %}
+                <a href="/produit?gout={{ gout }}&page=1">1</a>
+                {% if page > 2 %}
+                    <span>...</span>
+                {% endif %}
+                <a href="/produit?gout={{ gout }}&page={{ page - 1 }}">Précédent</a>
+            {% endif %}
+
+            {% if page > 2 %}
+                <a href="/produit?gout={{ gout }}&page=1">1</a>
+                <span>...</span>
+            {% endif %}
+
+            <!-- Afficher les pages autour de la page actuelle -->
+            {% for num_page in range(page - 1, page + 2) %}
+                {% if num_page > 0 and num_page <= total_pages %}
+                    <a href="/produit?gout={{ gout }}&page={{ num_page }}" class="{% if num_page == page %}active{% endif %}">{{ num_page }}</a>
+                {% endif %}
+            {% endfor %}
+
+            {% if page < total_pages - 1 %}
+                <span>...</span>
+                <a href="/produit?gout={{ gout }}&page={{ total_pages }}">{{ total_pages }}</a>
+            {% endif %}
+
+            {% if page < total_pages %}
+                <a href="/produit?gout={{ gout }}&page={{ page + 1 }}">Suivant</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

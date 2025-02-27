@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangChain QA et Sélection de Goût</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .gout-selection {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .gout-item {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gout-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .gout-item:hover {
+            transform: scale(1.1);
+        }
+        form {
+            margin-top: 40px;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #response {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Interface de sélection de goût -->
+    <h2>Sélectionnez un goût</h2>
+    <div class="gout-selection">
+        <a href="/produit?gout=fruit&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/fruit.png') }}" alt="Fruit">
+            </div>
+        </a>
+        <a href="/produit?gout=boisson&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson">
+            </div>
+        </a>
+        <a href="/produit?gout=classique&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique">
+            </div>
+        </a>
+        <a href="/produit?gout=menthe&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe">
+            </div>
+        </a>
+        <a href="/produit?gout=dessert&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert">
+            </div>
+        </a>
+        <a href="/produit?gout=frais&page=1">
+            <div class="gout-item">
+                <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais">
+            </div>
+        </a>
+    </div>
+    <!-- Interface LangChain QA -->
+    <h1>LangChain Question Answering</h1>
+    <p>Page is rendering correctly!</p>
+    <form action="/query" method="POST">
+        <label for="question">Enter your question:</label><br><br>
+        <input type="text" id="question" name="question"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+    <form action="/recommend" method="POST">
+        <label for="question">Enter your question:</label><br><br>
+        <input type="text" id="question" name="question"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- User authentication -->
+    <h1>Login</h1>
+    <a href="{{url_for('main.login')}}">Login Page</a><br>
+    <a href="{{url_for('main.register')}}">Register Page</a><br>
+    {% if current_user.is_authenticated %}
+        <a href="{{ url_for('main.user_products', user_id=current_user.id) }}">Voir mes produits sauvegardés</a>
+    {% else %}
+        <p>Veuillez vous connecter pour voir vos produits sauvegardés.</p>
+    {% endif %}
+
+
+
+
+
+</body>
+</html>

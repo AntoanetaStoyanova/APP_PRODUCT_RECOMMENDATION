@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmer la suppression du compte</title>
+</head>
+<body>
+    <h1>Êtes-vous sûr de vouloir supprimer votre compte ?</h1>
+    <form method="POST" action="{{ url_for('main.delete_account') }}">
+        <button type="submit" style="color: red;">Oui, supprimer mon compte</button>
+    </form>
+    <a href="{{ url_for('main.index') }}">Non, annuler</a>
+</body>
+</html>
