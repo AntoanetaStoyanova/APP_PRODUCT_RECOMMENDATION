@@ -26,4 +26,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run evaluation script
-        run: python rag_eval/eval_rag.py
+        run: python eval_rag.py
