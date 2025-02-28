@@ -1,5 +1,6 @@
 
-
+import csv
+import os
 from langchain.document_loaders import CSVLoader
 from flask import Blueprint, render_template, request, jsonify, redirect, url_for, flash
 from .db import get_products, get_user_products, show_produit  # Si vous avez un fichier db.py pour gérer les interactions avec la base de données
@@ -331,7 +332,8 @@ def recommend():
             )
             user_db.session.add(new_recommendation)
             user_db.session.commit()
-
+            logging.info(f"Valeurs de 'id_produit' extraites : {id_produit_list}")
+            logging.info(f"Réponse générée : {response}")
             print("Valeurs de 'id_produit' extraites :", id_produit_list)
             print(docs)
             # Enregistrer les produits consultés par l'utilisateur connecté
@@ -354,6 +356,42 @@ def recommend():
 
             # 🔥 Appel de la fonction SQL pour récupérer les images des produits
             img_produit_values = show_produit(id_produit_list)
+
+            # -----------------------
+            # Vérifier les données avant l'écriture dans le CSV
+            csv_file_path = './app/recommendations.csv'  
+            csv_headers = ['Question', 'Response', 'Document Content']
+
+            # Vérifier si le fichier CSV existe déjà
+            file_exists = os.path.isfile(csv_file_path)
+
+            # Vérifier le contenu des données
+            csv_data = [{
+                'Question': question,
+                'Response': response,
+                'Document Content': '\n'.join(doc.page_content for doc in docs)
+            }]
+
+            logging.info(f"Data to write to CSV: {csv_data}")
+
+            # Ouvrir le fichier CSV en mode 'a' (ajouter)
+            try:
+                with open(csv_file_path, mode='a', newline='', encoding='utf-8') as csv_file:
+                    writer = csv.DictWriter(csv_file, fieldnames=csv_headers)
+                    
+                    # Écrire les en-têtes seulement si le fichier n'existe pas déjà
+                    if not file_exists:
+                        writer.writeheader()
+
+                    # Ajouter les nouvelles données
+                    writer.writerows(csv_data)
+                logging.info(f"Nouvelles données ajoutées au fichier CSV : {csv_file_path}")
+            except Exception as e:
+                logging.error(f"Erreur lors de l'écriture dans le fichier CSV : {str(e)}")
+                error_message = f"Erreur lors de l'écriture dans le fichier CSV : {str(e)}"
+                return render_template('error_page.html', error_message=error_message), 500
+            #--------------------------
+
 
             return render_template(
                 'product_results.html',

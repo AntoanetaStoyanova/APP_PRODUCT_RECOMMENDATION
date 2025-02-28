@@ -590,3 +590,200 @@
 2025-02-27 14:53:14,872 - INFO - 127.0.0.1 - - [27/Feb/2025 14:53:14] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
 2025-02-27 14:53:14,873 - INFO - 127.0.0.1 - - [27/Feb/2025 14:53:14] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
 2025-02-27 14:53:26,943 - INFO - 127.0.0.1 - - [27/Feb/2025 14:53:26] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 16:52:57,723 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-02-27 16:52:57,723 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-27 16:52:57,726 - INFO -  * Restarting with stat
+2025-02-27 16:53:09,040 - WARNING -  * Debugger is active!
+2025-02-27 16:53:09,045 - INFO -  * Debugger PIN: 132-043-874
+2025-02-27 16:53:09,684 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:09] "GET / HTTP/1.1" 200 -
+2025-02-27 16:53:09,694 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:09] "GET / HTTP/1.1" 200 -
+2025-02-27 16:53:09,778 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:09] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:10,082 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:10] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:10,083 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:10] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:10,084 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:10] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:10,094 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:10] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:10,095 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:10] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:12,698 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:12] "GET /login HTTP/1.1" 200 -
+2025-02-27 16:53:20,040 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-27 16:53:20,053 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "GET / HTTP/1.1" 200 -
+2025-02-27 16:53:20,580 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:20,582 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:20,583 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:20,583 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:20,584 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:20,585 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:20] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 16:53:29,809 - INFO - 127.0.0.1 - - [27/Feb/2025 16:53:29] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 17:03:38,741 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/run.py', reloading
+2025-02-27 17:03:40,479 - INFO -  * Restarting with stat
+2025-02-27 17:03:56,662 - WARNING -  * Debugger is active!
+2025-02-27 17:03:56,664 - INFO -  * Debugger PIN: 132-043-874
+2025-02-27 19:42:22,327 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-02-27 19:42:22,329 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-27 19:42:22,332 - INFO -  * Restarting with stat
+2025-02-27 19:42:32,561 - WARNING -  * Debugger is active!
+2025-02-27 19:42:32,631 - INFO -  * Debugger PIN: 103-730-801
+2025-02-27 19:42:33,116 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "GET / HTTP/1.1" 200 -
+2025-02-27 19:42:33,121 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "GET / HTTP/1.1" 200 -
+2025-02-27 19:42:33,380 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 19:42:33,500 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 19:42:33,500 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 19:42:33,501 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 19:42:33,502 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 19:42:33,503 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 19:42:33,835 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-27 19:42:39,567 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:39] "GET /register HTTP/1.1" 200 -
+2025-02-27 19:42:52,814 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:52] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-02-27 19:42:52,921 - INFO - 127.0.0.1 - - [27/Feb/2025 19:42:52] "GET /login HTTP/1.1" 200 -
+2025-02-27 19:43:02,632 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-27 19:43:02,645 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:02] "GET / HTTP/1.1" 200 -
+2025-02-27 19:43:02,834 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:02] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 19:43:03,151 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:03] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 19:43:03,151 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:03] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 19:43:03,153 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:03] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 19:43:03,156 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:03] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 19:43:03,157 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:03] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 19:43:11,262 - INFO - 127.0.0.1 - - [27/Feb/2025 19:43:11] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 19:52:12,040 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/models.py', reloading
+2025-02-27 19:52:13,311 - INFO -  * Restarting with stat
+2025-02-27 19:54:20,822 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-02-27 19:54:20,823 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-27 19:54:20,826 - INFO -  * Restarting with stat
+2025-02-27 19:54:30,651 - WARNING -  * Debugger is active!
+2025-02-27 19:54:30,652 - INFO -  * Debugger PIN: 103-730-801
+2025-02-27 19:54:31,213 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:31] "GET / HTTP/1.1" 200 -
+2025-02-27 19:54:31,270 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:31] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 19:54:31,305 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:31] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 19:54:31,647 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:31] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 19:54:31,647 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:31] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 19:54:31,648 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:31] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 19:54:31,649 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:31] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 19:54:49,315 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:49] "GET /register HTTP/1.1" 200 -
+2025-02-27 19:54:58,246 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:58] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-02-27 19:54:58,265 - INFO - 127.0.0.1 - - [27/Feb/2025 19:54:58] "GET /login HTTP/1.1" 200 -
+2025-02-27 19:55:05,517 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-27 19:55:05,530 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:05] "GET / HTTP/1.1" 200 -
+2025-02-27 19:55:05,714 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:05] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 19:55:06,031 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:06] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 19:55:06,032 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:06] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 19:55:06,032 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:06] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 19:55:06,033 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:06] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 19:55:06,034 - INFO - 127.0.0.1 - - [27/Feb/2025 19:55:06] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 20:00:22,827 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/config.py', reloading
+2025-02-27 20:00:24,126 - INFO -  * Restarting with stat
+2025-02-27 20:34:20,817 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-02-27 20:34:20,817 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-27 20:34:20,820 - INFO -  * Restarting with stat
+2025-02-27 20:34:31,080 - WARNING -  * Debugger is active!
+2025-02-27 20:34:31,083 - INFO -  * Debugger PIN: 103-730-801
+2025-02-27 20:34:31,741 - INFO - 127.0.0.1 - - [27/Feb/2025 20:34:31] "GET / HTTP/1.1" 200 -
+2025-02-27 20:34:31,790 - INFO - 127.0.0.1 - - [27/Feb/2025 20:34:31] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 20:34:31,790 - INFO - 127.0.0.1 - - [27/Feb/2025 20:34:31] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 20:34:32,138 - INFO - 127.0.0.1 - - [27/Feb/2025 20:34:32] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 20:34:32,139 - INFO - 127.0.0.1 - - [27/Feb/2025 20:34:32] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 20:34:32,143 - INFO - 127.0.0.1 - - [27/Feb/2025 20:34:32] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 20:34:32,406 - INFO - 127.0.0.1 - - [27/Feb/2025 20:34:32] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:13:51,848 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-02-27 21:13:51,849 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-27 21:13:51,852 - INFO -  * Restarting with stat
+2025-02-27 21:14:01,878 - WARNING -  * Debugger is active!
+2025-02-27 21:14:01,946 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:14:02,417 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:02] "GET / HTTP/1.1" 200 -
+2025-02-27 21:14:02,645 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:02] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:02,647 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:02] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:02,772 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:02] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:02,772 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:02] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:02,774 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:02] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:02,776 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:02] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:03,093 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-27 21:14:07,607 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:07] "GET /login HTTP/1.1" 200 -
+2025-02-27 21:14:14,076 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-27 21:14:14,172 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "GET / HTTP/1.1" 200 -
+2025-02-27 21:14:14,536 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:14,536 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:14,538 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:14,539 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:14,541 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:14,542 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:14] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:14:22,474 - INFO - 127.0.0.1 - - [27/Feb/2025 21:14:22] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:15:57,253 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:15:58,494 - INFO -  * Restarting with stat
+2025-02-27 21:16:08,662 - WARNING -  * Debugger is active!
+2025-02-27 21:16:08,663 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:16:11,678 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:11] "GET / HTTP/1.1" 200 -
+2025-02-27 21:16:11,736 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:11] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 21:16:12,076 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:12] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 21:16:12,076 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:12] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 21:16:12,078 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:12] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 21:16:12,079 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:12] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 21:16:12,110 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:12] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:16:19,061 - INFO - 127.0.0.1 - - [27/Feb/2025 21:16:19] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:17:16,423 - INFO - 127.0.0.1 - - [27/Feb/2025 21:17:16] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:17:53,500 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:17:54,595 - INFO -  * Restarting with stat
+2025-02-27 21:18:06,082 - WARNING -  * Debugger is active!
+2025-02-27 21:18:06,083 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:18:06,722 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:06] "GET / HTTP/1.1" 200 -
+2025-02-27 21:18:06,774 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:06] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 21:18:06,775 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:06] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 21:18:07,076 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:07] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 21:18:07,076 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:07] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 21:18:07,078 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:07] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 21:18:07,079 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:07] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:18:42,091 - INFO - 127.0.0.1 - - [27/Feb/2025 21:18:42] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:21:43,895 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:21:44,994 - INFO -  * Restarting with stat
+2025-02-27 21:21:55,149 - WARNING -  * Debugger is active!
+2025-02-27 21:21:55,150 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:21:57,766 - INFO - 127.0.0.1 - - [27/Feb/2025 21:21:57] "GET / HTTP/1.1" 200 -
+2025-02-27 21:21:57,902 - INFO - 127.0.0.1 - - [27/Feb/2025 21:21:57] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 21:21:58,209 - INFO - 127.0.0.1 - - [27/Feb/2025 21:21:58] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 21:21:58,211 - INFO - 127.0.0.1 - - [27/Feb/2025 21:21:58] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 21:21:58,211 - INFO - 127.0.0.1 - - [27/Feb/2025 21:21:58] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 21:21:58,212 - INFO - 127.0.0.1 - - [27/Feb/2025 21:21:58] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 21:21:58,214 - INFO - 127.0.0.1 - - [27/Feb/2025 21:21:58] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:22:05,114 - INFO - 127.0.0.1 - - [27/Feb/2025 21:22:05] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:23:39,472 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:23:40,523 - INFO -  * Restarting with stat
+2025-02-27 21:23:50,685 - WARNING -  * Debugger is active!
+2025-02-27 21:23:50,686 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:23:53,328 - INFO - 127.0.0.1 - - [27/Feb/2025 21:23:53] "GET / HTTP/1.1" 200 -
+2025-02-27 21:23:53,426 - INFO - 127.0.0.1 - - [27/Feb/2025 21:23:53] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 21:23:53,729 - INFO - 127.0.0.1 - - [27/Feb/2025 21:23:53] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 21:23:53,729 - INFO - 127.0.0.1 - - [27/Feb/2025 21:23:53] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 21:23:53,731 - INFO - 127.0.0.1 - - [27/Feb/2025 21:23:53] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 21:23:53,732 - INFO - 127.0.0.1 - - [27/Feb/2025 21:23:53] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 21:23:53,733 - INFO - 127.0.0.1 - - [27/Feb/2025 21:23:53] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:24:02,922 - ERROR - Erreur lors de l'écriture dans le fichier CSV : [Errno 2] No such file or directory: '../../app/recommendations.csv'
+2025-02-27 21:24:02,944 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:02] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+2025-02-27 21:24:14,812 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:24:15,888 - INFO -  * Restarting with stat
+2025-02-27 21:24:26,328 - WARNING -  * Debugger is active!
+2025-02-27 21:24:26,330 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:24:27,028 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:27] "GET / HTTP/1.1" 200 -
+2025-02-27 21:24:27,084 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:27] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-02-27 21:24:27,085 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:27] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-02-27 21:24:27,393 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:27] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-02-27 21:24:27,393 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:27] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-02-27 21:24:27,398 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:27] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-02-27 21:24:27,399 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:27] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-02-27 21:24:29,025 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:24:30,102 - INFO -  * Restarting with stat
+2025-02-27 21:24:40,029 - WARNING -  * Debugger is active!
+2025-02-27 21:24:40,030 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:24:40,713 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:40] "GET / HTTP/1.1" 200 -
+2025-02-27 21:24:43,996 - INFO - 127.0.0.1 - - [27/Feb/2025 21:24:43] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:26:05,244 - INFO - 127.0.0.1 - - [27/Feb/2025 21:26:05] "GET / HTTP/1.1" 200 -
+2025-02-27 21:26:13,589 - INFO - 127.0.0.1 - - [27/Feb/2025 21:26:13] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:39:11,670 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:39:13,089 - INFO -  * Restarting with stat
+2025-02-27 21:39:27,453 - WARNING -  * Debugger is active!
+2025-02-27 21:39:27,455 - INFO -  * Debugger PIN: 121-961-793
+2025-02-27 21:39:31,207 - INFO - 127.0.0.1 - - [27/Feb/2025 21:39:31] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:39:54,530 - INFO - 127.0.0.1 - - [27/Feb/2025 21:39:54] "POST /recommend HTTP/1.1" 200 -
+2025-02-27 21:40:10,133 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-02-27 21:40:11,230 - INFO -  * Restarting with stat
