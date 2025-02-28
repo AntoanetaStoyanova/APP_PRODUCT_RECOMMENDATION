@@ -1,29 +1,34 @@
-name: Evaluate RAG Model
+name: RAG Evaluation
 
 on:
+  schedule:
+    - cron: '0 0 * * *'  # Exécuter tous les jours à minuit
   push:
     branches:
-      - main
-      - dev
-  pull_request:
+      - main  # Vous pouvez également l'exécuter lors des push sur la branche principale
+  workflow_dispatch:  # Permet également de lancer manuellement le workflow depuis GitHub
 
 jobs:
-  evaluate:
-    runs-on: ubuntu-latest
+  evaluate_rag:
+    runs-on: ubuntu-latest  # Utilisation de l'environnement Ubuntu
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2  # Cloner le repository
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v2  # Configurer Python
         with:
-          python-version: "3.10"
+          python-version: '3.10'  # Version de Python (adaptez si nécessaire)
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip  # Mettre à jour pip
+          pip install pandas sentence-transformers scikit-learn  # Installer les dépendances nécessaires
 
-      - name: Run evaluation script
-        run: python ../../app/rag_eval/eval_rag.py
+      - name: Run RAG evaluation script
+        run: python app/rag_eval/eval_rag.py  # Exécuter le script Python d'évaluation RAG
+
+      - name: Notify on failure
+        if: failure()  # Si le workflow échoue, une notification sera affichée
+        run: echo "⚠️ RAG evaluation failed! Check the workflow logs for details."
