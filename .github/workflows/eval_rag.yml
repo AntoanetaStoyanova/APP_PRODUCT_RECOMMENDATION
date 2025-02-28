@@ -26,6 +26,14 @@ jobs:
           python -m pip install --upgrade pip  # Mettre à jour pip
           pip install pandas sentence-transformers scikit-learn  # Installer les dépendances nécessaires
 
+      - name: Download recommendations.csv
+        run: |
+          # Commande pour télécharger recommendations.csv depuis une URL
+          curl -o app/recommendations.csv <URL_to_CSV>  # Remplacez <URL_to_CSV> par l'URL réelle
+
+      - name: List directory contents
+        run: ls -R  # Vérifie la structure des répertoires et où se trouve le fichier recommendations.csv
+
       - name: Run RAG evaluation script
         run: python app/rag_eval/eval_rag.py  # Exécuter le script Python d'évaluation RAG
 
