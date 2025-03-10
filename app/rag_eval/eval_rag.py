@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Je recupere le query de l'user, la reponse et la source de l'application dans un csv afin d'évaluer le rag avec bulk eval
-df = pd.read_csv("app/recommendations.csv", delimiter=";")
+df = pd.read_csv("../recommendations.csv", delimiter=";")
 
 
 # recuperer les valeurs des colonnes dans des listes python
