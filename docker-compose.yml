@@ -1,0 +1,61 @@
+# version: '3.8'
+
+# services:
+#   myapp:
+#     build: . 
+#     container_name: myapp
+#     environment:
+#       - DATABASE_URL=postgresql://postgres:Kandinsky_95@db:5432/postgres
+#     depends_on:
+#       - db
+#     ports:
+#       - "8080:8080"  # Expose le port 8080 de votre app sur localhost
+   
+#   db:
+#     image: postgres:latest
+#     container_name: postgres_db
+#     restart: always
+#     environment:
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: Kandinsky_95
+#       POSTGRES_DB: postgres
+#     ports:
+#       - "5432:5432"
+
+version: '3.8'
+
+services:
+  app:
+    build: .
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Kandinsky_95
+      - POSTGRES_DB=postgres
+      - POSTGRES_HOST=localhost
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - mynetwork
+
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Kandinsky_95
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local

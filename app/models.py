@@ -19,8 +19,7 @@ DB_USER = "postgres"
 DB_PASSWORD = "Kandinsky_95"
 DB_HOST = "localhost"
 DB_PORT = "5432"
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:Kandinsky_95@127.0.0.1:5432/postgres"
-
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:Kandinsky_95@localhost:5432/postgres"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = "1234"  # Nécessaire pour `flash`
 user_db = SQLAlchemy(app)

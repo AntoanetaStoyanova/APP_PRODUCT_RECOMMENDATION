@@ -9,7 +9,6 @@ import pandas as pd
 from langchain.schema import Document
 
 from .forms import RegisterForm, LoginForm
-# from .models import User
 from flask_login import login_user, login_required, current_user  
 from app import bcrypt
 import requests
@@ -54,24 +53,20 @@ import time
 # ----------------------------------------------------------------------------------------------------------------------------------
 from flask import Flask, request, jsonify, render_template
 from langchain.chains import RetrievalQA
-# from langchain.chat_models import AzureChatOpenAI
 from langchain.document_loaders import CSVLoader
-from langchain_community.vectorstores import FAISS
+
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
-from langchain.prompts import ChatPromptTemplate
-from langchain_openai import AzureOpenAIEmbeddings
-from langchain.chat_models import ChatOpenAI
-from langchain_openai import ChatOpenAI
+
 import os
 import openai
-from langchain.embeddings import HuggingFaceEmbeddings
+
 
 from app.llm import llm
 from app.vectorstore import load_vectorstore, save_vectorstore
 
 from app.utils import search_for_flavor, add_metadata_to_documents
-from app.embeddings import embeddings
+
 from app.prompt import prompt
 from config import Config
 
@@ -318,7 +313,7 @@ def recommend():
             id_produit_list = []
             for doc in docs:
                 # Accéder à la valeur de id_produit dans les métadonnées
-                id_produit = doc.metadata.get("row")
+                id_produit = doc.metadata.get("id_produit")
                 
                 if id_produit is not None:
                     id_produit_list.append(id_produit)
