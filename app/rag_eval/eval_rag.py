@@ -2,7 +2,14 @@ import time
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+import sys
+import os
+
+# Ajouter le dossier racine au chemin de recherche de Python
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+
 from config import Config
+
 # Charger le modèle SentenceTransformer
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -10,6 +17,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 # df = pd.read_csv("../recommendations.csv", delimiter=";")
 
 df = pd.read_csv(Config.RECOMMENDATIONS_CSV)
+
+# df = pd.read_csv(r"C:\Users\antoa\Desktop\projet certif\app\recommendations.csv")
 
 # recuperer les valeurs des colonnes dans des listes python
 queries = df['Question'].tolist()
