@@ -1,41 +1,31 @@
 name: RAG Evaluation
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Exécuter tous les jours à minuit
   push:
     branches:
-      - main  # Vous pouvez également l'exécuter lors des push sur la branche principale
-  workflow_dispatch:  # Permet également de lancer manuellement le workflow depuis GitHub
+      - main  # Déclencher sur chaque push vers la branche principale (main), ajustez selon votre configuration
 
 jobs:
-  evaluate_rag:
-    runs-on: ubuntu-latest  # Utilisation de l'environnement Ubuntu
+  evaluate-rag:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2  # Cloner le repository
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2  # Configurer Python
-        with:
-          python-version: '3.10'  # Version de Python (adaptez si nécessaire)
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip  # Mettre à jour pip
-          pip install pandas sentence-transformers scikit-learn  # Installer les dépendances nécessaires
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
 
-      - name: Download recommendations.csv
-        run: |
-          curl -o app/recommendations.csv https://example.com/recommendations.csv  # Remplacez l'URL par la vôtre
+    - name: Set PYTHONPATH
+      run: |
+        export PYTHONPATH=$PWD  # Ajoute la racine du projet au PYTHONPATH
+        echo "PYTHONPATH=$PYTHONPATH"  # Affiche PYTHONPATH pour vérifier
 
-      - name: List directory contents
-        run: ls -R  # Vérifie la structure des répertoires et où se trouve le fichier recommendations.csv
-
-      - name: Run RAG evaluation script
-        run: python app/rag_eval/eval_rag.py  # Exécuter le script Python d'évaluation RAG
-
-      - name: Notify on failure
-        if: failure()  # Si le workflow échoue, une notification sera affichée
-        run: echo "⚠️ RAG evaluation failed! Check the workflow logs for details."
+    - name: Run RAG evaluation script
+      run: python ../app/rag_eval/eval_rag.py

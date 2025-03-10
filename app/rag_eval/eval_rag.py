@@ -2,13 +2,15 @@ import time
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+
 import sys
 import os
 
-# Ajouter le dossier racine au chemin de recherche de Python
+# Ajouter le chemin de la racine du projet au sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 from config import Config
+
 
 # Charger le modèle SentenceTransformer
 model = SentenceTransformer('all-MiniLM-L6-v2')
