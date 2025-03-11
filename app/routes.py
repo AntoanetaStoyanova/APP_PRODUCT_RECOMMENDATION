@@ -7,10 +7,10 @@ from .db import get_products, get_user_products, show_produit  # Si vous avez un
 from .retriever import retriever, vectorstore
 import pandas as pd
 from langchain.schema import Document
-
+from app import bcrypt
 from .forms import RegisterForm, LoginForm
 from flask_login import login_user, login_required, current_user  
-# from app import bcrypt
+
 import requests
 from config import Config
 import logging

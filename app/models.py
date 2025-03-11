@@ -14,11 +14,11 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 # Paramètres de connexion
-DB_NAME = "postgres"
-DB_USER = "postgres"
-DB_PASSWORD = "Kandinsky_95"
-DB_HOST = "localhost"
-DB_PORT = "5432"
+# DB_NAME = "postgres"
+# DB_USER = "postgres"
+# DB_PASSWORD = "Kandinsky_95"
+# DB_HOST = "localhost"
+# DB_PORT = "5432"
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:Kandinsky_95@localhost:5432/postgres"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = "1234"  # Nécessaire pour `flash`

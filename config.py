@@ -1,15 +1,23 @@
 import os
 from dotenv import load_dotenv, find_dotenv
 
-# Charger les variables d'environnement à partir du fichier .env
-load_dotenv(find_dotenv())
+# Charger les variables d'environnement
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
+
+# # Charger les variables d'environnement à partir du fichier .env
+# load_dotenv(find_dotenv())
 
 class Config:
     POSTGRESQL_URI = os.getenv('POSTGRESQL_URI', 'postgresql://postgres:Kandinsky_95@localhost:5432/postgres')
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://postgres:Kandinsky_95@localhost:5432/postgres')
+
+    # POSTGRESQL_URI = os.getenv("POSTGRESQL_URI")
+    # SQLALCHEMY_DATABASE_URI = os.getenv("POSTGRESQL_URI")
     
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = os.getenv('SECRET_KEY', '1234')  # Make sure this is in your .env file
+    SECRET_KEY = os.getenv("SECRET_KEY")  # Make sure this is in your .env file
 
     # Configuration Azure OpenAIpig
     AZURE_OPENAI_API_KEY = os.getenv('AZURE_OPENAI_API_KEY_4')
