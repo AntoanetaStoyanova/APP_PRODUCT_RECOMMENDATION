@@ -1,3 +1,35 @@
+# name: Run Flask Tests
+
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
+
+#       - name: Setup Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: "3.10.6"  # Assure-toi que la version correspond à celle de ton projet
+
+#       - name: Install Pipenv
+#         run: pip install pipenv
+
+#       - name: Install dependencies
+#         run: pipenv install --dev  # Installe les dépendances de dev
+
+#       - name: Run tests
+#         run: pipenv run pytest tests/test_routes.py  # Exécute les tests spécifiés
+
 name: Run Flask Tests
 
 on:
@@ -12,6 +44,21 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:15  # Assure-toi que la version correspond à celle de ton projet
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: Kandinsky_95  # À remplacer par un secret GitHub
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,13 +66,25 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10.6"  # Assure-toi que la version correspond à celle de ton projet
+          python-version: "3.10.6"  # Assure que Pipenv utilisera la bonne version
 
       - name: Install Pipenv
         run: pip install pipenv
 
       - name: Install dependencies
-        run: pipenv install --dev  # Installe les dépendances de dev
+        run: pipenv install --dev
+
+      - name: Charger les variables d'environnement
+        run: |
+          echo "POSTGRESQL_URI=postgresql://postgres:Kandinsky_95@localhost:5432/postgres" >> $GITHUB_ENV
+          echo "DATABASE_URL=postgresql://postgres:Kandinsky_95@localhost:5432/postgres" >> $GITHUB_ENV
+          echo "SECRET_KEY=1234" >> $GITHUB_ENV
+          echo "AZURE_OPENAI_API_KEY_4=dummy_key" >> $GITHUB_ENV
+          echo "AZURE_OPENAI_API_ENDPOINT_4=dummy_endpoint" >> $GITHUB_ENV
+          echo "AZURE_DEPLOYMENT_NAME_4=dummy_deployment" >> $GITHUB_ENV
+
+      - name: Vérifier les variables d'environnement
+        run: env | grep POSTGRESQL_URI
 
       - name: Run tests
-        run: pipenv run pytest tests/test_routes.py  # Exécute les tests spécifiés
+        run: pipenv run pytest tests/test_routes.py
