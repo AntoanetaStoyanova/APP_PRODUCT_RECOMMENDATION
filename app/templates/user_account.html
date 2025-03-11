@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - {{ user.username }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .user-info h1 {
+            margin-left: 20px;
+            font-size: 2em;
+        }
+
+        .account-details {
+            margin-top: 40px;
+        }
+
+        .account-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .account-details th, .account-details td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        .account-details th {
+            background-color: #f4f4f4;
+        }
+
+        .delete-account {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .delete-account a {
+            color: red;
+            font-weight: bold;
+        }
+
+        .products-section {
+            margin-top: 60px; /* Espacement pour la section des produits */
+            margin-left: 20px;
+        }
+
+        /* Titre des produits */
+        .products-section h3 {
+            font-size: 1.8em;
+            color: #7f8c8d;
+            margin-bottom: 20px; /* Espacement sous le titre */
+        }
+
+        /* Conteneur principal pour les produits et le lien */
+        .products-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; /* Aligner les éléments sur la même ligne */
+            flex-wrap: wrap; /* Permet de revenir à la ligne si nécessaire */
+        }
+
+        /* Container pour les cartes de produits */
+        .product-list {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start; /* Aligner les produits sur la gauche */
+            flex-wrap: wrap; /* Permet de revenir à la ligne si nécessaire */
+            margin-bottom: 30px; /* Espacement sous les produits */
+        }
+
+        /* Style pour chaque carte de produit */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            position: relative;
+        }
+
+        /* Style pour l'image des produits */
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Style pour le nom du produit */
+        .product-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card:hover .product-name {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Lien pour consulter tous les produits */
+        .view-all-products {
+            display: inline-flex;
+            align-items: center;
+            font-size: 1.2em;
+            color: #b0b0b0; /* Gris clair */
+            margin-left: 20px;
+            margin-top: 20px; /* Ajouter un espacement au-dessus du lien */
+        }
+
+        .view-all-products a {
+            color: #b0b0b0; /* Gris clair */
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- User Info Section -->
+    <div class="user-info">
+        <h1>Bienvenue, {{ user.username }}!</h1>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products-section">
+        <!-- Titre des produits -->
+        <h3>Produits qui pourraient vous intéresser:</h3>
+
+        <div class="products-content">
+            <!-- Liste des produits -->
+            <div class="product-list">
+                {% for img_produit, nom_produit, url, prix_produit, pg_vg, origine, frais, surbooste, brand, gout in produits %}
+                    <div class="product-card">
+                        <a href="{{ url }}" target="_blank">
+                            <div class="image-container">
+                                <img src="{{ img_produit }}" alt="{{ nom_produit }}">
+                                <div class="product-name">{{ nom_produit }}</div> <!-- Nom caché par défaut -->
+                            </div>
+                        </a>
+                    </div>
+                {% else %}
+                    <p>Aucun produit associé.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Lien pour consulter tous les produits -->
+        <div class="view-all-products">
+            {% if current_user.is_authenticated %}
+                <a href="{{ url_for('main.user_products', user_id=current_user.id) }}">Voir tous les produits</a>
+            {% else %}
+                <span>Se connecter pour voir tous les produits</span>
+                <a href="{{ url_for('auth.login') }}">Se connecter</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Link to delete account -->
+    <div class="delete-account">
+        <h2>Supprimer votre compte</h2>
+        <a href="{{ url_for('main.delete_account') }}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer votre compte ?')">Confirmer la suppression de mon compte</a>
+    </div>
+
+</body>
+</html>

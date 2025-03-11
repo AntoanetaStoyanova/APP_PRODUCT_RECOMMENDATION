@@ -3,8 +3,8 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import InputRequired, Length, ValidationError, DataRequired
-from app import bcrypt 
-from app.models import user_db
+# from app import bcrypt 
+# from app.models import user_db
 
 class RegisterForm(FlaskForm):
     username = StringField(validators=[InputRequired(), Length(min=4, max=20)],

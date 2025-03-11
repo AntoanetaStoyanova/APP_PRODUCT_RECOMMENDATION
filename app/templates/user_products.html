@@ -4,23 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produits de l'utilisateur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            position: relative; /* For positioning the icon */
+        }
+
+        /* Container for the username and icon */
+        .user-info {
+            display: flex;
+            align-items: center; /* Align icon and text vertically */
+            justify-content: flex-end; /* Align them to the left */
+            gap: 20px; /* Space between username and icon */
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Icon at the top right */
+        .top-right-icon {
+            font-size: 50px;
+            margin-right: 60px;
+            
+        }
+
+        /* Container for all product cards */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between cards */
+        }
+
+        /* Each product card */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px; /* Fixed width for uniformity */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Styling the image */
+        .product-card img {
+            width: 100%; /* Ensure all images are the same width */
+            height: 200px; /* Set a fixed height for uniformity */
+            object-fit: cover; /* Ensures the image is properly scaled */
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* Styling for product info */
+        .product-info {
+            margin-top: 15px;
+            text-align: left;
+            width: 100%; /* Ensure info takes up full width */
+        }
+
+        .product-info p {
+            margin: 5px 0;
+        }
+
+        .product-info h3 {
+            margin-top: 0;
+        }
+
+        .delete-account {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Displaying the username and icon on the same line -->
+    <div class="user-info">
+        <span>{{ user.username }}</span>
+        <div class="top-right-icon">
+            <a href="{{ url_for('main.account', user_id=current_user.id) }}">
+                <div class="gout-item">
+                    <img src="{{ url_for('static', filename='gout_img/user.png') }}" alt="User account" width="40" height="40">
+                </div>
+            </a>
+        </div>
+    </div>
+
     <h1>Produits de {{ user.username }}</h1>
-    <ul>
-        {% for img_produit, nom_produit in produits %}
-            <li>
-                <img src="{{ img_produit }}" alt="{{ nom_produit }}">
-                <p>{{ nom_produit }}</p>
-            </li>
+    <div class="product-list">
+        {% for img_produit, nom_produit, url, prix_produit, pg_vg, origine, frais, surbooste, brand, gout in produits %}
+            <div class="product-card">
+                <a href="{{ url }}" target="_blank">
+                    <img src="{{ img_produit }}" alt="{{ nom_produit }}">
+                </a>
+                <div class="product-info">
+                    <h3>{{ nom_produit }}</h3>
+                    <p><strong>URL:</strong> {{ url }}</p>
+                    <p><strong>Prix:</strong> {{ prix_produit }}</p>
+                    <p><strong>PG/VG:</strong> {{ pg_vg }}</p>
+                    <p><strong>Origine:</strong> {{ origine }}</p>
+                    <p><strong>Frais:</strong> {{ frais }}</p>
+                    <p><strong>Surboosté:</strong> {{ surbooste }}</p>
+                    <p><strong>Marque:</strong> {{ brand }}</p>
+                    <p><strong>Goût:</strong> {{ gout }}</p>
+                </div>
+            </div>
         {% else %}
             <p>Aucun produit associé.</p>
         {% endfor %}
-    </ul>
-    
+    </div>
+
     <!-- Lien pour rediriger vers la page de confirmation de suppression -->
-    <h2>Supprimer votre compte</h2>
-    <a href="{{ url_for('main.delete_account') }}">Confirmer la suppression de mon compte</a>
+    <div class="delete-account">
+        <h2>Supprimer votre compte</h2>
+        <a href="{{ url_for('main.delete_account') }}">Confirmer la suppression de mon compte</a>
+    </div>
 
 </body>
 </html>

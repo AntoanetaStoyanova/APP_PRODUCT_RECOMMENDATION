@@ -15,7 +15,7 @@ def get_products(gout, per_page, offset):
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(
-                'SELECT id_produit, img_produit, nom_produit FROM public.produits WHERE gout = %s LIMIT %s OFFSET %s;',
+                'SELECT id_produit, img_produit, nom_produit, url FROM public.produits WHERE gout = %s LIMIT %s OFFSET %s;',
                 (gout, per_page, offset)
             )
             produits_list = cursor.fetchall()
@@ -39,7 +39,8 @@ def get_user_products(user_id):
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(
-                '''SELECT p.img_produit, p.nom_produit
+                '''SELECT p.img_produit, p.nom_produit, p.url, p.prix_produit, p.pg_vg, p.origine, p.frais, p.surbooste, p.brand, p.gout
+                 
                    FROM public.produits p
                    JOIN public.user_produit up ON p.id_produit = up.product_id
                    WHERE up.user_id = %s;''',
@@ -61,7 +62,7 @@ def show_produit(id_produit_list):
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(
-                '''SELECT img_produit, nom_produit
+                '''SELECT img_produit, nom_produit, url
                    FROM public.produits
                    WHERE id_produit = ANY(%s);''',
                 (id_produit_list,)
@@ -73,3 +74,6 @@ def show_produit(id_produit_list):
         img_produit_values = ["Aucune image disponible pour ce produit"] * len(id_produit_list)
 
     return img_produit_values
+
+
+

@@ -1,0 +1,26 @@
+name: Run Flask Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pipenv
+        run: pip install pipenv
+
+      - name: Install dependencies
+        run: pipenv install --dev  # Installe les dépendances (y compris celles de dev)
+
+      - name: Run tests
+        run: pipenv run pytest tests/test_routes.py

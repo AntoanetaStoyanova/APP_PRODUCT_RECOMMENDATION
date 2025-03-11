@@ -898,3 +898,783 @@
 2025-02-28 21:12:10,645 - INFO - 127.0.0.1 - - [28/Feb/2025 21:12:10] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
 2025-02-28 21:12:22,158 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/config.py', reloading
 2025-02-28 21:12:23,319 - INFO -  * Restarting with stat
+2025-03-10 12:30:41,029 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-03-10 12:30:41,031 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 12:30:41,039 - INFO -  * Restarting with stat
+2025-03-10 12:31:10,836 - WARNING -  * Debugger is active!
+2025-03-10 12:31:11,218 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 12:31:27,320 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "GET / HTTP/1.1" 200 -
+2025-03-10 12:31:27,561 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 12:31:27,646 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 12:31:27,647 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 12:31:27,711 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 12:31:27,887 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 12:31:27,971 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 12:31:27,982 - INFO - 127.0.0.1 - - [10/Mar/2025 12:31:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-10 12:35:35,576 - INFO - 127.0.0.1 - - [10/Mar/2025 12:35:35] "GET /login HTTP/1.1" 200 -
+2025-03-10 12:37:35,850 - INFO - 127.0.0.1 - - [10/Mar/2025 12:37:35] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-03-10 12:37:35,890 - INFO - 127.0.0.1 - - [10/Mar/2025 12:37:35] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-10 12:37:36,066 - INFO - 127.0.0.1 - - [10/Mar/2025 12:37:36] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-10 12:37:36,409 - INFO - 127.0.0.1 - - [10/Mar/2025 12:37:36] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=rkuSFpcOVHRqwvcge8co HTTP/1.1" 200 -
+2025-03-10 12:37:36,675 - INFO - 127.0.0.1 - - [10/Mar/2025 12:37:36] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-10 12:37:55,741 - INFO - 127.0.0.1 - - [10/Mar/2025 12:37:55] "GET /login HTTP/1.1" 200 -
+2025-03-10 12:39:19,223 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:19] "GET /login HTTP/1.1" 200 -
+2025-03-10 12:39:41,154 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:41] "GET / HTTP/1.1" 200 -
+2025-03-10 12:39:41,208 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:41] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 12:39:41,520 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:41] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 12:39:41,520 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:41] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 12:39:41,522 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:41] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 12:39:41,525 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:41] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 12:39:41,527 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:41] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 12:39:46,547 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:46] "GET /login HTTP/1.1" 200 -
+2025-03-10 12:39:55,676 - INFO - 127.0.0.1 - - [10/Mar/2025 12:39:55] "GET /register HTTP/1.1" 200 -
+2025-03-10 12:41:02,376 - INFO - 127.0.0.1 - - [10/Mar/2025 12:41:02] "GET /register HTTP/1.1" 200 -
+2025-03-10 12:41:56,388 - INFO - 127.0.0.1 - - [10/Mar/2025 12:41:56] "GET /register HTTP/1.1" 200 -
+2025-03-10 12:42:16,887 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:16] "GET /login HTTP/1.1" 200 -
+2025-03-10 12:42:23,661 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-10 12:42:23,675 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:23] "GET / HTTP/1.1" 200 -
+2025-03-10 12:42:24,133 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:24] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 12:42:24,199 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:24] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 12:42:24,199 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:24] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 12:42:24,201 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:24] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 12:42:24,201 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:24] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 12:42:24,204 - INFO - 127.0.0.1 - - [10/Mar/2025 12:42:24] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 12:45:53,992 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/config.py', reloading
+2025-03-10 12:45:55,518 - INFO -  * Restarting with stat
+2025-03-10 12:46:13,554 - WARNING -  * Debugger is active!
+2025-03-10 12:46:13,556 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 12:46:21,619 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 12:46:22,774 - INFO -  * Restarting with stat
+2025-03-10 12:46:35,125 - WARNING -  * Debugger is active!
+2025-03-10 12:46:35,126 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 12:46:35,608 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-10 12:46:35,613 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-10 12:46:35,667 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:35] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 12:46:36,011 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:36] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 12:46:36,276 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:36] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=up7z400PEI3FqLRUZQ1c HTTP/1.1" 200 -
+2025-03-10 12:46:36,338 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:36] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 12:46:44,359 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-10 12:46:44,654 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:44] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 12:46:44,762 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:44] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 12:46:45,089 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=up7z400PEI3FqLRUZQ1c HTTP/1.1[0m" 304 -
+2025-03-10 12:46:45,337 - INFO - 127.0.0.1 - - [10/Mar/2025 12:46:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 12:47:01,251 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 12:47:02,431 - INFO -  * Restarting with stat
+2025-03-10 12:47:14,754 - WARNING -  * Debugger is active!
+2025-03-10 12:47:14,756 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 12:47:15,044 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:15] "GET / HTTP/1.1" 200 -
+2025-03-10 12:47:15,113 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:15] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 12:47:15,139 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:15] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 12:47:15,458 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:15] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 12:47:15,459 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:15] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 12:47:15,459 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:15] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 12:47:15,462 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:15] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 12:47:18,312 - INFO - 127.0.0.1 - - [10/Mar/2025 12:47:18] "GET /login HTTP/1.1" 200 -
+2025-03-10 12:47:49,766 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 12:47:51,074 - INFO -  * Restarting with stat
+2025-03-10 12:48:04,074 - WARNING -  * Debugger is active!
+2025-03-10 12:48:04,075 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 12:48:04,526 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:04] "[33mGET /login HTTP/1.1[0m" 404 -
+2025-03-10 12:48:04,554 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:04] "GET / HTTP/1.1" 200 -
+2025-03-10 12:48:04,578 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:04] "GET / HTTP/1.1" 200 -
+2025-03-10 12:48:29,623 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:29] "GET / HTTP/1.1" 200 -
+2025-03-10 12:48:32,507 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "GET /main HTTP/1.1" 200 -
+2025-03-10 12:48:32,811 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 12:48:32,873 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 12:48:32,874 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 12:48:32,874 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 12:48:32,877 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 12:48:32,881 - INFO - 127.0.0.1 - - [10/Mar/2025 12:48:32] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 14:54:44,485 - INFO - 127.0.0.1 - - [10/Mar/2025 14:54:44] "GET / HTTP/1.1" 200 -
+2025-03-10 15:04:08,685 - INFO - 127.0.0.1 - - [10/Mar/2025 15:04:08] "GET /register HTTP/1.1" 200 -
+2025-03-10 15:08:16,137 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:16] "GET / HTTP/1.1" 200 -
+2025-03-10 15:08:18,224 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:18] "GET /main HTTP/1.1" 200 -
+2025-03-10 15:08:18,544 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:18] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 15:08:18,697 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:18] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 15:08:18,716 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:18] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 15:08:18,716 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:18] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 15:08:18,717 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:18] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 15:08:18,720 - INFO - 127.0.0.1 - - [10/Mar/2025 15:08:18] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 15:18:13,468 - INFO - 127.0.0.1 - - [10/Mar/2025 15:18:13] "GET /produit?gout=menthe&page=1 HTTP/1.1" 200 -
+2025-03-10 15:18:13,538 - INFO - 127.0.0.1 - - [10/Mar/2025 15:18:13] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 15:18:13,587 - INFO - 127.0.0.1 - - [10/Mar/2025 15:18:13] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 15:18:13,849 - INFO - 127.0.0.1 - - [10/Mar/2025 15:18:13] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 15:18:13,850 - INFO - 127.0.0.1 - - [10/Mar/2025 15:18:13] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 15:18:13,850 - INFO - 127.0.0.1 - - [10/Mar/2025 15:18:13] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 15:18:13,853 - INFO - 127.0.0.1 - - [10/Mar/2025 15:18:13] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 15:23:01,268 - INFO - 127.0.0.1 - - [10/Mar/2025 15:23:01] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 15:48:55,885 - INFO - 127.0.0.1 - - [10/Mar/2025 15:48:55] "GET /register HTTP/1.1" 200 -
+2025-03-10 15:54:11,424 - INFO - 127.0.0.1 - - [10/Mar/2025 15:54:11] "POST /register HTTP/1.1" 200 -
+2025-03-10 15:55:46,355 - INFO - 127.0.0.1 - - [10/Mar/2025 15:55:46] "GET / HTTP/1.1" 200 -
+2025-03-10 15:55:53,867 - INFO - 127.0.0.1 - - [10/Mar/2025 15:55:53] "POST / HTTP/1.1" 200 -
+2025-03-10 15:57:45,350 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 15:57:49,975 - INFO -  * Restarting with stat
+2025-03-10 15:58:09,502 - WARNING -  * Debugger is active!
+2025-03-10 15:58:09,506 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 15:58:10,168 - INFO - 127.0.0.1 - - [10/Mar/2025 15:58:10] "POST / HTTP/1.1" 200 -
+2025-03-10 15:58:12,228 - INFO - 127.0.0.1 - - [10/Mar/2025 15:58:12] "GET /register HTTP/1.1" 200 -
+2025-03-10 15:58:22,779 - INFO - 127.0.0.1 - - [10/Mar/2025 15:58:22] "POST /register HTTP/1.1" 200 -
+2025-03-10 15:58:38,449 - INFO - 127.0.0.1 - - [10/Mar/2025 15:58:38] "POST /register HTTP/1.1" 200 -
+2025-03-10 15:59:29,858 - INFO - 127.0.0.1 - - [10/Mar/2025 15:59:29] "POST /register HTTP/1.1" 200 -
+2025-03-10 16:01:22,959 - INFO - 127.0.0.1 - - [10/Mar/2025 16:01:22] "GET / HTTP/1.1" 200 -
+2025-03-10 16:01:24,198 - INFO - 127.0.0.1 - - [10/Mar/2025 16:01:24] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:01:30,082 - INFO - 127.0.0.1 - - [10/Mar/2025 16:01:30] "POST /register HTTP/1.1" 200 -
+2025-03-10 16:10:57,790 - INFO - 127.0.0.1 - - [10/Mar/2025 16:10:57] "GET / HTTP/1.1" 200 -
+2025-03-10 16:11:02,701 - INFO - 127.0.0.1 - - [10/Mar/2025 16:11:02] "POST / HTTP/1.1" 200 -
+2025-03-10 16:12:09,717 - INFO - 127.0.0.1 - - [10/Mar/2025 16:12:09] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:12:11,051 - INFO - 127.0.0.1 - - [10/Mar/2025 16:12:11] "GET / HTTP/1.1" 200 -
+2025-03-10 16:12:17,549 - INFO - 127.0.0.1 - - [10/Mar/2025 16:12:17] "POST / HTTP/1.1" 200 -
+2025-03-10 16:12:26,829 - INFO - 127.0.0.1 - - [10/Mar/2025 16:12:26] "POST / HTTP/1.1" 200 -
+2025-03-10 16:14:08,260 - INFO - 127.0.0.1 - - [10/Mar/2025 16:14:08] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:14:09,781 - INFO - 127.0.0.1 - - [10/Mar/2025 16:14:09] "GET / HTTP/1.1" 200 -
+2025-03-10 16:14:14,941 - INFO - 127.0.0.1 - - [10/Mar/2025 16:14:14] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:14:16,983 - INFO - 127.0.0.1 - - [10/Mar/2025 16:14:16] "GET / HTTP/1.1" 200 -
+2025-03-10 16:17:20,552 - INFO - 127.0.0.1 - - [10/Mar/2025 16:17:20] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:17:22,501 - INFO - 127.0.0.1 - - [10/Mar/2025 16:17:22] "GET / HTTP/1.1" 200 -
+2025-03-10 16:17:28,522 - INFO - 127.0.0.1 - - [10/Mar/2025 16:17:28] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:17:29,606 - INFO - 127.0.0.1 - - [10/Mar/2025 16:17:29] "GET / HTTP/1.1" 200 -
+2025-03-10 16:23:37,113 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 16:23:38,736 - INFO -  * Restarting with stat
+2025-03-10 16:24:47,100 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-03-10 16:24:47,100 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 16:24:47,103 - INFO -  * Restarting with stat
+2025-03-10 16:24:59,776 - WARNING -  * Debugger is active!
+2025-03-10 16:24:59,778 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 16:25:00,240 - INFO - 127.0.0.1 - - [10/Mar/2025 16:25:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-10 16:25:00,315 - INFO - 127.0.0.1 - - [10/Mar/2025 16:25:00] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 16:25:00,344 - INFO - 127.0.0.1 - - [10/Mar/2025 16:25:00] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 16:25:00,731 - INFO - 127.0.0.1 - - [10/Mar/2025 16:25:00] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=3KNjS4bU7nxRA0wisg34 HTTP/1.1" 200 -
+2025-03-10 16:25:00,980 - INFO - 127.0.0.1 - - [10/Mar/2025 16:25:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 16:26:50,586 - INFO - 127.0.0.1 - - [10/Mar/2025 16:26:50] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:26:54,752 - INFO - 127.0.0.1 - - [10/Mar/2025 16:26:54] "GET / HTTP/1.1" 200 -
+2025-03-10 16:26:57,638 - INFO - 127.0.0.1 - - [10/Mar/2025 16:26:57] "GET /login HTTP/1.1" 200 -
+2025-03-10 16:27:01,904 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:01] "GET /register HTTP/1.1" 200 -
+2025-03-10 16:27:06,025 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:06] "GET /main HTTP/1.1" 200 -
+2025-03-10 16:27:06,337 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:06] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 16:27:06,445 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:06] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 16:27:06,474 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:06] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 16:27:06,475 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:06] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 16:27:06,475 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:06] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 16:27:06,477 - INFO - 127.0.0.1 - - [10/Mar/2025 16:27:06] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 16:31:43,951 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:43] "GET /login HTTP/1.1" 200 -
+2025-03-10 16:31:47,431 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:47] "GET /main HTTP/1.1" 200 -
+2025-03-10 16:31:47,530 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:47] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 16:31:47,859 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:47] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 16:31:47,860 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:47] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 16:31:47,874 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:47] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 16:31:47,874 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:47] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 16:31:47,875 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:47] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 16:31:58,029 - INFO - 127.0.0.1 - - [10/Mar/2025 16:31:58] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 16:33:49,322 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:49] "GET /login HTTP/1.1" 200 -
+2025-03-10 16:33:51,005 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:51] "GET /main HTTP/1.1" 200 -
+2025-03-10 16:33:51,063 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:51] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 16:33:51,384 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:51] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 16:33:51,384 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:51] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 16:33:51,385 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:51] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 16:33:51,387 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:51] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 16:33:51,388 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:51] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 16:33:52,494 - INFO - 127.0.0.1 - - [10/Mar/2025 16:33:52] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 16:47:19,562 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 16:47:21,181 - INFO -  * Restarting with stat
+2025-03-10 16:47:39,478 - WARNING -  * Debugger is active!
+2025-03-10 16:47:39,480 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 16:49:45,940 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 16:49:47,402 - INFO -  * Restarting with stat
+2025-03-10 16:49:59,934 - WARNING -  * Debugger is active!
+2025-03-10 16:49:59,935 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 16:52:14,252 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 16:52:15,681 - INFO -  * Restarting with stat
+2025-03-10 16:52:27,954 - WARNING -  * Debugger is active!
+2025-03-10 16:52:27,955 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 16:54:13,458 - INFO - 127.0.0.1 - - [10/Mar/2025 16:54:13] "[35m[1mGET /user_products/6 HTTP/1.1[0m" 500 -
+2025-03-10 16:54:13,507 - INFO - 127.0.0.1 - - [10/Mar/2025 16:54:13] "GET /user_products/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-10 16:54:13,835 - INFO - 127.0.0.1 - - [10/Mar/2025 16:54:13] "GET /user_products/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-10 16:54:14,175 - INFO - 127.0.0.1 - - [10/Mar/2025 16:54:14] "GET /user_products/6?__debugger__=yes&cmd=resource&f=console.png&s=ZL0x8UVx8ClUweIqCCp7 HTTP/1.1" 200 -
+2025-03-10 16:54:14,440 - INFO - 127.0.0.1 - - [10/Mar/2025 16:54:14] "GET /user_products/6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-10 16:57:11,566 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:11] "[35m[1mGET /user_products/6 HTTP/1.1[0m" 500 -
+2025-03-10 16:57:11,652 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:11] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 16:57:12,003 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:12] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 16:57:12,267 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:12] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=console.png&s=ZL0x8UVx8ClUweIqCCp7 HTTP/1.1[0m" 304 -
+2025-03-10 16:57:51,142 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:51] "GET /login HTTP/1.1" 200 -
+2025-03-10 16:57:52,185 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:52] "GET /main HTTP/1.1" 200 -
+2025-03-10 16:57:52,485 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:52] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 16:57:52,549 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:52] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 16:57:52,550 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:52] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 16:57:52,551 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:52] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 16:57:52,553 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:52] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 16:57:52,555 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:52] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 16:57:53,557 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:53] "[35m[1mGET /user_products/6 HTTP/1.1[0m" 500 -
+2025-03-10 16:57:53,628 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:53] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 16:57:53,765 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:53] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 16:57:53,914 - INFO - 127.0.0.1 - - [10/Mar/2025 16:57:53] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=console.png&s=ZL0x8UVx8ClUweIqCCp7 HTTP/1.1[0m" 304 -
+2025-03-10 16:58:18,163 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:18] "GET /login HTTP/1.1" 200 -
+2025-03-10 16:58:19,418 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:19] "GET /main HTTP/1.1" 200 -
+2025-03-10 16:58:19,740 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:19] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 16:58:19,787 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:19] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 16:58:19,789 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:19] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 16:58:19,789 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:19] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 16:58:19,792 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:19] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 16:58:19,793 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:19] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 16:58:20,847 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:20] "[35m[1mGET /user_products/6 HTTP/1.1[0m" 500 -
+2025-03-10 16:58:20,928 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:20] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 16:58:21,065 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:21] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 16:58:21,256 - INFO - 127.0.0.1 - - [10/Mar/2025 16:58:21] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=console.png&s=ZL0x8UVx8ClUweIqCCp7 HTTP/1.1[0m" 304 -
+2025-03-10 16:59:33,002 - INFO - 127.0.0.1 - - [10/Mar/2025 16:59:33] "[35m[1mGET /user_products/6 HTTP/1.1[0m" 500 -
+2025-03-10 16:59:33,054 - INFO - 127.0.0.1 - - [10/Mar/2025 16:59:33] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 16:59:33,412 - INFO - 127.0.0.1 - - [10/Mar/2025 16:59:33] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 16:59:33,675 - INFO - 127.0.0.1 - - [10/Mar/2025 16:59:33] "[36mGET /user_products/6?__debugger__=yes&cmd=resource&f=console.png&s=ZL0x8UVx8ClUweIqCCp7 HTTP/1.1[0m" 304 -
+2025-03-10 17:00:15,775 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:15] "GET /login HTTP/1.1" 200 -
+2025-03-10 17:00:22,526 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:22] "POST /login HTTP/1.1" 200 -
+2025-03-10 17:00:30,388 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-10 17:00:30,502 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "GET /main HTTP/1.1" 200 -
+2025-03-10 17:00:30,881 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 17:00:30,924 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 17:00:30,925 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 17:00:30,974 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 17:00:30,975 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 17:00:30,975 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:30] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 17:00:33,881 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:33] "[35m[1mGET /user_products/3 HTTP/1.1[0m" 500 -
+2025-03-10 17:00:33,974 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:33] "GET /user_products/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-10 17:00:34,099 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:34] "GET /user_products/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-10 17:00:34,286 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:34] "GET /user_products/3?__debugger__=yes&cmd=resource&f=console.png&s=ZL0x8UVx8ClUweIqCCp7 HTTP/1.1" 200 -
+2025-03-10 17:00:34,441 - INFO - 127.0.0.1 - - [10/Mar/2025 17:00:34] "GET /user_products/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-10 17:02:17,579 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 17:02:18,875 - INFO -  * Restarting with stat
+2025-03-10 17:02:31,450 - WARNING -  * Debugger is active!
+2025-03-10 17:02:31,451 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 17:02:31,887 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:31] "GET /register HTTP/1.1" 200 -
+2025-03-10 17:02:33,494 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:33] "GET /login HTTP/1.1" 200 -
+2025-03-10 17:02:35,063 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:35] "GET /main HTTP/1.1" 200 -
+2025-03-10 17:02:35,369 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:35] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 17:02:35,473 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:35] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 17:02:35,517 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:35] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 17:02:35,518 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:35] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 17:02:35,528 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:35] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 17:02:35,530 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:35] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 17:02:36,768 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:36] "[35m[1mGET /user_products/3 HTTP/1.1[0m" 500 -
+2025-03-10 17:02:36,866 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:36] "[36mGET /user_products/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 17:02:37,008 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:37] "[36mGET /user_products/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 17:02:37,338 - INFO - 127.0.0.1 - - [10/Mar/2025 17:02:37] "GET /user_products/3?__debugger__=yes&cmd=resource&f=console.png&s=bj7IxaGLKy8E08mDLf4T HTTP/1.1" 200 -
+2025-03-10 17:02:56,483 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 17:02:57,800 - INFO -  * Restarting with stat
+2025-03-10 17:03:09,810 - WARNING -  * Debugger is active!
+2025-03-10 17:03:09,811 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 17:03:10,259 - INFO - 127.0.0.1 - - [10/Mar/2025 17:03:10] "GET /user_products/3 HTTP/1.1" 200 -
+2025-03-10 17:04:54,072 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 17:04:55,348 - INFO -  * Restarting with stat
+2025-03-10 17:05:07,738 - WARNING -  * Debugger is active!
+2025-03-10 17:05:07,739 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 17:05:19,543 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:19] "GET /login HTTP/1.1" 200 -
+2025-03-10 17:05:20,927 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:20] "GET /main HTTP/1.1" 200 -
+2025-03-10 17:05:21,233 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:21] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 17:05:21,389 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:21] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 17:05:21,391 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:21] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 17:05:21,392 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:21] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 17:05:21,393 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:21] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 17:05:21,395 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:21] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 17:05:22,792 - INFO - 127.0.0.1 - - [10/Mar/2025 17:05:22] "GET /user_products/3 HTTP/1.1" 200 -
+2025-03-10 17:06:02,098 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 17:06:03,340 - INFO -  * Restarting with stat
+2025-03-10 17:06:15,517 - WARNING -  * Debugger is active!
+2025-03-10 17:06:15,518 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 17:07:06,245 - INFO - 127.0.0.1 - - [10/Mar/2025 17:07:06] "GET /user_products/3 HTTP/1.1" 200 -
+2025-03-10 17:07:50,105 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 17:07:51,347 - INFO -  * Restarting with stat
+2025-03-10 17:08:03,839 - WARNING -  * Debugger is active!
+2025-03-10 17:08:03,840 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 17:08:42,360 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 17:08:43,874 - INFO -  * Restarting with stat
+2025-03-10 17:08:56,119 - WARNING -  * Debugger is active!
+2025-03-10 17:08:56,120 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 17:08:56,589 - INFO - 127.0.0.1 - - [10/Mar/2025 17:08:56] "GET /user_products/3 HTTP/1.1" 200 -
+2025-03-10 17:10:54,542 - INFO - 127.0.0.1 - - [10/Mar/2025 17:10:54] "GET /user_products/3 HTTP/1.1" 200 -
+2025-03-10 17:12:34,167 - INFO - 127.0.0.1 - - [10/Mar/2025 17:12:34] "GET /user_products/3 HTTP/1.1" 200 -
+2025-03-10 17:13:16,302 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:16] "GET /login HTTP/1.1" 200 -
+2025-03-10 17:13:21,813 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-10 17:13:21,932 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:21] "GET /main HTTP/1.1" 200 -
+2025-03-10 17:13:22,327 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:22] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 17:13:22,330 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:22] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 17:13:22,330 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:22] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 17:13:22,332 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:22] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 17:13:22,336 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:22] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 17:13:22,338 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:22] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 17:13:26,073 - INFO - 127.0.0.1 - - [10/Mar/2025 17:13:26] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:14:09,068 - INFO - 127.0.0.1 - - [10/Mar/2025 17:14:09] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:17:45,153 - INFO - 127.0.0.1 - - [10/Mar/2025 17:17:45] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:20:01,330 - INFO - 127.0.0.1 - - [10/Mar/2025 17:20:01] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:20:01,479 - INFO - 127.0.0.1 - - [10/Mar/2025 17:20:01] "GET /static/gout_img/user.png HTTP/1.1" 200 -
+2025-03-10 17:20:03,241 - INFO - 127.0.0.1 - - [10/Mar/2025 17:20:03] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 17:20:55,823 - INFO - 127.0.0.1 - - [10/Mar/2025 17:20:55] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:20:56,103 - INFO - 127.0.0.1 - - [10/Mar/2025 17:20:56] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:21:23,866 - INFO - 127.0.0.1 - - [10/Mar/2025 17:21:23] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:21:23,936 - INFO - 127.0.0.1 - - [10/Mar/2025 17:21:23] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:22:54,478 - INFO - 127.0.0.1 - - [10/Mar/2025 17:22:54] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:22:54,581 - INFO - 127.0.0.1 - - [10/Mar/2025 17:22:54] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:23:27,396 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:27] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:23:27,670 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:27] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:23:30,962 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:30] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:23:31,019 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:31] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:23:32,771 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:32] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 17:23:46,953 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:46] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:23:47,224 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:47] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:23:57,256 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:57] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:23:57,330 - INFO - 127.0.0.1 - - [10/Mar/2025 17:23:57] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:24:09,300 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:09] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:24:09,567 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:09] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:24:10,891 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:10] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:24:11,001 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:11] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:24:18,289 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:18] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:24:18,574 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:18] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:24:20,155 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:20] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:24:20,266 - INFO - 127.0.0.1 - - [10/Mar/2025 17:24:20] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:26:06,571 - INFO - 127.0.0.1 - - [10/Mar/2025 17:26:06] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:26:06,674 - INFO - 127.0.0.1 - - [10/Mar/2025 17:26:06] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:27:29,102 - INFO - 127.0.0.1 - - [10/Mar/2025 17:27:29] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:27:29,154 - INFO - 127.0.0.1 - - [10/Mar/2025 17:27:29] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:28:53,084 - INFO - 127.0.0.1 - - [10/Mar/2025 17:28:53] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:28:53,174 - INFO - 127.0.0.1 - - [10/Mar/2025 17:28:53] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:29:14,648 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:14] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:29:14,934 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:14] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:29:24,510 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:24] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:29:24,615 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:24] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:29:36,069 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:36] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:29:36,339 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:36] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:29:48,285 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:48] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:29:48,394 - INFO - 127.0.0.1 - - [10/Mar/2025 17:29:48] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:30:17,922 - INFO - 127.0.0.1 - - [10/Mar/2025 17:30:17] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:30:18,189 - INFO - 127.0.0.1 - - [10/Mar/2025 17:30:18] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:30:19,630 - INFO - 127.0.0.1 - - [10/Mar/2025 17:30:19] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 17:30:19,736 - INFO - 127.0.0.1 - - [10/Mar/2025 17:30:19] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 17:30:29,649 - INFO - 127.0.0.1 - - [10/Mar/2025 17:30:29] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 17:30:42,834 - INFO - 127.0.0.1 - - [10/Mar/2025 17:30:42] "GET /delete_account HTTP/1.1" 200 -
+2025-03-10 18:16:24,652 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-03-10 18:16:24,652 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 18:16:24,657 - INFO -  * Restarting with stat
+2025-03-10 18:16:36,858 - WARNING -  * Debugger is active!
+2025-03-10 18:16:36,860 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:19:14,413 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:19:15,899 - INFO -  * Restarting with stat
+2025-03-10 18:20:19,230 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-03-10 18:20:19,231 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 18:20:19,234 - INFO -  * Restarting with stat
+2025-03-10 18:20:31,289 - WARNING -  * Debugger is active!
+2025-03-10 18:20:31,291 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:20:33,625 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:33] "GET / HTTP/1.1" 200 -
+2025-03-10 18:20:38,146 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:38] "GET /main HTTP/1.1" 200 -
+2025-03-10 18:20:38,238 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:38] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 18:20:38,553 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:38] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 18:20:38,553 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:38] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 18:20:38,557 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:38] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 18:20:38,557 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:38] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 18:20:38,558 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:38] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 18:20:41,372 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:41] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:20:41,461 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:41] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:20:43,020 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:43] "[35m[1mGET /account HTTP/1.1[0m" 500 -
+2025-03-10 18:20:43,283 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:43] "GET /account?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-10 18:20:43,392 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:43] "GET /account?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-10 18:20:43,733 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:43] "GET /account?__debugger__=yes&cmd=resource&f=console.png&s=6Enc9dL7GeejjJFlUfcj HTTP/1.1" 200 -
+2025-03-10 18:20:43,996 - INFO - 127.0.0.1 - - [10/Mar/2025 18:20:43] "GET /account?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-10 18:22:43,751 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:22:45,013 - INFO -  * Restarting with stat
+2025-03-10 18:22:58,700 - WARNING -  * Debugger is active!
+2025-03-10 18:22:58,701 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:22:59,117 - INFO - 127.0.0.1 - - [10/Mar/2025 18:22:59] "GET /login HTTP/1.1" 200 -
+2025-03-10 18:23:08,916 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-10 18:23:09,032 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:09] "GET /main HTTP/1.1" 200 -
+2025-03-10 18:23:09,427 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:09] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 18:23:09,441 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:09] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 18:23:09,481 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:09] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 18:23:09,482 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:09] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 18:23:09,483 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:09] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 18:23:09,488 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:09] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 18:23:12,652 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:12] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:23:12,740 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:12] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:23:14,328 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:14] "[35m[1mGET /account HTTP/1.1[0m" 500 -
+2025-03-10 18:23:14,635 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:14] "[36mGET /account?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 18:23:14,727 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:14] "[36mGET /account?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 18:23:15,052 - INFO - 127.0.0.1 - - [10/Mar/2025 18:23:15] "GET /account?__debugger__=yes&cmd=resource&f=console.png&s=yJI9f6st76kEplJ7wBhD HTTP/1.1" 200 -
+2025-03-10 18:24:11,482 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:24:12,734 - INFO -  * Restarting with stat
+2025-03-10 18:24:25,102 - WARNING -  * Debugger is active!
+2025-03-10 18:24:25,103 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:24:25,486 - INFO - 127.0.0.1 - - [10/Mar/2025 18:24:25] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:24:25,489 - INFO - 127.0.0.1 - - [10/Mar/2025 18:24:25] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:24:32,248 - INFO - 127.0.0.1 - - [10/Mar/2025 18:24:32] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:24:35,859 - INFO - 127.0.0.1 - - [10/Mar/2025 18:24:35] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:24:48,467 - INFO - 127.0.0.1 - - [10/Mar/2025 18:24:48] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:24:48,540 - INFO - 127.0.0.1 - - [10/Mar/2025 18:24:48] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:24:49,784 - INFO - 127.0.0.1 - - [10/Mar/2025 18:24:49] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:27:20,474 - INFO - 127.0.0.1 - - [10/Mar/2025 18:27:20] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:27:23,652 - INFO - 127.0.0.1 - - [10/Mar/2025 18:27:23] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:28:23,939 - INFO - 127.0.0.1 - - [10/Mar/2025 18:28:23] "[33mGET /account HTTP/1.1[0m" 404 -
+2025-03-10 18:28:53,421 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:28:54,720 - INFO -  * Restarting with stat
+2025-03-10 18:29:07,492 - WARNING -  * Debugger is active!
+2025-03-10 18:29:07,493 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:29:07,954 - INFO - 127.0.0.1 - - [10/Mar/2025 18:29:07] "[35m[1mGET /account HTTP/1.1[0m" 500 -
+2025-03-10 18:29:07,968 - INFO - 127.0.0.1 - - [10/Mar/2025 18:29:07] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:29:08,007 - INFO - 127.0.0.1 - - [10/Mar/2025 18:29:08] "[36mGET /account?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 18:29:08,357 - INFO - 127.0.0.1 - - [10/Mar/2025 18:29:08] "[36mGET /account?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 18:29:08,609 - INFO - 127.0.0.1 - - [10/Mar/2025 18:29:08] "GET /account?__debugger__=yes&cmd=resource&f=console.png&s=sjNvlNpAJ7zdBdP7oTKf HTTP/1.1" 200 -
+2025-03-10 18:29:08,689 - INFO - 127.0.0.1 - - [10/Mar/2025 18:29:08] "[36mGET /account?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 18:31:22,560 - INFO - 127.0.0.1 - - [10/Mar/2025 18:31:22] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:31:30,625 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:31:31,992 - INFO -  * Restarting with stat
+2025-03-10 18:31:44,345 - WARNING -  * Debugger is active!
+2025-03-10 18:31:44,347 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:31:44,685 - INFO - 127.0.0.1 - - [10/Mar/2025 18:31:44] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:31:44,808 - INFO - 127.0.0.1 - - [10/Mar/2025 18:31:44] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:31:48,400 - INFO - 127.0.0.1 - - [10/Mar/2025 18:31:48] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:31:48,681 - INFO - 127.0.0.1 - - [10/Mar/2025 18:31:48] "[33mGET /static/images/default_avatar.png HTTP/1.1[0m" 404 -
+2025-03-10 18:33:35,053 - INFO - 127.0.0.1 - - [10/Mar/2025 18:33:35] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:36:32,780 - INFO - 127.0.0.1 - - [10/Mar/2025 18:36:32] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:37:29,697 - INFO - 127.0.0.1 - - [10/Mar/2025 18:37:29] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:37:58,454 - INFO - 127.0.0.1 - - [10/Mar/2025 18:37:58] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:37:58,562 - INFO - 127.0.0.1 - - [10/Mar/2025 18:37:58] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:38:00,211 - INFO - 127.0.0.1 - - [10/Mar/2025 18:38:00] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:39:02,727 - INFO - 127.0.0.1 - - [10/Mar/2025 18:39:02] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:39:05,769 - INFO - 127.0.0.1 - - [10/Mar/2025 18:39:05] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:40:21,618 - INFO - 127.0.0.1 - - [10/Mar/2025 18:40:21] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:40:24,319 - INFO - 127.0.0.1 - - [10/Mar/2025 18:40:24] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:40:45,883 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:40:47,185 - INFO -  * Restarting with stat
+2025-03-10 18:40:59,449 - WARNING -  * Debugger is active!
+2025-03-10 18:40:59,450 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:40:59,913 - INFO - 127.0.0.1 - - [10/Mar/2025 18:40:59] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:41:05,006 - INFO - 127.0.0.1 - - [10/Mar/2025 18:41:05] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:41:11,368 - INFO - 127.0.0.1 - - [10/Mar/2025 18:41:11] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:41:11,458 - INFO - 127.0.0.1 - - [10/Mar/2025 18:41:11] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:41:13,854 - INFO - 127.0.0.1 - - [10/Mar/2025 18:41:13] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:42:01,396 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:42:02,626 - INFO -  * Restarting with stat
+2025-03-10 18:42:14,587 - WARNING -  * Debugger is active!
+2025-03-10 18:42:14,588 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:42:49,899 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:49] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:42:53,651 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:53] "GET /login HTTP/1.1" 200 -
+2025-03-10 18:42:59,155 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-10 18:42:59,272 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "GET /main HTTP/1.1" 200 -
+2025-03-10 18:42:59,661 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 18:42:59,661 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 18:42:59,662 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 18:42:59,663 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 18:42:59,664 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 18:42:59,665 - INFO - 127.0.0.1 - - [10/Mar/2025 18:42:59] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 18:43:04,241 - INFO - 127.0.0.1 - - [10/Mar/2025 18:43:04] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:43:04,347 - INFO - 127.0.0.1 - - [10/Mar/2025 18:43:04] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:43:05,747 - INFO - 127.0.0.1 - - [10/Mar/2025 18:43:05] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:43:31,722 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:43:33,008 - INFO -  * Restarting with stat
+2025-03-10 18:43:44,846 - WARNING -  * Debugger is active!
+2025-03-10 18:43:44,848 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:44:05,830 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:05] "[35m[1mGET /account/6 HTTP/1.1[0m" 500 -
+2025-03-10 18:44:05,906 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:05] "GET /account/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-10 18:44:06,020 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:06] "GET /account/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-10 18:44:06,352 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:06] "GET /account/6?__debugger__=yes&cmd=resource&f=console.png&s=LtYGmQLaqoXrDosPTweh HTTP/1.1" 200 -
+2025-03-10 18:44:06,601 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:06] "GET /account/6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-10 18:44:45,375 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:45] "[35m[1mGET /account/6 HTTP/1.1[0m" 500 -
+2025-03-10 18:44:45,622 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:45] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 18:44:45,857 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:45] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 18:44:46,183 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:46] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=console.png&s=LtYGmQLaqoXrDosPTweh HTTP/1.1[0m" 304 -
+2025-03-10 18:44:46,448 - INFO - 127.0.0.1 - - [10/Mar/2025 18:44:46] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 18:45:04,589 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:04] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:45:04,679 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:04] "[33mGET /account/('https://assets.aromes-et-liquides.fr/54993-thickbox_default/e-liquide-cirkus-fraise-menthe-par-vdlv.jpg',%20'Fraise%20Menthe%20Cirkus%20VDLV',%20'https://www.aromes-et-liquides.fr/e-liquide-cirkus-vdlv/10230-e-liquide-cirkus-fraise-menthe-par-vdlv.html',%205.9,%20'50/50',%20'France',%20'Oui',%20'Non',%20'VDLV',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:04,805 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:04] "[33mGET /account/('https://assets.aromes-et-liquides.fr/55052-thickbox_default/e-liquide-miss-fraise-par-alfaliquid.jpg',%20'Miss%20Fraise%20Alfaliquid',%20'https://www.aromes-et-liquides.fr/e-liquide-alfaliquid/2307-e-liquide-miss-fraise-par-alfaliquid.html',%205.9,%20'74/26',%20'France',%20'Non',%20'Non',%20'Alfaliquid',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,025 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/54367-thickbox_default/heisenberg.jpg',%20'Heisenberg%20Vampire%20Vape',%20'https://www.aromes-et-liquides.fr/e-liquide-vampire-vape/3531-heisenberg.html',%205.5,%20'60/40',%20'Royaume-Uni',%20'Oui',%20'Non',%20'Vampire%20Vape',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,027 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/54948-thickbox_default/e-liquide-fruizee-crazy-mango-par-eliquide-france.jpg',%20'Crazy%20Mango%20Fruizee',%20'https://www.aromes-et-liquides.fr/e-liquide-fruizee/4856-e-liquide-fruizee-crazy-mango-par-eliquide-france.html',%204.9,%20'50/50',%20'France',%20'Oui',%20'Non',%20'Eliquid%20France',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,030 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/54914-thickbox_default/e-liquide-fraise-sauvage-pulp.jpg',%20'Fraise%20Sauvage%20PULP',%20'https://www.aromes-et-liquides.fr/e-liquide-pulp/1832-e-liquide-fraise-sauvage-pulp.html',%205.9,%20'70/30',%20'France',%20'Non',%20'Non',%20'PULP',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,033 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/55065-thickbox_default/e-liquide-red-astaire-par-t-juice.jpg',%20'Red%20Astaire%20T-Juice',%20'https://www.aromes-et-liquides.fr/e-liquide-t-juice/3539-e-liquide-red-astaire-par-t-juice.html',%204.9,%20'50/50',%20'Royaume-Uni',%20'Oui',%20'Non',%20'T-Juice',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,040 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/55930-thickbox_default/purple-rain-200-ml.jpg',%20'Purple%20Rain%20200ml%20Hello%20Cloudy',%20'https://www.aromes-et-liquides.fr/e-liquide-hello-cloudy/13378-purple-rain-200-ml.html',%2013.23,%20'50/50',%20'France',%20'Oui',%20'Oui',%20'Hello%20Cloudy',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,117 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/53649-thickbox_default/phoenix-ultimate.jpg',%20'Phoenix%20Ultimate%20A&L',%20'https://www.aromes-et-liquides.fr/e-liquide-ultimate/13004-phoenix-ultimate.html',%205.9,%20'50/50',%20'France',%20'Oui',%20'Non',%20'Arômes%20et%20Liquides%20(A&L)',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,352 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/51961-thickbox_default/fruits-rouges-givre-200ml.jpg',%20'Fruits%20Rouges%20Givré%20200ml%20Biggy%20Bear',%20'https://www.aromes-et-liquides.fr/e-liquide-biggy-bear/17324-fruits-rouges-givre-200ml.html',%2014.5,%20'50/50',%20'France',%20'Oui',%20'Oui',%20"Secret's%20Lab",%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,354 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/45672-thickbox_default/red-light-200-ml.jpg',%20'Red%20Light%20200ml%20Hello%20Cloudy',%20'https://www.aromes-et-liquides.fr/e-liquide-hello-cloudy/13379-red-light-200-ml.html',%2011.34,%20'50/50',%20'France',%20'Oui',%20'Oui',%20'Hello%20Cloudy',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,358 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/45026-thickbox_default/kawaii-50ml.jpg',%20'Kawaii%2050ml%20Les%20Créations%20A&L',%20'https://www.aromes-et-liquides.fr/e-liquide-al-creations/15161-kawaii-50ml.html',%2016.9,%20'50/50',%20'France',%20'Non',%20'Oui',%20'Arômes%20et%20Liquides%20(A&L)',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,363 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/47774-thickbox_default/ultimate-ragnarok-al-50ml.jpg',%20'Ragnarok%2050ml%20Ultimate%20A&L',%20'https://www.aromes-et-liquides.fr/e-liquide-ultimate/13056-ultimate-ragnarok-al-50ml.html',%2018.9,%20'50/50',%20'France',%20'Oui',%20'Oui',%20'Arômes%20et%20Liquides%20(A&L)',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,365 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/50458-thickbox_default/fruits-rouges-grenade-fraise-des-bois-200ml.jpg',%20'Fruits%20Rouges%20Grenade%20Fraise%20des%20Bois%20200ml%20Biggy%20Bear',%20'https://www.aromes-et-liquides.fr/e-liquide-biggy-bear/16207-fruits-rouges-grenade-fraise-des-bois-200ml.html',%2014.5,%20'50/50',%20'France',%20'Oui',%20'Oui',%20"Secret's%20Lab",%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,429 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/45171-thickbox_default/dragonfruit-and-lychee-100ml-fruits.jpg',%20'Dragonfruit%20and%20Lychee%20100ml%20Fruits%20Chuffed',%20'https://www.aromes-et-liquides.fr/e-liquide-chuffed/15254-dragonfruit-and-lychee-100ml-fruits.html',%209.9,%20'30/70',%20'Royaume-Uni',%20'Oui',%20'Oui',%20'Chuffed',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,664 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/15514-thickbox_default/e-liquide-fruizee-bloody-summer-50ml-par-eliquid-france.jpg',%20'Bloody%20Summer%2050ml%20Fruizee',%20'https://www.aromes-et-liquides.fr/e-liquide-fruizee/5761-e-liquide-fruizee-bloody-summer-50ml-par-eliquid-france.html',%2016.9,%20'30/70',%20'France',%20'Oui',%20'Oui',%20'Eliquid%20France',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,670 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/54982-thickbox_default/e-liquide-cirkus-mangue-framboise-par-vdlv.jpg',%20'Mangue%20Framboise%20Cirkus%20VDLV',%20'https://www.aromes-et-liquides.fr/e-liquide-cirkus-vdlv/4807-e-liquide-cirkus-mangue-framboise-par-vdlv.html',%205.9,%20'60/40',%20'France',%20'Non',%20'Non',%20'VDLV',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,674 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/44422-thickbox_default/strawberry-pomegranate-100ml-fruits.jpg',%20'Strawberry%20Pomegranate%20100ml%20Fruits%20Chuffed',%20'https://www.aromes-et-liquides.fr/e-liquide-chuffed/14935-strawberry-pomegranate-100ml-fruits.html',%209.9,%20'30/70',%20'Royaume-Uni',%20'Oui',%20'Oui',%20'Chuffed',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:05,677 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:05] "[33mGET /account/('https://assets.aromes-et-liquides.fr/42095-thickbox_default/frozen-lemon-and-lime-100ml-ice.jpg',%20'Frozen%20Lemon%20And%20Lime%20100ml%20Ice%20Chuffed',%20'https://www.aromes-et-liquides.fr/e-liquide-chuffed/14228-frozen-lemon-and-lime-100ml-ice.html',%209.9,%20'30/70',%20'Royaume-Uni',%20'Oui',%20'Oui',%20'Chuffed',%20'fruit') HTTP/1.1[0m" 404 -
+2025-03-10 18:45:45,812 - INFO - 127.0.0.1 - - [10/Mar/2025 18:45:45] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:46:39,765 - INFO - 127.0.0.1 - - [10/Mar/2025 18:46:39] "[35m[1mGET /account/6 HTTP/1.1[0m" 500 -
+2025-03-10 18:46:39,903 - INFO - 127.0.0.1 - - [10/Mar/2025 18:46:39] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 18:46:40,243 - INFO - 127.0.0.1 - - [10/Mar/2025 18:46:40] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 18:46:40,506 - INFO - 127.0.0.1 - - [10/Mar/2025 18:46:40] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=console.png&s=LtYGmQLaqoXrDosPTweh HTTP/1.1[0m" 304 -
+2025-03-10 18:46:40,568 - INFO - 127.0.0.1 - - [10/Mar/2025 18:46:40] "[36mGET /account/6?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 18:47:02,119 - INFO - 127.0.0.1 - - [10/Mar/2025 18:47:02] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:47:14,345 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 18:47:15,757 - INFO -  * Restarting with stat
+2025-03-10 18:47:28,306 - WARNING -  * Debugger is active!
+2025-03-10 18:47:28,307 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 18:47:28,765 - INFO - 127.0.0.1 - - [10/Mar/2025 18:47:28] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:48:35,242 - INFO - 127.0.0.1 - - [10/Mar/2025 18:48:35] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:52:39,586 - INFO - 127.0.0.1 - - [10/Mar/2025 18:52:39] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:59:19,497 - INFO - 127.0.0.1 - - [10/Mar/2025 18:59:19] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 18:59:35,681 - INFO - 127.0.0.1 - - [10/Mar/2025 18:59:35] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 18:59:35,747 - INFO - 127.0.0.1 - - [10/Mar/2025 18:59:35] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 18:59:38,008 - INFO - 127.0.0.1 - - [10/Mar/2025 18:59:38] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:02:27,125 - INFO - 127.0.0.1 - - [10/Mar/2025 19:02:27] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:06:03,469 - INFO - 127.0.0.1 - - [10/Mar/2025 19:06:03] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:06:35,371 - INFO - 127.0.0.1 - - [10/Mar/2025 19:06:35] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:08:16,021 - INFO - 127.0.0.1 - - [10/Mar/2025 19:08:16] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:09:53,811 - INFO - 127.0.0.1 - - [10/Mar/2025 19:09:53] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:10:58,769 - INFO - 127.0.0.1 - - [10/Mar/2025 19:10:58] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:11:44,801 - INFO - 127.0.0.1 - - [10/Mar/2025 19:11:44] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:12:09,449 - INFO - 127.0.0.1 - - [10/Mar/2025 19:12:09] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:13:58,835 - INFO - 127.0.0.1 - - [10/Mar/2025 19:13:58] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:15:11,519 - INFO - 127.0.0.1 - - [10/Mar/2025 19:15:11] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:15:43,143 - INFO - 127.0.0.1 - - [10/Mar/2025 19:15:43] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:17:36,432 - INFO - 127.0.0.1 - - [10/Mar/2025 19:17:36] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:17:36,478 - INFO - 127.0.0.1 - - [10/Mar/2025 19:17:36] "[33mGET /account/path_to_image_for_all_products.png HTTP/1.1[0m" 404 -
+2025-03-10 19:17:39,934 - INFO - 127.0.0.1 - - [10/Mar/2025 19:17:39] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 19:17:40,230 - INFO - 127.0.0.1 - - [10/Mar/2025 19:17:40] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 19:18:33,287 - INFO - 127.0.0.1 - - [10/Mar/2025 19:18:33] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:18:35,905 - INFO - 127.0.0.1 - - [10/Mar/2025 19:18:35] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 19:18:36,006 - INFO - 127.0.0.1 - - [10/Mar/2025 19:18:36] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 19:18:40,906 - INFO - 127.0.0.1 - - [10/Mar/2025 19:18:40] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 19:18:41,146 - INFO - 127.0.0.1 - - [10/Mar/2025 19:18:41] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 19:20:28,283 - INFO - 127.0.0.1 - - [10/Mar/2025 19:20:28] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:20:28,376 - INFO - 127.0.0.1 - - [10/Mar/2025 19:20:28] "[33mGET /account/path_to_image_for_all_products.png HTTP/1.1[0m" 404 -
+2025-03-10 19:20:29,685 - INFO - 127.0.0.1 - - [10/Mar/2025 19:20:29] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:20:29,974 - INFO - 127.0.0.1 - - [10/Mar/2025 19:20:29] "[33mGET /account/path_to_image_for_all_products.png HTTP/1.1[0m" 404 -
+2025-03-10 19:20:45,078 - INFO - 127.0.0.1 - - [10/Mar/2025 19:20:45] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:20:45,124 - INFO - 127.0.0.1 - - [10/Mar/2025 19:20:45] "[33mGET /account/path_to_image_for_all_products.png HTTP/1.1[0m" 404 -
+2025-03-10 19:21:01,936 - INFO - 127.0.0.1 - - [10/Mar/2025 19:21:01] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:23:43,614 - INFO - 127.0.0.1 - - [10/Mar/2025 19:23:43] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:23:58,321 - INFO - 127.0.0.1 - - [10/Mar/2025 19:23:58] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:24:02,625 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:02] "GET /user_products/6 HTTP/1.1" 200 -
+2025-03-10 19:24:02,923 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:02] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:08,486 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:08] "GET /account/6 HTTP/1.1" 200 -
+2025-03-10 19:24:15,237 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:15] "GET / HTTP/1.1" 200 -
+2025-03-10 19:24:18,237 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:18] "GET /main HTTP/1.1" 200 -
+2025-03-10 19:24:18,532 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:18] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:18,637 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:18] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:18,638 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:18] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:18,685 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:18] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:18,687 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:18] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:18,689 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:18] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:20,414 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:20] "GET /produit?gout=fruit&page=1 HTTP/1.1" 200 -
+2025-03-10 19:24:20,602 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:20] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:20,634 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:20] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:20,808 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:20] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:20,809 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:20] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:20,809 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:20] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:24:20,811 - INFO - 127.0.0.1 - - [10/Mar/2025 19:24:20] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:25:30,719 - INFO - 127.0.0.1 - - [10/Mar/2025 19:25:30] "[35m[1mGET /produit?gout=fruit&page=1 HTTP/1.1[0m" 500 -
+2025-03-10 19:25:30,782 - INFO - 127.0.0.1 - - [10/Mar/2025 19:25:30] "GET /produit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-10 19:25:30,892 - INFO - 127.0.0.1 - - [10/Mar/2025 19:25:30] "GET /produit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-10 19:25:31,243 - INFO - 127.0.0.1 - - [10/Mar/2025 19:25:31] "GET /produit?__debugger__=yes&cmd=resource&f=console.png&s=aBS8ZXjU7YgYt21en78X HTTP/1.1" 200 -
+2025-03-10 19:25:31,493 - INFO - 127.0.0.1 - - [10/Mar/2025 19:25:31] "GET /produit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-10 19:27:15,348 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:15] "[35m[1mGET /produit?gout=fruit&page=1 HTTP/1.1[0m" 500 -
+2025-03-10 19:27:15,411 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:15] "[36mGET /produit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 19:27:15,537 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:15] "[36mGET /produit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 19:27:15,868 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:15] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png&s=aBS8ZXjU7YgYt21en78X HTTP/1.1[0m" 304 -
+2025-03-10 19:27:16,131 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:16] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 19:27:38,123 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:38] "[35m[1mGET /produit?gout=fruit&page=1 HTTP/1.1[0m" 500 -
+2025-03-10 19:27:38,361 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:38] "[36mGET /produit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 19:27:38,533 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:38] "[36mGET /produit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 19:27:38,857 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:38] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png&s=aBS8ZXjU7YgYt21en78X HTTP/1.1[0m" 304 -
+2025-03-10 19:27:39,117 - INFO - 127.0.0.1 - - [10/Mar/2025 19:27:39] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 19:28:06,260 - INFO - 127.0.0.1 - - [10/Mar/2025 19:28:06] "[35m[1mGET /produit?gout=fruit&page=1 HTTP/1.1[0m" 500 -
+2025-03-10 19:28:06,511 - INFO - 127.0.0.1 - - [10/Mar/2025 19:28:06] "[36mGET /produit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 19:28:06,620 - INFO - 127.0.0.1 - - [10/Mar/2025 19:28:06] "[36mGET /produit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 19:28:06,949 - INFO - 127.0.0.1 - - [10/Mar/2025 19:28:06] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png&s=aBS8ZXjU7YgYt21en78X HTTP/1.1[0m" 304 -
+2025-03-10 19:28:07,196 - INFO - 127.0.0.1 - - [10/Mar/2025 19:28:07] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 19:28:41,973 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 19:28:44,959 - INFO -  * Restarting with stat
+2025-03-10 19:29:03,329 - WARNING -  * Debugger is active!
+2025-03-10 19:29:03,333 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 19:29:03,830 - INFO - 127.0.0.1 - - [10/Mar/2025 19:29:03] "GET /produit?gout=fruit&page=1 HTTP/1.1" 200 -
+2025-03-10 19:29:03,993 - INFO - 127.0.0.1 - - [10/Mar/2025 19:29:03] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:29:03,995 - INFO - 127.0.0.1 - - [10/Mar/2025 19:29:03] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:29:04,307 - INFO - 127.0.0.1 - - [10/Mar/2025 19:29:04] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:29:04,307 - INFO - 127.0.0.1 - - [10/Mar/2025 19:29:04] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:29:04,309 - INFO - 127.0.0.1 - - [10/Mar/2025 19:29:04] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:29:04,311 - INFO - 127.0.0.1 - - [10/Mar/2025 19:29:04] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:31:20,582 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:20] "[35m[1mGET /produit?gout=fruit&page=1 HTTP/1.1[0m" 500 -
+2025-03-10 19:31:20,681 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:20] "[36mGET /produit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 19:31:20,768 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:20] "[36mGET /produit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 19:31:21,089 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:21] "GET /produit?__debugger__=yes&cmd=resource&f=console.png&s=IZ64EA9gOY0eNc3vHxtu HTTP/1.1" 200 -
+2025-03-10 19:31:21,352 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:21] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 19:31:33,198 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:33] "[35m[1mGET /produit?gout=fruit&page=1 HTTP/1.1[0m" 500 -
+2025-03-10 19:31:33,439 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:33] "[36mGET /produit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 19:31:33,611 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:33] "[36mGET /produit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 19:31:33,937 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:33] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png&s=IZ64EA9gOY0eNc3vHxtu HTTP/1.1[0m" 304 -
+2025-03-10 19:31:34,198 - INFO - 127.0.0.1 - - [10/Mar/2025 19:31:34] "[36mGET /produit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:40,816 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:40] "GET /produit?gout=fruit&page=1 HTTP/1.1" 200 -
+2025-03-10 19:32:40,922 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:40] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:41,026 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:41] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:41,271 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:41] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:41,272 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:41] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:41,272 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:41] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:41,275 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:41] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:46,572 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:46] "GET /produit?gout=fruit&page=2 HTTP/1.1" 200 -
+2025-03-10 19:32:46,808 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:46] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:46,822 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:46] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:46,934 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:46] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:46,934 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:46] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:46,935 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:46] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:32:46,937 - INFO - 127.0.0.1 - - [10/Mar/2025 19:32:46] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:33:15,012 - INFO - 127.0.0.1 - - [10/Mar/2025 19:33:15] "GET /produit?gout=fruit&page=2 HTTP/1.1" 200 -
+2025-03-10 19:33:15,083 - INFO - 127.0.0.1 - - [10/Mar/2025 19:33:15] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:33:15,207 - INFO - 127.0.0.1 - - [10/Mar/2025 19:33:15] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:33:15,459 - INFO - 127.0.0.1 - - [10/Mar/2025 19:33:15] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:33:15,461 - INFO - 127.0.0.1 - - [10/Mar/2025 19:33:15] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:33:15,463 - INFO - 127.0.0.1 - - [10/Mar/2025 19:33:15] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:33:15,464 - INFO - 127.0.0.1 - - [10/Mar/2025 19:33:15] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:33:37,819 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 19:33:39,220 - INFO -  * Restarting with stat
+2025-03-10 19:33:52,223 - WARNING -  * Debugger is active!
+2025-03-10 19:33:52,224 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 19:34:19,028 - INFO - 127.0.0.1 - - [10/Mar/2025 19:34:19] "GET /produit?gout=fruit&page=2 HTTP/1.1" 200 -
+2025-03-10 19:34:19,134 - INFO - 127.0.0.1 - - [10/Mar/2025 19:34:19] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:34:19,213 - INFO - 127.0.0.1 - - [10/Mar/2025 19:34:19] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:34:19,470 - INFO - 127.0.0.1 - - [10/Mar/2025 19:34:19] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:34:19,471 - INFO - 127.0.0.1 - - [10/Mar/2025 19:34:19] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:34:19,472 - INFO - 127.0.0.1 - - [10/Mar/2025 19:34:19] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:34:19,476 - INFO - 127.0.0.1 - - [10/Mar/2025 19:34:19] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:29,823 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:29] "GET /produit?gout=boisson&page=1 HTTP/1.1" 200 -
+2025-03-10 19:35:30,042 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:30] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:30,070 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:30] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:30,195 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:30] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:30,196 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:30] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:30,197 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:30] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:30,197 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:30] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:55,837 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:55] "GET /produit?gout=boisson&page=1 HTTP/1.1" 200 -
+2025-03-10 19:35:55,900 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:55] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:56,047 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:56] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:56,249 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:56] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:56,250 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:56] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:56,251 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:56] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:35:56,252 - INFO - 127.0.0.1 - - [10/Mar/2025 19:35:56] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:36:02,765 - INFO - 127.0.0.1 - - [10/Mar/2025 19:36:02] "GET /produit?gout=boisson&page=2 HTTP/1.1" 200 -
+2025-03-10 19:36:02,979 - INFO - 127.0.0.1 - - [10/Mar/2025 19:36:02] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:36:02,994 - INFO - 127.0.0.1 - - [10/Mar/2025 19:36:02] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:36:03,205 - INFO - 127.0.0.1 - - [10/Mar/2025 19:36:03] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:36:03,206 - INFO - 127.0.0.1 - - [10/Mar/2025 19:36:03] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:36:03,207 - INFO - 127.0.0.1 - - [10/Mar/2025 19:36:03] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:36:03,209 - INFO - 127.0.0.1 - - [10/Mar/2025 19:36:03] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:12,397 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:12] "GET /produit?gout=boisson&page=2 HTTP/1.1" 200 -
+2025-03-10 19:38:12,455 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:12] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:12,609 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:12] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:12,766 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:12] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:12,768 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:12] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:12,768 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:12] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:12,769 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:12] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:33,479 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:33] "GET /produit?gout=boisson&page=2 HTTP/1.1" 200 -
+2025-03-10 19:38:33,541 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:33] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:33,703 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:33] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:33,909 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:33] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:33,939 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:33] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:33,941 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:33] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:38:33,942 - INFO - 127.0.0.1 - - [10/Mar/2025 19:38:33] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:39:51,411 - INFO - 127.0.0.1 - - [10/Mar/2025 19:39:51] "GET /produit?gout=boisson&page=2 HTTP/1.1" 200 -
+2025-03-10 19:39:51,493 - INFO - 127.0.0.1 - - [10/Mar/2025 19:39:51] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:39:51,613 - INFO - 127.0.0.1 - - [10/Mar/2025 19:39:51] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:39:51,820 - INFO - 127.0.0.1 - - [10/Mar/2025 19:39:51] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:39:51,821 - INFO - 127.0.0.1 - - [10/Mar/2025 19:39:51] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:39:51,822 - INFO - 127.0.0.1 - - [10/Mar/2025 19:39:51] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:39:51,824 - INFO - 127.0.0.1 - - [10/Mar/2025 19:39:51] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:41:03,918 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/routes.py', reloading
+2025-03-10 19:41:05,371 - INFO -  * Restarting with stat
+2025-03-10 19:41:19,114 - WARNING -  * Debugger is active!
+2025-03-10 19:41:19,116 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 19:41:19,563 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:19] "GET /produit?gout=boisson&page=2 HTTP/1.1" 200 -
+2025-03-10 19:41:19,647 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:19] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:41:19,674 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:19] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:41:19,986 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:19] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:41:19,988 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:19] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:41:19,989 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:19] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:41:19,992 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:19] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:41:59,288 - INFO - 127.0.0.1 - - [10/Mar/2025 19:41:59] "GET / HTTP/1.1" 200 -
+2025-03-10 19:42:21,565 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:21] "GET /register HTTP/1.1" 200 -
+2025-03-10 19:42:40,567 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:40] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-10 19:42:40,620 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:40] "GET /login HTTP/1.1" 200 -
+2025-03-10 19:42:53,843 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-10 19:42:53,878 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:53] "GET /main HTTP/1.1" 200 -
+2025-03-10 19:42:54,282 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:54] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 19:42:54,587 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:54] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 19:42:54,589 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:54] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 19:42:54,611 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:54] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 19:42:54,612 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:54] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 19:42:54,614 - INFO - 127.0.0.1 - - [10/Mar/2025 19:42:54] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 19:43:07,767 - INFO - 127.0.0.1 - - [10/Mar/2025 19:43:07] "POST /query HTTP/1.1" 200 -
+2025-03-10 19:43:18,794 - INFO - 127.0.0.1 - - [10/Mar/2025 19:43:18] "POST /query HTTP/1.1" 200 -
+2025-03-10 19:43:38,224 - INFO - 127.0.0.1 - - [10/Mar/2025 19:43:38] "POST /query HTTP/1.1" 200 -
+2025-03-10 19:43:48,881 - INFO - 127.0.0.1 - - [10/Mar/2025 19:43:48] "POST /query HTTP/1.1" 200 -
+2025-03-10 19:43:57,762 - INFO - 127.0.0.1 - - [10/Mar/2025 19:43:57] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 19:44:07,479 - INFO - 127.0.0.1 - - [10/Mar/2025 19:44:07] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 19:44:29,266 - INFO - 127.0.0.1 - - [10/Mar/2025 19:44:29] "POST /query HTTP/1.1" 200 -
+2025-03-10 19:44:37,642 - INFO - 127.0.0.1 - - [10/Mar/2025 19:44:37] "POST /query HTTP/1.1" 200 -
+2025-03-10 19:44:49,181 - INFO - 127.0.0.1 - - [10/Mar/2025 19:44:49] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 19:44:49,631 - INFO - 127.0.0.1 - - [10/Mar/2025 19:44:49] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 19:45:05,753 - INFO - 127.0.0.1 - - [10/Mar/2025 19:45:05] "GET /user_products/9 HTTP/1.1" 200 -
+2025-03-10 19:45:05,965 - INFO - 127.0.0.1 - - [10/Mar/2025 19:45:05] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 19:45:25,703 - INFO - 127.0.0.1 - - [10/Mar/2025 19:45:25] "GET /account/9 HTTP/1.1" 200 -
+2025-03-10 19:46:01,328 - INFO - 127.0.0.1 - - [10/Mar/2025 19:46:01] "POST /query HTTP/1.1" 200 -
+2025-03-10 19:46:22,115 - INFO - 127.0.0.1 - - [10/Mar/2025 19:46:22] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 19:47:11,644 - INFO - 127.0.0.1 - - [10/Mar/2025 19:47:11] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:04:22,425 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-03-10 20:04:22,426 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 20:04:22,430 - INFO -  * Restarting with stat
+2025-03-10 20:04:36,368 - WARNING -  * Debugger is active!
+2025-03-10 20:04:36,370 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 20:04:37,018 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:37] "GET / HTTP/1.1" 200 -
+2025-03-10 20:04:37,030 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:37] "GET / HTTP/1.1" 200 -
+2025-03-10 20:04:42,036 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:42] "GET /main HTTP/1.1" 200 -
+2025-03-10 20:04:42,334 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:42] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 20:04:42,524 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:42] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 20:04:42,590 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:42] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 20:04:42,591 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:42] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 20:04:42,592 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:42] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 20:04:42,597 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:42] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 20:04:45,566 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:45] "GET /user_products/9 HTTP/1.1" 200 -
+2025-03-10 20:04:45,714 - INFO - 127.0.0.1 - - [10/Mar/2025 20:04:45] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 20:09:14,775 - INFO - 127.0.0.1 - - [10/Mar/2025 20:09:14] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+2025-03-10 20:09:17,532 - INFO - 127.0.0.1 - - [10/Mar/2025 20:09:17] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+2025-03-10 20:09:17,587 - INFO - 127.0.0.1 - - [10/Mar/2025 20:09:17] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 20:09:17,907 - INFO - 127.0.0.1 - - [10/Mar/2025 20:09:17] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 20:09:18,249 - INFO - 127.0.0.1 - - [10/Mar/2025 20:09:18] "GET /recommend?__debugger__=yes&cmd=resource&f=console.png&s=adzhM1U2651930fs4ouS HTTP/1.1" 200 -
+2025-03-10 20:09:18,511 - INFO - 127.0.0.1 - - [10/Mar/2025 20:09:18] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 20:10:44,979 - INFO - 127.0.0.1 - - [10/Mar/2025 20:10:44] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:11:16,536 - INFO - 127.0.0.1 - - [10/Mar/2025 20:11:16] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:12:51,175 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:51] "GET / HTTP/1.1" 200 -
+2025-03-10 20:12:54,254 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:54] "GET /main HTTP/1.1" 200 -
+2025-03-10 20:12:54,578 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:54] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-10 20:12:54,775 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:54] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-10 20:12:54,776 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:54] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-10 20:12:54,796 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:54] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-10 20:12:54,799 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:54] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-10 20:12:54,801 - INFO - 127.0.0.1 - - [10/Mar/2025 20:12:54] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-10 20:13:01,394 - INFO - 127.0.0.1 - - [10/Mar/2025 20:13:01] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:14:48,064 - INFO - 127.0.0.1 - - [10/Mar/2025 20:14:48] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:16:13,834 - INFO - 127.0.0.1 - - [10/Mar/2025 20:16:13] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:17:28,517 - INFO - 127.0.0.1 - - [10/Mar/2025 20:17:28] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:18:25,681 - INFO - 127.0.0.1 - - [10/Mar/2025 20:18:25] "[35m[1mPOST /recommend HTTP/1.1[0m" 500 -
+2025-03-10 20:18:26,092 - INFO - 127.0.0.1 - - [10/Mar/2025 20:18:26] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-10 20:18:26,137 - INFO - 127.0.0.1 - - [10/Mar/2025 20:18:26] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-10 20:18:26,344 - INFO - 127.0.0.1 - - [10/Mar/2025 20:18:26] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=console.png&s=adzhM1U2651930fs4ouS HTTP/1.1[0m" 304 -
+2025-03-10 20:18:26,483 - INFO - 127.0.0.1 - - [10/Mar/2025 20:18:26] "[36mGET /recommend?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-10 20:19:57,580 - INFO - 127.0.0.1 - - [10/Mar/2025 20:19:57] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:21:51,460 - INFO - 127.0.0.1 - - [10/Mar/2025 20:21:51] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:23:08,161 - INFO - 127.0.0.1 - - [10/Mar/2025 20:23:08] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:26:17,034 - INFO - 127.0.0.1 - - [10/Mar/2025 20:26:17] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:27:55,220 - INFO - 127.0.0.1 - - [10/Mar/2025 20:27:55] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:28:35,523 - INFO - 127.0.0.1 - - [10/Mar/2025 20:28:35] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:29:04,274 - INFO - 127.0.0.1 - - [10/Mar/2025 20:29:04] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:31:19,212 - INFO - 127.0.0.1 - - [10/Mar/2025 20:31:19] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:31:23,848 - INFO - 127.0.0.1 - - [10/Mar/2025 20:31:23] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:31:26,431 - INFO - 127.0.0.1 - - [10/Mar/2025 20:31:26] "GET /user_products/9 HTTP/1.1" 200 -
+2025-03-10 20:31:26,533 - INFO - 127.0.0.1 - - [10/Mar/2025 20:31:26] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-10 20:31:33,349 - INFO - 127.0.0.1 - - [10/Mar/2025 20:31:33] "POST /recommend HTTP/1.1" 200 -
+2025-03-10 20:32:29,840 - INFO -  * Detected change in '/mnt/c/Users/antoa/Desktop/projet certif/app/db.py', reloading
+2025-03-10 20:32:31,521 - INFO -  * Restarting with stat
+2025-03-10 20:32:51,662 - WARNING -  * Debugger is active!
+2025-03-10 20:32:51,664 - INFO -  * Debugger PIN: 493-915-515
+2025-03-10 20:35:03,603 - INFO - 127.0.0.1 - - [10/Mar/2025 20:35:03] "GET /user_products/9 HTTP/1.1" 200 -
+2025-03-10 20:35:03,737 - INFO - 127.0.0.1 - - [10/Mar/2025 20:35:03] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -

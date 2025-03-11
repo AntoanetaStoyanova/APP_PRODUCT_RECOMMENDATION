@@ -59,7 +59,7 @@ from .models import user_db
 import os
 # Initialiser les extensions
 import sys
-
+from .routes import main_bp
 
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__) + '/../'))
 from config import Config
@@ -78,9 +78,9 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     app.config.from_object('config.Config')
-
+    # bcrypt.init_app(app)
     user_db.init_app(app)
-    bcrypt.init_app(app)
+    
     login_manager.init_app(app)
 
     from .routes import main_bp  # Import inside create_app to avoid circular import

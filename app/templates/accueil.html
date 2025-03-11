@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+        }
+        .button-container a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 15px 30px;
+            width: 100%;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur notre application</h1>
+    <div class="button-container">
+        <!-- Connexion -->
+        <a href="{{ url_for('main.login') }}">Connectez-vous</a>
+        <!-- Création de compte -->
+        <a href="{{ url_for('main.register') }}">Créez votre compte</a>
+        <!-- Recommandation produits -->
+        <a href="{{ url_for('main.index') }}">Obtenez des recommandations</a>
+    </div>
+</body>
+</html>

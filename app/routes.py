@@ -10,7 +10,7 @@ from langchain.schema import Document
 
 from .forms import RegisterForm, LoginForm
 from flask_login import login_user, login_required, current_user  
-from app import bcrypt
+# from app import bcrypt
 import requests
 from config import Config
 import logging
@@ -140,8 +140,41 @@ qa_chain = (
 
 # Route principale
 @main_bp.route('/')
+def acceuil():
+    return render_template('accueil.html')
+
+@main_bp.route('/main')
 def index():
     return render_template('main.html')
+
+# @main_bp.route('/account/<int:user_id>')
+# @login_required
+# def account(user_id):
+#     # Vérifie que l'ID de l'utilisateur dans l'URL correspond à l'utilisateur connecté
+#     if current_user.id != user_id:
+#         flash("Vous n'avez pas accès à ces produits.", "danger")
+#         return redirect(url_for('auth.login'))  # Redirige vers la page de connexion
+
+#     # Si l'utilisateur est authentifié et a le bon ID, récupère les informations de l'utilisateur
+#     user = User.query.get_or_404(user_id)
+#     # Appeler la fonction pour récupérer les produits de cet utilisateur
+#     produits = get_user_products(user_id)
+#     return render_template('user_account.html', user=user, produits=produits)
+
+@main_bp.route('/account/<int:user_id>')
+@login_required
+def account(user_id):
+    # Vérifie que l'ID de l'utilisateur dans l'URL correspond à l'utilisateur connecté
+    if current_user.id != user_id:
+        flash("Vous n'avez pas accès à ces produits.", "danger")
+        return redirect(url_for('auth.login'))  # Redirige vers la page de connexion
+
+    # Si l'utilisateur est authentifié et a le bon ID, récupère les informations de l'utilisateur
+    user = User.query.get_or_404(user_id)
+    # Appeler la fonction pour récupérer les produits de cet utilisateur
+    produits = get_user_products(user_id)
+    
+    return render_template('user_account.html', user=user, produits=produits[:3])
 
 
 # Route pour la connexion
@@ -159,24 +192,65 @@ def login():
     return render_template('login.html', form=form)
 
 # Route pour l'inscription
+# @main_bp.route('/register', methods=['GET', 'POST'])
+# def register():
+#     form = RegisterForm()
+#     if form.validate_on_submit():
+#         # Vérifier si le consentement a été donné
+#         if not form.consent.data:
+#             flash("Vous devez accepter les termes et conditions.", "danger")
+#             return render_template('register.html', form=form)
+#         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+#         new_user = User(
+#             username=form.username.data, 
+#             password=hashed_password,
+#             consent=form.consent.data
+#             )
+#         user_db.session.add(new_user)
+#         user_db.session.commit()
+#         flash(f"Utilisateur {new_user.username} créé avec succès !", "success")
+#         return redirect(url_for('main.login'))
+#     return render_template('register.html', form=form)
+# Route pour l'inscription
 @main_bp.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegisterForm()
+    
     if form.validate_on_submit():
         # Vérifier si le consentement a été donné
         if not form.consent.data:
             flash("Vous devez accepter les termes et conditions.", "danger")
             return render_template('register.html', form=form)
+
+        # Vérifier si le nom d'utilisateur est déjà pris
+        existing_user = User.query.filter_by(username=form.username.data).first()
+        if existing_user:
+            flash("Ce nom d'utilisateur est déjà pris. Veuillez en choisir un autre.", "danger")
+            return render_template('register.html', form=form)
+
+        # Vérifier si le mot de passe est vide
+        if not form.password.data.strip():
+            flash("Le mot de passe ne peut pas être vide.", "danger")
+            return render_template('register.html', form=form)
+
+        # Vérifier si le nom d'utilisateur est vide
+        if not form.username.data.strip():
+            flash("Le nom d'utilisateur ne peut pas être vide.", "danger")
+            return render_template('register.html', form=form)
+
+        # Hacher le mot de passe et enregistrer l'utilisateur
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         new_user = User(
             username=form.username.data, 
             password=hashed_password,
             consent=form.consent.data
-            )
+        )
         user_db.session.add(new_user)
         user_db.session.commit()
+        
         flash(f"Utilisateur {new_user.username} créé avec succès !", "success")
         return redirect(url_for('main.login'))
+
     return render_template('register.html', form=form)
 
 
@@ -205,7 +279,7 @@ def show_produits():
     """Affiche les produits en fonction du goût sélectionné."""
     gout = request.args.get('gout')  # Récupérer le paramètre 'gout'
     page = int(request.args.get('page', 1))  # Numéro de page, par défaut 1
-    per_page = 9  # Nombre de produits par page
+    per_page = 10  # Nombre de produits par page
     offset = (page - 1) * per_page  # Calculer l'offset pour la pagination
 
     produits_list = []
