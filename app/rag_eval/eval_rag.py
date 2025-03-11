@@ -6,10 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import sys
 import os
 
-# Ajouter le chemin de la racine du projet au sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
-from config import Config
 
 
 # Charger le modèle SentenceTransformer
@@ -18,7 +15,7 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 # Je recupere le query de l'user, la reponse et la source de l'application dans un csv afin d'évaluer le rag avec bulk eval
 df = pd.read_csv("app/recommendations.csv")
 
-# df = pd.read_csv(Config.RECOMMENDATIONS_CSV)
+
 
 
 
