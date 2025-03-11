@@ -1,7 +1,7 @@
 .env
 er_produit up
 ;d public.produits;
-tests/
+
 config.py
 mlruns/
 instance/
