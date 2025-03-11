@@ -16,7 +16,7 @@ from config import Config
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Je recupere le query de l'user, la reponse et la source de l'application dans un csv afin d'évaluer le rag avec bulk eval
-df = pd.read_csv("../../app/recommendations.csv")
+df = pd.read_csv("app/recommendations.csv")
 
 # df = pd.read_csv(Config.RECOMMENDATIONS_CSV)
 
