@@ -16,9 +16,9 @@ jobs:
       postgres:
         image: postgres:15  # Assure-toi que la version correspond à celle de ton projet
         env:
-          POSTGRES_USER: "$DB_USER"
-          POSTGRES_PASSWORD: "$DB_PASSWORD" 
-          POSTGRES_DB: "$DB_NAME"
+          POSTGRES_USER: ${{ secrets.DB_USER }}
+          POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          POSTGRES_DB: ${{ secrets.DB_NAME }}
         ports:
           - 5432:5432
         options: >-
@@ -44,12 +44,12 @@ jobs:
 
       - name: Charger les variables d'environnement
         run: |
-          echo "POSTGRESQL_URI=$POSTGRESQL_URI" >> $GITHUB_ENV
-          echo "DATABASE_URL=$POSTGRESQL_URI" >> $GITHUB_ENV
-          echo "SECRET_KEY=$SECRET_KEY" >> $GITHUB_ENV
-          echo "AZURE_OPENAI_API_KEY_4=$AZURE_OPENAI_API_KEY_4" >> $GITHUB_ENV
-          echo "AZURE_OPENAI_API_ENDPOINT_4=$OPENAI_API_ENDPOINT_4" >> $GITHUB_ENV
-          echo "AZURE_DEPLOYMENT_NAME_4=$AZURE_DEPLOYMENT_NAME_4" >> $GITHUB_ENV
+          echo "POSTGRESQL_URI= ${{ secrets.POSTGRESQL_URI }}" >> $GITHUB_ENV 
+          echo "DATABASE_URL= ${{ secrets.POSTGRESQL_URI }}" >> $GITHUB_ENV 
+          echo "SECRET_KEY= ${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
+          echo "AZURE_OPENAI_API_KEY_4= ${{ secrets.AZURE_OPENAI_API_KEY_4 }}" >> $GITHUB_ENV
+          echo "AZURE_OPENAI_API_ENDPOINT_4= ${{ secrets.OPENAI_API_ENDPOINT_4 }}" >> $GITHUB_ENV
+          echo "AZURE_DEPLOYMENT_NAME_4= ${{ secrets.AZURE_DEPLOYMENT_NAME_4 }}" >> $GITHUB_ENV
 
       - name: Vérifier les variables d'environnement (sans afficher les valeurs sensibles)
         run: |
