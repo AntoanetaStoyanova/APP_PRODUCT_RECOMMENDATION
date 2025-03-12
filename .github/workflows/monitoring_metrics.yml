@@ -33,6 +33,13 @@ jobs:
             pipenv run python app/rag_eval/rag_monitoring.py
         #   echo "RECOMMENDATIONS_CSV=app/recommendations.csv" >> $GITHUB_ENV  # Chemin vers ton CSV local
 
+
+      - name: Configure Git user
+        run: |
+          git config --global user.email  ${{ secrets.MAIL }}
+          git config --global user.name ${{ secrets.USER_NAME }}
+
+
       - name: Commit and push updated monitoring data
         run: |
           git add app/rag_eval/monitoring.csv
