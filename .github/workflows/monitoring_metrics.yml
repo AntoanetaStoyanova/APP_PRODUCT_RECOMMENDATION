@@ -41,8 +41,10 @@ jobs:
 
 
       - name: Commit and push updated monitoring data
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }} 
         run: |
           git add app/rag_eval/monitoring.csv
           git commit -m "Update monitoring data"
-          git push https://REDACTED@github.com/AntoanetaStoyanova/APP_PRODUCT_RECOMMENDATION
+          git push https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/${{ github.repository }}.git
 
