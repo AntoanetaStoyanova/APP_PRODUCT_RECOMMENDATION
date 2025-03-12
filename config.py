@@ -17,7 +17,7 @@ class Config:
     # SQLALCHEMY_DATABASE_URI = os.getenv("POSTGRESQL_URI")
     
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = os.getenv("SECRET_KEY")  # Make sure this is in your .env file
+    SECRET_KEY = os.getenv("SECRET_KEY", '12345')  # Make sure this is in your .env file
 
     # Configuration Azure OpenAIpig
     AZURE_OPENAI_API_KEY = os.getenv('AZURE_OPENAI_API_KEY_4')

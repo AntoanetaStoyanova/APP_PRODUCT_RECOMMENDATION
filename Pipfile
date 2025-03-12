@@ -41,6 +41,9 @@ requests = "*"
 ipython = "*"
 pigar = "*"
 pytest-mock = "*"
+dash = "*"
+plotly = "*"
+streamlit = "*"
 
 [dev-packages]
 

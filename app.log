@@ -1803,3 +1803,21 @@
 2025-03-11 18:58:09,720 - INFO - 127.0.0.1 - - [11/Mar/2025 18:58:09] "POST /recommend HTTP/1.1" 200 -
 2025-03-11 18:58:20,454 - INFO - 127.0.0.1 - - [11/Mar/2025 18:58:20] "GET /user_products/3 HTTP/1.1" 200 -
 2025-03-11 18:58:20,764 - INFO - 127.0.0.1 - - [11/Mar/2025 18:58:20] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
+2025-03-11 19:06:33,680 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2025-03-11 19:06:33,681 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 19:06:33,684 - INFO -  * Restarting with stat
+2025-03-11 19:06:45,996 - WARNING -  * Debugger is active!
+2025-03-11 19:06:45,998 - INFO -  * Debugger PIN: 382-477-762
+2025-03-11 19:06:46,299 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:46] "GET / HTTP/1.1" 200 -
+2025-03-11 19:06:50,129 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:50] "GET /login HTTP/1.1" 200 -
+2025-03-11 19:06:55,857 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-11 19:06:55,977 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:55] "GET /main HTTP/1.1" 200 -
+2025-03-11 19:06:56,397 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:56] "[36mGET /static/gout_img/fruit.png HTTP/1.1[0m" 304 -
+2025-03-11 19:06:56,409 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:56] "[36mGET /static/gout_img/classique.png HTTP/1.1[0m" 304 -
+2025-03-11 19:06:56,410 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:56] "[36mGET /static/gout_img/boisson.png HTTP/1.1[0m" 304 -
+2025-03-11 19:06:56,423 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:56] "[36mGET /static/gout_img/menthes.png HTTP/1.1[0m" 304 -
+2025-03-11 19:06:56,424 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:56] "[36mGET /static/gout_img/dessert.png HTTP/1.1[0m" 304 -
+2025-03-11 19:06:56,426 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:56] "[36mGET /static/gout_img/frais.png HTTP/1.1[0m" 304 -
+2025-03-11 19:06:58,094 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:58] "GET /user_products/3 HTTP/1.1" 200 -
+2025-03-11 19:06:58,249 - INFO - 127.0.0.1 - - [11/Mar/2025 19:06:58] "[36mGET /static/gout_img/user.png HTTP/1.1[0m" 304 -
