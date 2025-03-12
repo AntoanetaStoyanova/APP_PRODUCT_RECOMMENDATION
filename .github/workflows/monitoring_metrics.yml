@@ -27,24 +27,9 @@ jobs:
       - name: Install dependencies
         run: pipenv install --dev
 
-      # Suppression de la configuration PostgreSQL, car tu n'en as pas besoin
+      
       - name: Run monitoring data script
         run: |
             pipenv run python app/rag_eval/rag_monitoring.py
-        #   echo "RECOMMENDATIONS_CSV=app/recommendations.csv" >> $GITHUB_ENV  # Chemin vers ton CSV local
-
-
-      - name: Configure Git user
-        run: |
-          git config --global user.email  ${{ secrets.MAIL }}
-          git config --global user.name ${{ secrets.USER_NAME }}
-
-
-      - name: Commit and push updated monitoring data
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }} 
-        run: |
-          git add app/rag_eval/monitoring.csv
-          git commit -m "Update monitoring data"
-          git push https://x-access-token:${{ secrets.REPO_TOKEN }}@github.com/${{ github.repository }}.git
+       
 
