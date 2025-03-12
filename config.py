@@ -37,3 +37,4 @@ class Config:
     VECTORSTORE_PATH = os.path.join(BASE_DIR, 'app', 'faiss_vector_store')
     # Construire le chemin absolu du fichier CSV
     RECOMMENDATIONS_CSV = os.path.join(BASE_DIR, "app", "recommendations.csv")  
+    RAG_EVAL_MONITORING_CSV = os.path.join(BASE_DIR, "app", "rag_eval", "monitoring.csv")

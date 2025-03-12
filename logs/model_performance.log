@@ -1,0 +1,98 @@
+2025-03-12 12:41:22,438 - INFO - Use pytorch device_name: cpu
+2025-03-12 12:41:22,439 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 12:41:25,290 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 12:41:38,981 - ERROR - ❌ La latence est trop élevée : 186.45 ms.
+2025-03-12 12:41:39,124 - ERROR - ❌ La latence est trop élevée : 142.82 ms.
+2025-03-12 12:41:39,256 - ERROR - ❌ La latence est trop élevée : 131.28 ms.
+2025-03-12 12:41:39,385 - ERROR - ❌ La latence est trop élevée : 128.14 ms.
+2025-03-12 12:41:39,522 - ERROR - ❌ La latence est trop élevée : 135.80 ms.
+2025-03-12 12:41:39,656 - ERROR - ❌ La latence est trop élevée : 131.70 ms.
+2025-03-12 12:41:39,796 - ERROR - ❌ La latence est trop élevée : 139.36 ms.
+2025-03-12 12:41:39,930 - ERROR - ❌ La latence est trop élevée : 133.19 ms.
+2025-03-12 12:41:40,064 - ERROR - ❌ La latence est trop élevée : 134.01 ms.
+2025-03-12 12:41:40,192 - ERROR - ❌ La latence est trop élevée : 127.18 ms.
+2025-03-12 12:41:40,336 - ERROR - ❌ La latence est trop élevée : 143.22 ms.
+2025-03-12 12:41:40,469 - ERROR - ❌ La latence est trop élevée : 132.32 ms.
+2025-03-12 12:41:40,599 - ERROR - ❌ La latence est trop élevée : 130.09 ms.
+2025-03-12 12:41:40,725 - ERROR - ❌ La latence est trop élevée : 124.77 ms.
+2025-03-12 12:41:40,851 - ERROR - ❌ La latence est trop élevée : 125.54 ms.
+2025-03-12 12:41:40,984 - ERROR - ❌ La latence est trop élevée : 132.85 ms.
+2025-03-12 12:41:41,107 - ERROR - ❌ La latence est trop élevée : 122.46 ms.
+2025-03-12 12:41:41,235 - ERROR - ❌ La latence est trop élevée : 127.58 ms.
+2025-03-12 12:41:41,362 - ERROR - ❌ La latence est trop élevée : 126.36 ms.
+2025-03-12 12:41:41,482 - ERROR - ❌ La latence est trop élevée : 119.60 ms.
+2025-03-12 12:41:41,599 - ERROR - ❌ La latence est trop élevée : 116.25 ms.
+2025-03-12 12:41:41,718 - ERROR - ❌ La latence est trop élevée : 117.57 ms.
+2025-03-12 12:41:41,839 - ERROR - ❌ La latence est trop élevée : 121.10 ms.
+2025-03-12 12:41:41,986 - ERROR - ❌ La latence est trop élevée : 146.08 ms.
+2025-03-12 12:41:42,111 - ERROR - ❌ La latence est trop élevée : 124.50 ms.
+2025-03-12 12:41:42,238 - ERROR - ❌ La latence est trop élevée : 126.68 ms.
+2025-03-12 12:41:42,355 - ERROR - ❌ La latence est trop élevée : 116.72 ms.
+2025-03-12 12:41:42,485 - ERROR - ❌ La latence est trop élevée : 128.66 ms.
+2025-03-12 12:41:42,615 - ERROR - ❌ La latence est trop élevée : 129.37 ms.
+2025-03-12 12:41:42,743 - ERROR - ❌ La latence est trop élevée : 128.29 ms.
+2025-03-12 12:41:42,870 - ERROR - ❌ La latence est trop élevée : 125.83 ms.
+2025-03-12 12:41:42,894 - INFO - ✅ Données de monitoring mises à jour !
+2025-03-12 13:44:08,313 - INFO - Use pytorch device_name: cpu
+2025-03-12 13:44:08,314 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 13:44:10,444 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 13:46:25,608 - ERROR - ❌ La latence est trop élevée : 255.91 ms.
+2025-03-12 13:46:25,729 - ERROR - ❌ La latence est trop élevée : 120.83 ms.
+2025-03-12 13:46:25,859 - ERROR - ❌ La latence est trop élevée : 128.94 ms.
+2025-03-12 13:46:25,870 - INFO - ✅ Données de monitoring mises à jour !
+2025-03-12 13:47:03,509 - INFO - Use pytorch device_name: cpu
+2025-03-12 13:47:03,509 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 13:47:15,630 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 13:47:27,078 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 13:47:37,900 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 13:53:31,302 - INFO - Use pytorch device_name: cpu
+2025-03-12 13:53:31,303 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 13:53:33,526 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 13:57:01,371 - INFO - Use pytorch device_name: cpu
+2025-03-12 13:57:01,371 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 13:57:03,342 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 14:01:55,849 - INFO - Use pytorch device_name: cpu
+2025-03-12 14:01:55,850 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 14:01:59,957 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 14:03:29,782 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 14:06:46,057 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 14:09:40,086 - INFO - Use pytorch device_name: cpu
+2025-03-12 14:09:40,087 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 14:09:42,422 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 14:13:21,931 - INFO - Use pytorch device_name: cpu
+2025-03-12 14:13:21,931 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 14:13:23,958 - ERROR - ❌ Le fichier recommendations.csv est introuvable !
+2025-03-12 14:17:48,898 - INFO - Use pytorch device_name: cpu
+2025-03-12 14:17:48,899 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 14:59:44 - INFO - Chargement des données de monitoring.
+2025-03-12 15:01:29 - INFO - Chargement des données de monitoring.
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.63554525) pour l'ID 0
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5746133) pour l'ID 1
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.52010417) pour l'ID 2
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.36907893) pour l'ID 3
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.6146699) pour l'ID 4
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.12482781) pour l'ID 5
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.12482781) pour l'ID 6
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5268925) pour l'ID 7
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.52646995) pour l'ID 8
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.12482781) pour l'ID 9
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5493819) pour l'ID 11
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5493819) pour l'ID 12
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5894747) pour l'ID 13
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5493819) pour l'ID 14
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.614658) pour l'ID 15
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5793197) pour l'ID 16
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5502306) pour l'ID 17
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5737604) pour l'ID 18
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.6080531) pour l'ID 19
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.6146699) pour l'ID 20
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.6132847) pour l'ID 21
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.60945714) pour l'ID 22
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5579407) pour l'ID 23
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.6038803) pour l'ID 24
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5737604) pour l'ID 25
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.6132847) pour l'ID 26
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.600008) pour l'ID 27
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.607263) pour l'ID 28
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.5685998) pour l'ID 29
+2025-03-12 15:01:29 - WARNING - ALERTE: Similarité faible (0.6670406) pour l'ID 30

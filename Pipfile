@@ -44,6 +44,9 @@ pytest-mock = "*"
 dash = "*"
 plotly = "*"
 streamlit = "*"
+seaborn = "*"
+matplotlib = "*"
+"subprocess.run" = "*"
 
 [dev-packages]
 
