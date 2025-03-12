@@ -44,4 +44,5 @@ jobs:
         run: |
           git add app/rag_eval/monitoring.csv
           git commit -m "Update monitoring data"
-          git push
+          git push https://REDACTED@github.com/AntoanetaStoyanova/APP_PRODUCT_RECOMMENDATION
+
