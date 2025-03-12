@@ -1,4 +1,4 @@
-name: Run RAG Evaluation Tests
+name: Run RAG Evaluation Monitoring
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
       # Suppression de la configuration PostgreSQL, car tu n'en as pas besoin
       - name: Run monitoring data script
         run: |
-            python app/rag_monitoring.py
+            python app/rag_eval/rag_monitoring.py
         #   echo "RECOMMENDATIONS_CSV=app/recommendations.csv" >> $GITHUB_ENV  # Chemin vers ton CSV local
 
       - name: Commit and push updated monitoring data
