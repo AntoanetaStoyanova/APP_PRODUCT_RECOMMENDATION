@@ -32,4 +32,4 @@ jobs:
           echo "RECOMMENDATIONS_CSV=app/rag_csv.csv" >> $GITHUB_ENV  # Chemin vers ton CSV local
 
       - name: Run CVS test
-        run: pipenv run python test/test_csv.py
+        run: pipenv run pytest tests/test_csv.py
