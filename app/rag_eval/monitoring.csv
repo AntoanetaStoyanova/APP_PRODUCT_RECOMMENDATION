@@ -1,5 +1,5 @@
 Timestamp,Query,Response,Source,Similarity Query-Response,Similarity Response-Source,Latency (ms)
-2025-03-12 11:47:23,je veux liquide avec cassis,"Pour un e-liquide avec saveur de cassis, vous avez deux options :
+2025-03-12 14:23:36,je veux liquide avec cassis,"Pour un e-liquide avec saveur de cassis, vous avez deux options :
 
 1. **Cassis Frais Cirkus VDLV** : Ce e-liquide est proposé par Vincent Dans Les Vapes (VDLV) et est disponible en flacons de 10ml. Il a une saveur de cassis, lime, vin, et menthol, avec un ratio PG/VG de 50/50. Il est frais et fruité, et est disponible en plusieurs taux de nicotine (3, 6 et 12mg/ml). Le prix est de 5.9 euros.
 
@@ -52,8 +52,8 @@ description: Le Miss Fraise par Alfaliquid est un e-liquide fabriqué en France 
 brand: Alfaliquid
 gout: fruit
 info_brand: Le fabricant français s'est fait reconnaître par ses recettes de e-liquides, et ce, au fil du temps. Mettant à l'honneur aussi bien des goûts fruités que classics par exemple, soyez toujours certain de trouver votre prêt à l'emploi avec Alfaliquid.
-id_produit: 17",0.63554525,0.77792716,253.42702865600586
-2025-03-12 11:47:23,je veux liquide avec fraise,"Voici quelques options d'e-liquides avec saveur de fraise que vous pourriez envisager :
+id_produit: 17",0.63554525,0.77792716,258.09502601623535
+2025-03-12 14:23:36,je veux liquide avec fraise,"Voici quelques options d'e-liquides avec saveur de fraise que vous pourriez envisager :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose un mélange frais et fruité de fraises et de menthe, accompagné d'un goût d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6 et 12mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -108,8 +108,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.5746133,0.7228736,159.30843353271484
-2025-03-12 11:47:23,liquide avec lime,"Il existe plusieurs e-liquides avec des saveurs de lime. Voici quelques exemples :
+id_produit: 9",0.5746133,0.7228736,155.06672859191895
+2025-03-12 14:23:36,liquide avec lime,"Il existe plusieurs e-liquides avec des saveurs de lime. Voici quelques exemples :
 
 1. **Frozen Lemon And Lime 100ml Ice Chuffed** : Ce e-liquide propose des saveurs fraîches de citrons jaunes et verts (lime). Il est surboosté et peut être mélangé avec des boosters de nicotine selon les besoins.
 
@@ -164,8 +164,8 @@ description: Arômes et Liquides vous propose des saveurs fraîches aux goûts d
 brand: Arômes et Liquides (A&L)
 gout: fruit
 info_brand: Arômes et Liquides (A&L) est un fabricant français de e-liquides et concentrés DIY depuis 2012. Avec ses laborantins situés non loin de Saint-Étienne dans la Loire, il vous présente une vaste collection de saveurs allant des plus simples aux plus complexes. La marque s'est notamment distinguée dans l'univers de la vape grâce à sa recette classic du Ryan USA de la gamme A&L, puis du mix au goût de fruits rouges Ragnarok de la collection Ultimate.
-id_produit: 92",0.52010417,0.7097138,159.1653823852539
-2025-03-12 11:47:24,je veux pomme,"Il semble que vous soyez intéressé par un produit à saveur de pomme. Voici deux options de e-liquides à saveur de pomme disponibles :
+id_produit: 92",0.52010417,0.7097138,156.3408374786377
+2025-03-12 14:23:37,je veux pomme,"Il semble que vous soyez intéressé par un produit à saveur de pomme. Voici deux options de e-liquides à saveur de pomme disponibles :
 
 1. **A&L Pomme** : Un e-liquide au goût de pomme verte fabriqué en France par Arômes et Liquides (A&L). Il est disponible en fiole de 10 ml avec un ratio PG/VG de 50/50. Le prix est de 4.9 euros.
 
@@ -218,8 +218,8 @@ description: Le Pomme Verte est un e-liquide pour cigarettes électroniques fabr
 brand: Alfaliquid
 gout: fruit
 info_brand: Le fabricant français s'est fait reconnaître par ses recettes de e-liquides, et ce, au fil du temps. Mettant à l'honneur aussi bien des goûts fruités que classics par exemple, soyez toujours certain de trouver votre prêt à l'emploi avec Alfaliquid.
-id_produit: 20",0.36907893,0.67134225,192.0182704925537
-2025-03-12 11:47:24,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 20",0.36907893,0.67134225,138.49854469299316
+2025-03-12 14:23:37,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -274,8 +274,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.6146699,0.72292435,166.16153717041016
-2025-03-12 11:47:24,caramel,I don't know.,"index: 46
+id_produit: 9",0.6146699,0.72292435,132.68184661865234
+2025-03-12 14:23:37,caramel,I don't know.,"index: 46
 url: https://www.aromes-et-liquides.fr/e-liquide-biggy-bear/16208-melon-fruit-du-dragon-200ml.html
 nom_produit: Melon Fruit du Dragon 200ml Biggy Bear
 img_produit: https://assets.aromes-et-liquides.fr/50474-thickbox_default/melon-fruit-du-dragon-200ml.jpg
@@ -322,8 +322,8 @@ description: Le Dragonfruit and Lychee 100ml est un e-liquide à booster issu de
 brand: Chuffed
 gout: fruit
 info_brand: Chuffed est une marque originaire du Royaume-Uni, spécialisée dans la conception de e-liquides pour cigarette électronique. Retrouvez les recettes de Chuffed en format de 100ml, non nicotinés de base et à booster en fonction de vos besoins.
-id_produit: 28",0.12482781,0.066884875,157.5460433959961
-2025-03-12 11:47:24,caramel,I don't know.,"index: 46
+id_produit: 28",0.12482781,0.066884875,103.3468246459961
+2025-03-12 14:23:37,caramel,I don't know.,"index: 46
 url: https://www.aromes-et-liquides.fr/e-liquide-biggy-bear/16208-melon-fruit-du-dragon-200ml.html
 nom_produit: Melon Fruit du Dragon 200ml Biggy Bear
 img_produit: https://assets.aromes-et-liquides.fr/50474-thickbox_default/melon-fruit-du-dragon-200ml.jpg
@@ -370,8 +370,8 @@ description: Le Dragonfruit and Lychee 100ml est un e-liquide à booster issu de
 brand: Chuffed
 gout: fruit
 info_brand: Chuffed est une marque originaire du Royaume-Uni, spécialisée dans la conception de e-liquides pour cigarette électronique. Retrouvez les recettes de Chuffed en format de 100ml, non nicotinés de base et à booster en fonction de vos besoins.
-id_produit: 28",0.12482781,0.066884875,150.21181106567383
-2025-03-12 11:47:24,citron,"The term ""citron"" in the provided context refers to a flavor component in various e-liquids for electronic cigarettes. These e-liquids, produced by brands like Eliquid France and Arômes et Liquides (A&L), incorporate citron as part of their fruity flavor profiles, often combined with other fruits such as cassis, orange, mandarine, lime, and nectarine. The e-liquids are designed for use in electronic cigarettes and are available in different nicotine strengths.","index: 43
+id_produit: 28",0.12482781,0.066884875,107.00082778930664
+2025-03-12 14:23:37,citron,"The term ""citron"" in the provided context refers to a flavor component in various e-liquids for electronic cigarettes. These e-liquids, produced by brands like Eliquid France and Arômes et Liquides (A&L), incorporate citron as part of their fruity flavor profiles, often combined with other fruits such as cassis, orange, mandarine, lime, and nectarine. The e-liquids are designed for use in electronic cigarettes and are available in different nicotine strengths.","index: 43
 url: https://www.aromes-et-liquides.fr/e-liquide-fruizee/3888-e-liquide-fruizee-citron-cassis-par-eliquid-france.html
 nom_produit: Citron Cassis Fruizee
 img_produit: https://assets.aromes-et-liquides.fr/54551-thickbox_default/e-liquide-fruizee-citron-cassis-par-eliquid-france.jpg
@@ -418,8 +418,8 @@ description: Le e-liquide Spartacus Ultimate est un produitprêt à l'emploipour
 brand: Arômes et Liquides (A&L)
 gout: fruit
 info_brand: Arômes et Liquides (A&L) est un fabricant français de e-liquides et concentrés DIY depuis 2012. Avec ses laborantins situés non loin de Saint-Étienne dans la Loire, il vous présente une vaste collection de saveurs allant des plus simples aux plus complexes. La marque s'est notamment distinguée dans l'univers de la vape grâce à sa recette classic du Ryan USA de la gamme A&L, puis du mix au goût de fruits rouges Ragnarok de la collection Ultimate.
-id_produit: 10",0.5268925,0.5935072,153.52320671081543
-2025-03-12 11:47:24,citron,"The term ""citron"" in the provided context refers to a flavor component in various e-liquids for electronic cigarettes. These e-liquids, produced by brands like Eliquid France and Arômes et Liquides (A&L), incorporate citron as part of their fruity flavor profiles, often combined with other fruits such as cassis, orange, mandarine, lime, and nectarine. The e-liquids are designed for use in vaping devices and are available in different nicotine strengths.","index: 43
+id_produit: 10",0.5268925,0.5935072,114.1958236694336
+2025-03-12 14:23:37,citron,"The term ""citron"" in the provided context refers to a flavor component in various e-liquids for electronic cigarettes. These e-liquids, produced by brands like Eliquid France and Arômes et Liquides (A&L), incorporate citron as part of their fruity flavor profiles, often combined with other fruits such as cassis, orange, mandarine, lime, and nectarine. The e-liquids are designed for use in vaping devices and are available in different nicotine strengths.","index: 43
 url: https://www.aromes-et-liquides.fr/e-liquide-fruizee/3888-e-liquide-fruizee-citron-cassis-par-eliquid-france.html
 nom_produit: Citron Cassis Fruizee
 img_produit: https://assets.aromes-et-liquides.fr/54551-thickbox_default/e-liquide-fruizee-citron-cassis-par-eliquid-france.jpg
@@ -466,8 +466,8 @@ description: Le e-liquide Spartacus Ultimate est un produitprêt à l'emploipour
 brand: Arômes et Liquides (A&L)
 gout: fruit
 info_brand: Arômes et Liquides (A&L) est un fabricant français de e-liquides et concentrés DIY depuis 2012. Avec ses laborantins situés non loin de Saint-Étienne dans la Loire, il vous présente une vaste collection de saveurs allant des plus simples aux plus complexes. La marque s'est notamment distinguée dans l'univers de la vape grâce à sa recette classic du Ryan USA de la gamme A&L, puis du mix au goût de fruits rouges Ragnarok de la collection Ultimate.
-id_produit: 10",0.52646995,0.59554535,163.03348541259766
-2025-03-12 11:47:25,caramel,I don't know.,"index: 46
+id_produit: 10",0.52646995,0.59554535,123.30150604248047
+2025-03-12 14:23:37,caramel,I don't know.,"index: 46
 url: https://www.aromes-et-liquides.fr/e-liquide-biggy-bear/16208-melon-fruit-du-dragon-200ml.html
 nom_produit: Melon Fruit du Dragon 200ml Biggy Bear
 img_produit: https://assets.aromes-et-liquides.fr/50474-thickbox_default/melon-fruit-du-dragon-200ml.jpg
@@ -514,8 +514,8 @@ description: Le Dragonfruit and Lychee 100ml est un e-liquide à booster issu de
 brand: Chuffed
 gout: fruit
 info_brand: Chuffed est une marque originaire du Royaume-Uni, spécialisée dans la conception de e-liquides pour cigarette électronique. Retrouvez les recettes de Chuffed en format de 100ml, non nicotinés de base et à booster en fonction de vos besoins.
-id_produit: 28",0.12482781,0.066884875,164.38055038452148
-2025-03-12 11:47:25,je veux un produit avec du caramel,"Je suis désolé, mais je n'ai pas trouvé de produit avec du caramel dans les contextes fournis.","index: 77
+id_produit: 28",0.12482781,0.066884875,124.96256828308105
+2025-03-12 14:23:37,je veux un produit avec du caramel,"Je suis désolé, mais je n'ai pas trouvé de produit avec du caramel dans les contextes fournis.","index: 77
 url: https://www.aromes-et-liquides.fr/e-liquide-vdlv/3744-e-liquide-cerise-par-vdlv.html
 nom_produit: Cerise VDLV
 img_produit: https://assets.aromes-et-liquides.fr/54973-thickbox_default/e-liquide-cerise-par-vdlv.jpg
@@ -562,8 +562,8 @@ description: L'Exotic par Eliquid France est fabriqué en France, et reproduit l
 brand: Eliquid France
 gout: fruit
 info_brand: Créé en 2013 à Nieul sur Mer en Charente-Maritime, le laboratoire Eliquid France s'est fait une place de choix dans l'univers de la vape grâce à des liquides de qualité, exportant ses créations dans le monde entier. Toujours en recherche d'innovation, la marque française propose des recettes variées aux saveurs allant de simples à complexes, et se déclinant autant en arôme DIY qu'en e-liquide prêt à vaper.
-id_produit: 24",0.7551257,0.40413398,145.8749771118164
-2025-03-12 11:47:25,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
+id_produit: 24",0.7551257,0.40413398,178.8625717163086
+2025-03-12 14:23:38,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
 
 1. **A&L Pomme** : Un e-liquide pour cigarette électronique avec des saveurs de pomme verte, lime, et fruits rouges. Fabriqué en France par Arômes et Liquides (A&L), il est disponible en fiole de 10 ml avec un ratio PG/VG de 50/50. Prix : 4.9 euros. [Voir le produit](https://www.aromes-et-liquides.fr/e-liquide-al/9188-e-liquide-pomme-par-al.html)
 
@@ -614,8 +614,8 @@ description: Le Strawberry Pomegranate 100ml est un e-liquide à booster issu de
 brand: Chuffed
 gout: fruit
 info_brand: Chuffed est une marque originaire du Royaume-Uni, spécialisée dans la conception de e-liquides pour cigarette électronique. Retrouvez les recettes de Chuffed en format de 100ml, non nicotinés de base et à booster en fonction de vos besoins.
-id_produit: 69",0.5493819,0.7840264,149.0042209625244
-2025-03-12 11:47:25,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
+id_produit: 69",0.5493819,0.7840264,158.5671901702881
+2025-03-12 14:23:38,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
 
 1. **A&L Pomme** : Un e-liquide pour cigarette électronique avec des saveurs de pomme verte, lime, et fruits rouges. Fabriqué en France par Arômes et Liquides (A&L), il est disponible en fiole de 10 ml avec un ratio PG/VG de 50/50. Prix : 4.9 euros. [Voir le produit](https://www.aromes-et-liquides.fr/e-liquide-al/9188-e-liquide-pomme-par-al.html)
 
@@ -666,8 +666,8 @@ description: Le Strawberry Pomegranate 100ml est un e-liquide à booster issu de
 brand: Chuffed
 gout: fruit
 info_brand: Chuffed est une marque originaire du Royaume-Uni, spécialisée dans la conception de e-liquides pour cigarette électronique. Retrouvez les recettes de Chuffed en format de 100ml, non nicotinés de base et à booster en fonction de vos besoins.
-id_produit: 69",0.5493819,0.7840264,141.54481887817383
-2025-03-12 11:47:25,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
+id_produit: 69",0.5493819,0.7840264,133.7454319000244
+2025-03-12 14:23:38,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
 
 1. **A&L Pomme** : Un e-liquide pour cigarette électronique avec des saveurs de pomme verte, lime, et fruits rouges. Fabriqué en France par Arômes et Liquides (A&L), il est disponible en fiole de 10 ml avec un ratio PG/VG de 50/50. Prix : 4.9 €.
 
@@ -726,8 +726,8 @@ description: Le Strawberry Pomegranate 100ml est un e-liquide à booster issu de
 brand: Chuffed
 gout: fruit
 info_brand: Chuffed est une marque originaire du Royaume-Uni, spécialisée dans la conception de e-liquides pour cigarette électronique. Retrouvez les recettes de Chuffed en format de 100ml, non nicotinés de base et à booster en fonction de vos besoins.
-id_produit: 69",0.5894747,0.8303175,136.22426986694336
-2025-03-12 11:47:25,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
+id_produit: 69",0.5894747,0.8303175,153.0008316040039
+2025-03-12 14:23:38,je veux des produit avec pomme,"Voici deux produits contenant de la pomme :
 
 1. **A&L Pomme** : Un e-liquide pour cigarette électronique avec des saveurs de pomme verte, lime, et fruits rouges. Fabriqué en France par Arômes et Liquides (A&L), il est disponible en fiole de 10 ml avec un ratio PG/VG de 50/50. Prix : 4.9 euros. [Voir le produit](https://www.aromes-et-liquides.fr/e-liquide-al/9188-e-liquide-pomme-par-al.html)
 
@@ -778,8 +778,8 @@ description: Le Strawberry Pomegranate 100ml est un e-liquide à booster issu de
 brand: Chuffed
 gout: fruit
 info_brand: Chuffed est une marque originaire du Royaume-Uni, spécialisée dans la conception de e-liquides pour cigarette électronique. Retrouvez les recettes de Chuffed en format de 100ml, non nicotinés de base et à booster en fonction de vos besoins.
-id_produit: 69",0.5493819,0.7840264,134.35626029968262
-2025-03-12 11:47:25,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 69",0.5493819,0.7840264,127.09546089172363
+2025-03-12 14:23:38,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12 mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -834,8 +834,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.614658,0.7243794,147.29785919189453
-2025-03-12 11:47:26,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.614658,0.7243794,114.63356018066406
+2025-03-12 14:23:38,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV**: Ce e-liquide propose une saveur de fraise mélangée avec menthe, anis, eucalyptus, et lime. Il est frais et fruité, avec un ratio PG/VG de 50/50. Il est fabriqué en France par Vincent Dans Les Vapes.
 
@@ -890,8 +890,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.5793197,0.72313464,152.9526710510254
-2025-03-12 11:47:26,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.5793197,0.72313464,118.44134330749512
+2025-03-12 14:23:38,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine.
 
@@ -946,8 +946,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.5502306,0.6837667,137.02774047851562
-2025-03-12 11:47:26,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.5502306,0.6837667,146.99697494506836
+2025-03-12 14:23:39,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine.
 
@@ -1002,8 +1002,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.5737604,0.68120277,147.9346752166748
-2025-03-12 11:47:26,je veux liquide avec fraise,"Voici quelques options de e-liquides avec saveur de fraise :
+id_produit: 9",0.5737604,0.68120277,143.10836791992188
+2025-03-12 14:23:39,je veux liquide avec fraise,"Voici quelques options de e-liquides avec saveur de fraise :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose un mélange frais et fruité de fraises et de menthe, accompagné d'un goût d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6 et 12mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1058,8 +1058,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.6080531,0.7226652,136.10100746154785
-2025-03-12 11:47:26,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.6080531,0.7226652,135.6637477874756
+2025-03-12 14:23:39,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1114,8 +1114,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.6146699,0.72292435,139.1901969909668
-2025-03-12 11:47:26,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.6146699,0.72292435,138.21053504943848
+2025-03-12 14:23:39,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1170,8 +1170,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.6132847,0.71560806,159.28936004638672
-2025-03-12 11:47:26,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.6132847,0.71560806,143.98694038391113
+2025-03-12 14:23:39,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12 mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1226,8 +1226,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.60945714,0.72382104,147.19343185424805
-2025-03-12 11:47:27,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.60945714,0.72382104,128.1437873840332
+2025-03-12 14:23:39,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine.
 
@@ -1282,8 +1282,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.5579407,0.6890068,154.47187423706055
-2025-03-12 11:47:27,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.5579407,0.6890068,125.15068054199219
+2025-03-12 14:23:39,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12 mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1338,8 +1338,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.6038803,0.7216411,162.628173828125
-2025-03-12 11:47:27,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.6038803,0.7216411,131.63042068481445
+2025-03-12 14:23:40,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine.
 
@@ -1394,8 +1394,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.5737604,0.68120277,152.51517295837402
-2025-03-12 11:47:27,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.5737604,0.68120277,196.90585136413574
+2025-03-12 14:23:40,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1450,8 +1450,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.6132847,0.71560806,158.53095054626465
-2025-03-12 11:47:27,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.6132847,0.71560806,161.9887351989746
+2025-03-12 14:23:40,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1506,8 +1506,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.600008,0.7108468,161.4842414855957
-2025-03-12 11:47:28,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.600008,0.7108468,130.9506893157959
+2025-03-12 14:23:40,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine (3, 6, et 12 mg/ml). Le ratio PG/VG est de 50/50.
 
@@ -1562,8 +1562,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.607263,0.7168846,314.07642364501953
-2025-03-12 11:47:28,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
+id_produit: 9",0.607263,0.7168846,142.93837547302246
+2025-03-12 14:23:40,je veux liquide avec fraise,"Il existe plusieurs e-liquides avec saveur de fraise que vous pouvez considérer :
 
 1. **Fraise Menthe Cirkus VDLV** : Ce e-liquide propose une combinaison de fraise et menthe, avec des notes d'anis et d'eucalyptus. Il est fabriqué en France par Vincent Dans Les Vapes et est disponible en plusieurs taux de nicotine.
 
@@ -1618,8 +1618,8 @@ description: Découvrez une mono-saveur dédiée à la fraise des bois, dans un 
 brand: PULP
 gout: fruit
 info_brand: C'est dans leur laboratoire français, et plus particulièrement parisien que les aromaticiens de la marque PULP conçoivent leurs multiples recettes, et ce, toujours avec le sens du détail. Ainsi, il vous présente aussi bien des e-liquides prêts à vaper, à booster, ou encore des concentrés DIY (Do It Yourself) aux saveurs finement reproduites et de diverses variétés.
-id_produit: 9",0.5685998,0.6903261,222.78571128845215
-2025-03-12 11:47:28,je veux liquide avec citron,"Le e-liquide ""Oni Ultimate"" par Arômes et Liquides (A&L) semble correspondre à votre demande. Il est composé de saveurs de citron vert et de citron jaune, avec une touche de fraîcheur. Ce produit est prêt à l'emploi pour les cigarettes électroniques et est disponible en plusieurs taux de nicotine.","index: 6
+id_produit: 9",0.5685998,0.6903261,141.50738716125488
+2025-03-12 14:23:40,je veux liquide avec citron,"Le e-liquide ""Oni Ultimate"" par Arômes et Liquides (A&L) semble correspondre à votre demande. Il est composé de saveurs de citron vert et de citron jaune, avec une touche de fraîcheur. Ce produit est prêt à l'emploi pour les cigarettes électroniques et est disponible en plusieurs taux de nicotine.","index: 6
 url: https://www.aromes-et-liquides.fr/e-liquide-vampire-vape/3531-heisenberg.html
 nom_produit: Heisenberg Vampire Vape
 img_produit: https://assets.aromes-et-liquides.fr/54367-thickbox_default/heisenberg.jpg
@@ -1666,4 +1666,4 @@ description: Le Mangue Framboise de la gamme Cirkus par VDLV est un e-liquide fr
 brand: VDLV
 gout: fruit
 info_brand: VDLV, pour Vincent Dans Les Vapes, est un fabricant français de liquides pour cigarette électronique. Depuis 2012, la marque basée en Gironde s'attache à proposer des produits de qualité aux vapoteurs du monde entier. Fort de diverses gammes telles que Cirkus, Classic Wanted ou encore V'ICE, VDLV s'adresse autant aux amateurs de e-liquides prêts à vaper qu'aux utilisateurs d'arômes DIY.
-id_produit: 91",0.6670406,0.5607623,197.34668731689453
+id_produit: 91",0.6670406,0.5607623,143.5997486114502

@@ -1,0 +1,40 @@
+name: Run RAG Evaluation Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.6"
+
+      - name: Install Pipenv
+        run: pip install pipenv
+
+      - name: Install dependencies
+        run: pipenv install --dev
+
+      # Suppression de la configuration PostgreSQL, car tu n'en as pas besoin
+      - name: Run monitoring data script
+        run: |
+            python app/rag_monitoring.py
+        #   echo "RECOMMENDATIONS_CSV=app/recommendations.csv" >> $GITHUB_ENV  # Chemin vers ton CSV local
+
+      - name: Commit and push updated monitoring data
+        run: |
+          git add app/rag_eval/monitoring.csv
+          git commit -m "Update monitoring data"
+          git push
