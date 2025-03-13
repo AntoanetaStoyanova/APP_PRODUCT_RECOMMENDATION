@@ -92,7 +92,7 @@
 
 
 # app/__init__.py
-
+from config import Config
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
@@ -110,9 +110,10 @@ def load_user(user_id):
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Kandinsky_95@localhost:5432/postgres'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config.from_object('config.Config')
+
+    
+    app.config.from_object(Config)
+    
 
     # Initialize extensions inside create_app
     bcrypt = Bcrypt(app)

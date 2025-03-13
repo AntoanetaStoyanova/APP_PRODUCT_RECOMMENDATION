@@ -2,12 +2,12 @@ import pandas as pd
 import re
 from langchain.schema import Document
 # Fonction pour interroger le retriever et obtenir les produits associés
-def query_retriever(question):
-    products = []
-    # Logique pour interroger le retriever et récupérer les produits
-    # Exemple de code:
-    # products = df[df['question_column'].str.contains(question)]
-    return products
+# def query_retriever(question):
+#     products = []
+#     # Logique pour interroger le retriever et récupérer les produits
+#     # Exemple de code:
+#     # products = df[df['question_column'].str.contains(question)]
+#     return products
 
 def parse_products(response_text):
     products = []
@@ -54,33 +54,6 @@ def search_for_flavor(query):
     return ", ".join(flavors_in_query)
 
 
-# # Fonction pour ajouter des métadonnées aux documents existants
-# def add_metadata_to_documents(documents, csv_path):
-#     modified_documents = []
-    
-#     # Charger le CSV pour ajouter des informations supplémentaires
-#     df = pd.read_csv("../../RGBD/table_produits/produits.csv")
-    
-#     for index, row in df.iterrows():
-#         # Récupérer le document original
-#         document = documents[index]  # Assurez-vous que l'index correspond à la ligne dans le CSV
-#         modified_documents = []
-#         for index, row in df.iterrows():
-#             metadata = documents[index].metadata
-#             metadata["row"] = index
-#             # Ajouter l'ID du produit aux métadonnées
-#             if "id_produit" in row:
-#                 metadata["id_produit"] = row["id_produit"]
-            
-#             # Ajouter la saveur si elle existe
-#             if "saveur" in row:
-#                 metadata["saveur"] = str(row["saveur"])
-        
-#         # Créer un nouveau document avec les métadonnées mises à jour
-#         modified_document = Document(page_content=document.page_content, metadata=metadata)
-#         modified_documents.append(modified_document)
-
-#     return modified_documents
 
 
 

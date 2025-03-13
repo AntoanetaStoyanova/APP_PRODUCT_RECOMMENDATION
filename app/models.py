@@ -1,33 +1,29 @@
-# app/models.py
-# app/models.py
 
 from flask import Flask
 from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.dialects.postgresql import JSON
-
+from config import Config
 app = Flask(__name__)
 
 
 from flask_sqlalchemy import SQLAlchemy
 
 
+app.config.from_object(Config)
 
-# Paramètres de connexion
-# DB_NAME = "postgres"
-# DB_USER = "postgres"
-# DB_PASSWORD = "Kandinsky_95"
-# DB_HOST = "localhost"
-# DB_PORT = "5432"
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:Kandinsky_95@localhost:5432/postgres"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = "1234"  # Nécessaire pour `flash`
 user_db = SQLAlchemy(app)
 # Table d'association user_produit (Many-to-Many)
 user_produit = user_db.Table(
     "user_produit",
-    user_db.Column("user_id", user_db.Integer, user_db.ForeignKey("user.id"), primary_key=True),
-    user_db.Column("product_id", user_db.Integer, user_db.ForeignKey("produits.id_produit"), primary_key=True),
+    user_db.Column("user_id", 
+                   user_db.Integer, 
+                   user_db.ForeignKey("user.id"), 
+                   primary_key=True),
+    user_db.Column("product_id", 
+                   user_db.Integer, 
+                   user_db.ForeignKey("produits.id_produit"), 
+                   primary_key=True),
 )
 
 

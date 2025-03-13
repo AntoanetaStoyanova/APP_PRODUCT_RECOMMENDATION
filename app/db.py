@@ -1,9 +1,10 @@
+
+
 import psycopg2
 
+from config import Config
 
-
-POSTGRESQL_URI = 'postgresql://postgres:Kandinsky_95@localhost:5432/postgres'
-
+POSTGRESQL_URI = Config.POSTGRESQL_URI
 
 # afficher les produits selon le goût choisit
 def get_products(gout, per_page, offset):
@@ -39,7 +40,12 @@ def get_user_products(user_id):
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(
-                '''SELECT p.img_produit, p.nom_produit, p.url, p.prix_produit, p.pg_vg, p.origine, p.frais, p.surbooste, p.brand, p.gout
+                '''SELECT p.img_produit, 
+                            p.nom_produit, 
+                            p.url, p.prix_produit, 
+                            p.pg_vg, p.origine, 
+                            p.frais, p.surbooste, 
+                            p.brand, p.gout
                  
                    FROM public.produits p
                    JOIN public.user_produit up ON p.id_produit = up.product_id

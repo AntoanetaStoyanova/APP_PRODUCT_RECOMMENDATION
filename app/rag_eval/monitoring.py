@@ -53,14 +53,14 @@ def check_alerts(df):
         
         # Vérifier la latence
         if row["Latency (ms)"] > 30000:  # Latence supérieure à 30 secondes
-            log_message = f"ALERTE: Latence élevée ({row['Latency (ms)']} ms) pour l'ID {unique_id}"
+            log_message = f"ALERTE: Latence élevée ({row['Latency (ms)']} ms) pour l'index {unique_id}"
             logging.warning(log_message)  # Log dans le fichier
             st.warning(f"ALERTE: La latence de {unique_id} dépasse les 30 secondes.")  # Affichage dans l'interface Streamlit
             st.text(log_message)  # Affichage du message d'alerte dans Streamlit
 
         # Vérifier la similarité
         if row["Similarity Query-Response"] < 0.7:  # Similarité inférieure à 0.7
-            log_message = f"ALERTE: Similarité faible ({row['Similarity Query-Response']}) pour l'ID {unique_id}"
+            log_message = f"ALERTE: Similarité faible ({row['Similarity Query-Response']}) pour l'index {unique_id}"
             logging.warning(log_message)  # Log dans le fichier
             st.warning(f"ALERTE: La similarité de {unique_id} est inférieure à 0.7.")  # Affichage dans l'interface Streamlit
             st.text(log_message)  # Affichage du message d'al
