@@ -7,3 +7,8 @@ instance/
 getsql/
 app/instance/
 app/README.md
+'udo systemctl status postgresql'
+'h origin main'
+';d public.produits;'
+'e -i 7137b0b'
+er
