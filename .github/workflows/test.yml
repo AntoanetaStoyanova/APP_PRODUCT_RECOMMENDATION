@@ -45,7 +45,7 @@ jobs:
       - name: Charger les variables d'environnement
         run: |
           echo "POSTGRESQL_URI= ${{ secrets.POSTGRESQL_URI }}" >> $GITHUB_ENV 
-          echo "SQLALCHEMY_DATABASE_URI= ${{ secrets.SQLALCHEMY_DATABASE_URI }}" >> $GITHUB_ENV 
+          echo "DATABASE_URL=sqlite:///:memory:" >> $GITHUB_ENV
           echo "DATABASE_URL= ${{ secrets.POSTGRESQL_URI }}" >> $GITHUB_ENV 
           echo "SECRET_KEY= ${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
           echo "AZURE_OPENAI_API_KEY_4= ${{ secrets.AZURE_OPENAI_API_KEY_4 }}" >> $GITHUB_ENV
