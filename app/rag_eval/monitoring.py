@@ -22,6 +22,8 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S"  # Format de la date
 )
 
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Charger le modèle SentenceTransformer
 @st.cache_resource
 def load_model():
@@ -34,6 +36,8 @@ def load_data():
     logging.info("Chargement des données de monitoring.")
     df = pd.read_csv("app/rag_eval/monitoring.csv")
     return df
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Fonction pour exécuter le script de monitoring
 def run_monitoring_script():
@@ -44,6 +48,13 @@ def run_monitoring_script():
     except subprocess.CalledProcessError as e:
         logging.error(f"Erreur lors de l'exécution de rag_monitoring.py : {e}")
         st.error("Une erreur est survenue lors de l'exécution du script.")
+
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Initialisation de l'état des alertes dans st.session_state
+if "alerts_shown" not in st.session_state:
+    st.session_state.alerts_shown = False
 
 # Fonction pour vérifier la latence et la similarité et déclencher des alertes
 def check_alerts(df):
@@ -59,21 +70,33 @@ def check_alerts(df):
             st.text(log_message)  # Affichage du message d'alerte dans Streamlit
 
         # Vérifier la similarité
-        if row["Similarity Query-Response"] < 0.7:  # Similarité inférieure à 0.7
+        if row["Similarity Query-Response"] < 0.6:  # Similarité inférieure à 0.7
             log_message = f"ALERTE: Similarité faible ({row['Similarity Query-Response']}) pour l'index {unique_id}"
             logging.warning(log_message)  # Log dans le fichier
-            st.warning(f"ALERTE: La similarité de {unique_id} est inférieure à 0.7.")  # Affichage dans l'interface Streamlit
-            st.text(log_message)  # Affichage du message d'al
+            # st.warning(f"ALERTE: La similarité de {unique_id} est inférieure à 0.6.")  # Affichage dans l'interface Streamlit
+            st.text(log_message)  
+            st.dataframe(df.loc[index, ["Query", "Response", "Source"]])
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+df = load_data()
+st.dataframe(df, width=1000)
+
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Bouton pour relancer le script et actualiser les données
 if st.button("Mettre à jour les données de monitoring"):
     run_monitoring_script()
     st.success("Les données de monitoring ont été mises à jour avec succès.")
 
-# Charger les données (après l'éventuelle mise à jour)
-df = load_data()
 
-# Vérifier les alertes sur les données
-check_alerts(df)
+
+
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # Calcul des métriques principales
 best_score_query_response = round(df["Similarity Query-Response"].max(), 2)
@@ -85,6 +108,8 @@ worst_score_response_source = round(df["Similarity Response-Source"].min(), 2)
 average_score_response_source = round(df["Similarity Response-Source"].mean(), 2)
 
 average_latency = round(df["Latency (ms)"].mean(), 2)
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Affichage dans le dashboard Streamlit
 st.title("Dashboard de Monitoring du Modèle")
@@ -145,6 +170,8 @@ with col4:
         <h5 style="color: #ffffff;">{average_latency}</h5>
     </div>
     """, unsafe_allow_html=True)
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Graphiques
 # Distribution des scores Similarity Query-Response
@@ -175,3 +202,18 @@ fig_boxplot = plt.figure(figsize=(10, 6))
 sns.boxplot(data=df[["Similarity Query-Response", "Similarity Response-Source"]])
 plt.title("Boîte à moustaches des scores de Similarité")
 st.pyplot(fig_boxplot)
+
+
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Vérifier les alertes sur les données
+st.title("Vérification des alertes")
+# Ajouter un bouton pour déclencher l'affichage des alertes
+if st.button('Afficher / Cacher toutes les alertes'):
+    st.session_state.alerts_shown = not st.session_state.alerts_shown
+
+# Si les alertes doivent être affichées, exécuter la fonction de vérification
+if st.session_state.alerts_shown:
+    check_alerts(df)
