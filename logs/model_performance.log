@@ -690,3 +690,22 @@
 2025-03-13 18:39:11 - WARNING - ALERTE: Similarité faible (0.5579407) pour l'index 23
 2025-03-13 18:39:11 - WARNING - ALERTE: Similarité faible (0.5737604) pour l'index 25
 2025-03-13 18:39:11 - WARNING - ALERTE: Similarité faible (0.5685998) pour l'index 29
+2025-03-14 15:56:25 - INFO - Chargement des données de monitoring.
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5746133) pour l'index 1
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.52010417) pour l'index 2
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.36907893) pour l'index 3
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.12482781) pour l'index 5
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.12482781) pour l'index 6
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5268925) pour l'index 7
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.52646995) pour l'index 8
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.12482781) pour l'index 9
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5493819) pour l'index 11
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5493819) pour l'index 12
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5894747) pour l'index 13
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5493819) pour l'index 14
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5793197) pour l'index 16
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5502306) pour l'index 17
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5737604) pour l'index 18
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5579407) pour l'index 23
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5737604) pour l'index 25
+2025-03-14 15:57:52 - WARNING - ALERTE: Similarité faible (0.5685998) pour l'index 29

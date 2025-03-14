@@ -10,7 +10,7 @@ from langchain.schema import Document
 from app import bcrypt, create_app
 from .forms import RegisterForm, LoginForm
 from flask_login import login_user, login_required, current_user  
-
+from .llm_connection import get_llm_connection
 import requests
 from config import Config
 import logging
@@ -137,7 +137,14 @@ qa_chain = (
     | StrOutputParser()
 )
 
-
+@main_bp.route('/test_connection')
+def test_connection():
+    llm = get_llm_connection()
+    
+    if llm:
+        return jsonify({"status": "success", "message": "Connexion réussie au modèle LLM."})
+    else:
+        return jsonify({"status": "error", "message": "Échec de la connexion au modèle LLM."})
 # Route principale
 @main_bp.route('/')
 def acceuil():
@@ -360,12 +367,12 @@ def query():
 def recommend():
     question = request.form.get('question')
 
-    
     # Vérifier si la question est vide (Code 400)
     if not question:
         error_message = "Veuillez entrer une question."
         logging.error(f"Erreur 400: {error_message}")
-        return render_template('error_page.html', error_message=error_message), 400
+        return render_template('error_page.html', 
+                               error_message=error_message), 400
     
     retries = 5  # Nombre maximum de tentatives
     backoff_time = 1  # Temps de pause initial (en secondes)
@@ -376,7 +383,8 @@ def recommend():
             # Utilisation de la fonction search_for_flavor dans retriever.invoke
             flavors_in_query = search_for_flavor(question)
             # Essayer d'obtenir la réponse
-            response = qa_chain.invoke(question, filter={"saveur": flavors_in_query})
+            response = qa_chain.invoke(question, 
+                                       filter={"saveur": flavors_in_query})
             
             docs = retriever.invoke(question)
             for doc in docs:
@@ -393,7 +401,7 @@ def recommend():
                     id_produit_list.append(id_produit)
         
 
-            # 🔥 **Insertion des recommandations en base de données**
+            # **Insertion des recommandations en base de données**
             new_recommendation = Recommendation(
                 question=question,
                 response=response,  # JSON attendu
@@ -423,7 +431,7 @@ def recommend():
 
                 user_db.session.commit()  # Commit après avoir ajouté tous les produits
 
-            # 🔥 Appel de la fonction SQL pour récupérer les images des produits
+            # Appel de la fonction SQL pour récupérer les images des produits
             img_produit_values = show_produit(id_produit_list)
 
             # -----------------------

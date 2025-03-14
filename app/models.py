@@ -55,7 +55,7 @@ class Product(user_db.Model):
 
 
 class User(user_db.Model, UserMixin):
-    id = user_db.Column(user_db.Integer, primary_key=True)
+    id = user_db.Column(user_db.Integer, primary_key=True , autoincrement=True )
     username = user_db.Column(user_db.String(20), nullable=False, unique=True)
     password = user_db.Column(user_db.String(80), nullable=False)
 
