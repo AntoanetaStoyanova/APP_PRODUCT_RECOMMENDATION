@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #fffefe;
             margin: 0;
             padding: 0;
         }
@@ -27,25 +27,23 @@
         .gout-selection {
             display: flex;
             justify-content: center;
-            gap: 20px;  /* Espacement entre les images */
-            margin-bottom: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 80px;
         }
-
         .gout-item {
             cursor: pointer;
             transition: transform 0.3s ease-in-out;
-            border-radius: 10px;
         }
-
-        .gout-item:hover {
-            transform: scale(1.1);
-        }
-
         .gout-item img {
-            width: 120px;  /* Taille réduite des images */
-            height: 120px;  /* Taille réduite des images */
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             border-radius: 10px;
+        }
+        .gout-item:hover {
+            transform: scale(1.1);
         }
 
         /* Styles pour les cartes des produits */
@@ -54,6 +52,7 @@
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
+            margin-bottom: 80px;
         }
 
         .card {
@@ -120,11 +119,85 @@
             padding: 8px 15px;
             color: #333;
         }
+        /* Navbar style to align elements on the same line */
+        .navbar {
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Vertically align items */
+            padding: 10px; /* Add padding around the navbar */
+            background-color: #ffffff; /* Dark background for the navbar */
+        }
+        .auth-links {
+            display: flex;
+            gap: 15px; /* Espacement entre les liens de connexion et d'inscription */
+        }
+
+        .auth-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-left: 10px; /* Space between items 
+            font-size: 15px;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        } */
+        /* Container for the username and icon */
+        .user-info {
+            display: flex;
+            align-items: center; /* Align icon and text vertically */
+            justify-content: flex-end; /* Align them to the left */
+            gap: 10px; /* Space between username and icon */
+            margin-left: 20px;
+            
+        }
+       
+        /* Icon at the top right */
+        .top-right-icon {
+            font-size: 5px;
+            margin-right: 10px;
+            
+        }
+        /* Style for the user icon image */
+        .top-right-icon img {
+            width: 60px; /* Adjusted image size */
+            height: 60px; /* Adjusted image size */
+            border-radius: 50%; /* Make the icon circular */
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Liste des Produits</h1>
+        <!-- Navbar with user icon and login/register links -->
+    <div class="navbar">
+        <div class="auth-links">
+            <!-- Sinon, afficher les liens de connexion et d'inscription -->
+            <a href="{{ url_for('main.login') }}">Se connecter</a>
+            <a href="{{ url_for('main.register') }}">S'inscrire</a>
+        </div>
+        <div class="user-info">
+            <div class="top-right-icon">
+                <a href="{{ url_for('main.account', user_id=current_user.id) }}">
+                    <div class="gout-item">
+                        <img src="{{ url_for('static', filename='gout_img/user.png') }}" alt="User account" width="40" height="40">
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+      
 
         <!-- Section pour sélectionner le goût en cliquant sur une image -->
         <div class="gout-selection">
@@ -159,7 +232,8 @@
                 </div>
             </a>
         </div>
-
+     
+        
         <!-- Affichage des produits sous forme de cartes -->
         <div class="card-container">
             {% for id_produit, img_produit, nom_produit, url in produits %}

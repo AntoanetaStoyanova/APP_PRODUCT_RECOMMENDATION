@@ -9,10 +9,11 @@ import pandas as pd
 from langchain.schema import Document
 from app import bcrypt, create_app
 from .forms import RegisterForm, LoginForm
-from flask_login import login_user, login_required, current_user  
+from flask_login import login_user, login_required, current_user
 from .llm_connection import get_llm_connection
 import requests
 from config import Config
+import time
 import logging
 # Configurer le logging
 logging.basicConfig(
@@ -198,6 +199,8 @@ def login():
             flash("Nom d'utilisateur ou mot de passe incorrect.", "danger")
     return render_template('login.html', form=form)
 
+
+
 # Route pour l'inscription
 # @main_bp.route('/register', methods=['GET', 'POST'])
 # def register():
@@ -361,7 +364,6 @@ def query():
 
         
 # avec llm affiche les produits recommender + sauvegarder user_id et produit_id dans la table user_produit
-
 @main_bp.route('/recommend', methods=['POST'])
 @login_required  # Assurez-vous que l'utilisateur est connecté
 def recommend():
@@ -380,12 +382,18 @@ def recommend():
     
     for attempt in range(retries):
         try:
+            start_time = time.perf_counter()  # Utilisation de perf_counter
+            logging.info(f"Début de la requête à {start_time:.4f} secondes")
             # Utilisation de la fonction search_for_flavor dans retriever.invoke
             flavors_in_query = search_for_flavor(question)
             # Essayer d'obtenir la réponse
             response = qa_chain.invoke(question, 
                                        filter={"saveur": flavors_in_query})
             
+            end_time = time.perf_counter()  # Fin du chrono
+            execution_time = end_time - start_time
+            logging.info(f"Temps d'exécution de la requête: {execution_time:.4f} secondes")
+            print(execution_time)
             docs = retriever.invoke(question)
             for doc in docs:
                 print(f"Document ID: {doc.id}, Métadonnées: {doc.metadata}")
@@ -437,7 +445,7 @@ def recommend():
             # -----------------------
             # Vérifier les données avant l'écriture dans le CSV
             csv_file_path = './app/recommendations.csv'  
-            csv_headers = ['Question', 'Response', 'Document Content']
+            csv_headers = ['Question', 'Response', 'Source'] 
 
             # Vérifier si le fichier CSV existe déjà
             file_exists = os.path.isfile(csv_file_path)
@@ -446,11 +454,12 @@ def recommend():
             csv_data = [{
                 'Question': question,
                 'Response': response,
-                'Document Content': '\n'.join(doc.page_content for doc in docs)
+                'Source': '\n'.join(doc.page_content for doc in docs)
             }]
 
             logging.info(f"Data to write to CSV: {csv_data}")
-
+            # Vérifiez les clés du dictionnaire avant l'écriture dans le CSV
+            logging.info(f"csv_data keys: {list(csv_data[0].keys())}")
             # Ouvrir le fichier CSV en mode 'a' (ajouter)
             try:
                 with open(csv_file_path, mode='a', newline='', encoding='utf-8') as csv_file:

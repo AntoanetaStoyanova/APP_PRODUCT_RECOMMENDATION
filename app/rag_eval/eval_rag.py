@@ -22,7 +22,7 @@ df = pd.read_csv("app/recommendations.csv")
 # recuperer les valeurs des colonnes dans des listes python
 queries = df['Question'].tolist()
 responses = df['Response'].tolist()
-sources = df['Document Content'].tolist()
+sources = df['Source'].tolist()
 
 
 # Initialiser une liste pour stocker les résultats

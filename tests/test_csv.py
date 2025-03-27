@@ -16,8 +16,6 @@ def test_no_missing_values(load_data):
     for col in important_columns:
         assert df[col].isna().sum() == 0, f"Des valeurs manquantes ont été trouvées dans la colonne {col}"
 
-
-
 def test_valid_urls(load_data):
     df = load_data
     url_pattern = re.compile(r'http[s]?://.*')

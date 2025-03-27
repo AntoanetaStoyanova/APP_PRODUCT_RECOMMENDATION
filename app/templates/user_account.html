@@ -138,11 +138,88 @@
             font-weight: bold;
             margin-left: 10px;
         }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Vertically align items */
+            padding: 10px; /* Add padding around the navbar */
+            background-color: #ffffff; /* Dark background for the navbar */
+        }
+        .auth-links {
+            display: flex;
+            gap: 15px; /* Espacement entre les liens de connexion et d'inscription */
+        }
+
+        .auth-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-left: 10px; /* Space between items 
+            font-size: 15px;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        } */
+        /* Container for the username and icon */
+        .user-info {
+            display: flex;
+            align-items: flex-start; /* Align icon and text vertically */
+            justify-content: flex-start; /* Align them to the left */
+            gap: 10px; /* Space between username and icon */
+            margin-left: 20px;
+            
+        }
+       
+        /* Icon at the top right */
+        .top-right-icon {
+            font-size: 5px;
+            margin-right: 10px;
+            
+        }
+        /* Style for the user icon image */
+        .top-right-icon img {
+            width: 60px; /* Adjusted image size */
+            height: 60px; /* Adjusted image size */
+            border-radius: 50%; /* Make the icon circular */
+        }
 
     </style>
 </head>
 <body>
-
+    <div class="container">
+        <!-- Navbar with user icon and login/register links -->
+    <div class="navbar">
+        <div class="auth-links">
+            <!-- Sinon, afficher les liens de connexion et d'inscription -->
+            <a href="{{ url_for('main.login') }}">Se connecter</a>
+            <a href="{{ url_for('main.register') }}">S'inscrire</a>
+        </div>
+        <div class="user-info">
+            <div class="top-right-icon">
+                <a href="{{ url_for('main.account', user_id=current_user.id) }}">
+                    <div class="gout-item">
+                        <img src="{{ url_for('static', filename='gout_img/user.png') }}" alt="User account" width="40" height="40">
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
     <!-- User Info Section -->
     <div class="user-info">
         <h1>Bienvenue, {{ user.username }}!</h1>

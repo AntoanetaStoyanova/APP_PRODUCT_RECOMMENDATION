@@ -47,7 +47,7 @@ def run_evaluation(DATA_PATH, CSV_PATH):
     df = pd.read_csv(DATA_PATH)
     queries = df['Question'].tolist()
     responses = df['Response'].tolist()
-    sources = df['Document Content'].tolist()
+    sources = df['Source'].tolist()
 
     results = []
     for query, response, source in zip(queries, responses, sources):

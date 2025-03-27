@@ -26,7 +26,6 @@ jobs:
       - name: Install dependencies
         run: pipenv install --dev
 
-      # Suppression de la configuration PostgreSQL, car tu n'en as pas besoin
       - name: Set environment variables
         run: |
           echo "RECOMMENDATIONS_CSV=app/rag_csv.csv" >> $GITHUB_ENV  # Chemin vers ton CSV local

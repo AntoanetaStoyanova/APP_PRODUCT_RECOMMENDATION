@@ -13,7 +13,7 @@ df = pd.read_csv("app/recommendations.csv")
 # Récupérer les valeurs des colonnes
 queries = df['Question'].tolist()
 responses = df['Response'].tolist()
-sources = df['Document Content'].tolist()
+sources = df['Source'].tolist()
 
 
 
@@ -32,13 +32,13 @@ for query, response, source in zip(queries, responses, sources):
     similarity_query_response = cosine_similarity([embeddings[0]], [embeddings[1]])[0][0]
     similarity_response_source = cosine_similarity([embeddings[1]], [embeddings[2]])[0][0]
 
-    
-
     end_time = time.time()  
     latency = (end_time - start_time) * 1000  
 
     # Ajouter les résultats avec timestamp
-    results.append([time.strftime("%Y-%m-%d %H:%M:%S"), query, response, source, similarity_query_response, similarity_response_source, latency])
+    results.append([time.strftime("%Y-%m-%d %H:%M:%S"), 
+                    query, response, source, similarity_query_response, 
+                    similarity_response_source, latency])
 
 
 
@@ -52,4 +52,4 @@ if not os.path.exists(csv_path):
 else:
     pd.DataFrame(results, columns=columns).to_csv(csv_path, mode='a', header=False, index=False)
 
-print("✅ Données de monitoring mises à jour dans monitoring.csv")
+print("Données de monitoring mises à jour dans monitoring.csv")

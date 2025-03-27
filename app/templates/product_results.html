@@ -9,14 +9,17 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
             text-align: center;
         }
 
         h1 {
             text-align: center;
         }
-
+        
+        pre {
+        font-size: 30px; /* Taille du texte */
+        }
         /* Conteneur principal */
         .product-container {
             display: flex;
@@ -89,15 +92,116 @@
             text-align: center;
             width: 100%;
         }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center; /* Vertically align items */
+            padding: 10px; /* Add padding around the navbar */
+            background-color: #ffffff; /* Dark background for the navbar */
+        }
+        .auth-links {
+            display: flex;
+            gap: 15px; /* Espacement entre les liens de connexion et d'inscription */
+        }
 
+        .auth-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-left: 10px; /* Space between items 
+            font-size: 15px;
+        }
+
+        .navbar a:hover {
+            color: #007bff;
+        } */
+        /* Container for the username and icon */
+        .user-info {
+            display: flex;
+            align-items: center; /* Align icon and text vertically */
+            justify-content: flex-end; /* Align them to the left */
+            gap: 10px; /* Space between username and icon */
+            margin-left: 20px;
+            
+        }
+       
+        /* Icon at the top right */
+        .top-right-icon {
+            font-size: 5px;
+            margin-right: 10px;
+            
+        }
+        /* Style for the user icon image */
+        .top-right-icon img {
+            width: 60px; /* Adjusted image size */
+            height: 60px; /* Adjusted image size */
+            border-radius: 50%; /* Make the icon circular */
+        }
+        pre {
+            font-size: 20px; /* Réduit la taille de la police */
+            text-align: center; /* Centre le texte */
+            margin: 20px auto; /* Centre horizontalement et ajoute une marge verticale */
+            display: flex; /* Utilisation de flexbox */
+            justify-content: center; /* Centre le texte horizontalement */
+            align-items: center; /* Centre verticalement */
+            width: fit-content; /* Ajuste la largeur au texte */
+            max-width: 80%; /* Empêche qu'il soit trop large */
+            padding: 10px; /* Ajoute un peu d'espace autour */
+            
+           
+            border-radius: 5px; /* Coins arrondis */
+            white-space: pre-wrap; /* Permet le retour à la ligne si besoin */
+        }
+
+        /* Centre également le conteneur parent si nécessaire */
+        .pre-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Navbar with user icon and login/register links -->
+    <div class="navbar">
+        <div class="auth-links">
+            <!-- Sinon, afficher les liens de connexion et d'inscription -->
+            <a href="{{ url_for('main.login') }}">Se connecter</a>
+            <a href="{{ url_for('main.register') }}">S'inscrire</a>
+        </div>
+        <div class="user-info">
+            <div class="top-right-icon">
+                <a href="{{ url_for('main.account', user_id=current_user.id) }}">
+                    <div class="gout-item">
+                        <img src="{{ url_for('static', filename='gout_img/user.png') }}" alt="User account" width="40" height="40">
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
     <h1>Résultats de la Recommandation</h1>
     
-    <p><strong>Réponse brute :</strong></p>
-    <pre>{{ recommendation }}</pre>
-
+    <div class="pre-container">
+        <pre>{{ recommendation }}</pre>
+    </div>
+    <!-- <pre>{{ recommendation }}</pre> -->
+    
     <!-- Conteneur principal -->
     <div class="product-container">
         <!-- Colonne des images sous forme de cartes en ligne -->
