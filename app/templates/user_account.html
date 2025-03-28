@@ -11,8 +11,9 @@
         }
 
         .user-info h1 {
-            margin-left: 20px;
-            font-size: 2em;
+            text-align: center;
+            margin-top:  100px;
+            color:#247d7e;
         }
 
         .account-details {
@@ -36,11 +37,14 @@
         .delete-account {
             margin-top: 30px;
             text-align: center;
+            color: #247d7e;
         }
 
         .delete-account a {
-            color: red;
-            font-weight: bold;
+            color: rgb(224, 119, 119);
+           
+            text-decoration: none;
+
         }
 
         .products-section {
@@ -127,16 +131,17 @@
             display: inline-flex;
             align-items: center;
             font-size: 1.2em;
-            color: #b0b0b0; /* Gris clair */
+            color:  #247d7e;
             margin-left: 20px;
             margin-top: 20px; /* Ajouter un espacement au-dessus du lien */
         }
 
         .view-all-products a {
-            color: #b0b0b0; /* Gris clair */
+            color:  #247d7e;
             text-decoration: none;
             font-weight: bold;
             margin-left: 10px;
+            margin-bottom: 300px;
         }
         .container {
             width: 80%;
@@ -145,21 +150,33 @@
         }
         .navbar {
             display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            align-items: center; /* Vertically align items */
+            justify-content: space-between; 
+            /* align-items: center; Vertically align items */
             padding: 10px; /* Add padding around the navbar */
             background-color: #ffffff; /* Dark background for the navbar */
         }
         .auth-links {
             display: flex;
+            align-items: center;
             gap: 15px; /* Espacement entre les liens de connexion et d'inscription */
+        
+        }
+        .auth-links a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
+        }
+        .back-link  {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .back-link a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
         }
 
-        .auth-links a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            font-size: 14px;
-        }
 
         .auth-links a:hover {
             text-decoration: underline;
@@ -197,6 +214,9 @@
             height: 60px; /* Adjusted image size */
             border-radius: 50%; /* Make the icon circular */
         }
+        .back-link {
+            margin-right: auto; /* Pousse ce bloc vers la gauche */
+        }
 
     </style>
 </head>
@@ -204,6 +224,10 @@
     <div class="container">
         <!-- Navbar with user icon and login/register links -->
     <div class="navbar">
+        <div class="back-link">
+            <a href="{{ url_for('main.index') }}">← Obtenez des recommandations personnalisées
+        </div>
+
         <div class="auth-links">
             <!-- Sinon, afficher les liens de connexion et d'inscription -->
             <a href="{{ url_for('main.login') }}">Se connecter</a>

@@ -32,3 +32,7 @@ class Config:
     # Construire le chemin absolu du fichier CSV
     RECOMMENDATIONS_CSV = os.path.join(BASE_DIR, "app", "recommendations.csv")  
     RAG_EVAL_MONITORING_CSV = os.path.join(BASE_DIR, "app", "rag_eval", "monitoring.csv")
+
+    LANGFUSE_SECRET_KEY= os.getenv('LANGFUSE_SECRET_KEY')
+    LANGFUSE_PUBLIC_KEY= os.getenv('LANGFUSE_PUBLIC_KEY')
+    LANGFUSE_HOST= os.getenv('LANGFUSE_HOST')

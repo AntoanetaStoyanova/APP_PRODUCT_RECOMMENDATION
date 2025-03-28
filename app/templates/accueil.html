@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue</title>
     <style>
-        body {
+         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
-            flex-direction: column;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
-        h1 {
-            margin-bottom: 20px;
+        .top-header {
+            position: absolute;
+            top: 200px;
+            width: 100%;
+            text-align: center;
+            color: #247d7e;
         }
         .button-container {
             display: flex;
@@ -30,7 +34,7 @@
             padding: 15px 30px;
             width: 100%;
             text-align: center;
-            background-color: #007bff;
+            background-color:  #247d7e;
             color: white;
             font-size: 16px;
             border-radius: 5px;
@@ -39,12 +43,169 @@
             transition: background-color 0.3s;
         }
         .button-container a:hover {
-            background-color: #0056b3;
+            background-color:  #216f70;
         }
+
+        /* Style pour le popup */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 600px;
+            max-width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+      
+        .disclaimer {
+            padding: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .popup-header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .popup-header p {
+            font-size: 18px;
+            margin: 0;
+            color: #585454
+        }
+
+        .disclaimer {
+            font-size: 14px;
+            margin: 0;
+            color: #585454
+        }
+
+        /* Partie avec le fond orange */
+        .orange-section {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .popup-content h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .popup-content input {
+            font-size: 18px;
+            padding: 10px;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid #2e9b9d;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+        .popup-content input:focus {
+            border-color:  #2e9b9d;
+        }
+        .popup-content button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #247d7e;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            height: 44px; /* Hauteur égale à celle des inputs */
+        }
+        .popup-content button:hover {
+            background-color: #195758;
+        }
+        
+        /* Style pour l'image et le texte sur la même ligne */
+        .popup-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+            
+        }
+
+        .date-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .date-container input {
+            width: 30%;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #2e9b9d;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+            height: 44px; /* Hauteur fixe pour les inputs */
+        }
+        .date-container input:focus {
+            border-color: #2e9b9d;
+        }
+
+
+
+
+
+        
+
     </style>
 </head>
 <body>
-    <!-- <h1>Bienvenue sur notre application</h1> -->
+
+    <div class="top-header">
+        <h1>Trouvez le e-liquide parfait pour vous</h1>
+        <h2>Des suggestions personnalisées selon vos préférences</h2>
+    </div>
+
+     <!-- Popup pour l'âge -->
+     <div id="agePopup" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <img src="{{ url_for('static', filename='gout_img/age-limit-18-icon.png') }}" alt="Age Limit">
+                <p>NE VAPOTEZ PAS SI VOUS NE FUMEZ PAS</p>
+            </div>
+            <p class="disclaimer">En entrant sur ce site, je reconnais être majeur(e) et que je suis autorisé(e) par la législation de mon pays à acheter des produits contenant de la nicotine.</p>
+            
+            <div class="orange-section">
+                <h2>Veuillez entrer votre date de naissance</h2>
+                <div class="date-container">
+                    <input type="number" id="birthday" placeholder="JJ" min="1" max="31">
+                    <input type="number" id="birthmonth" placeholder="MM" min="1" max="12">
+                    <input type="number" id="birthyear" placeholder="AAAA" min="1900" max="2025">
+                    <button onclick="checkAge()">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <h1>🔍 Trouvez le e-liquide parfait pour vous</h1>
+    <h2>Des suggestions personnalisées selon vos préférences</h2> -->
     <div class="button-container">
         <!-- Connexion -->
         <a href="{{ url_for('main.login') }}">Connectez-vous</a>
@@ -53,5 +214,37 @@
         <!-- Recommandation produits -->
         <a href="{{ url_for('main.index') }}">Obtenez des recommandations</a>
     </div>
+
+    <script>
+        function checkAge() {
+            var day = document.getElementById('birthday').value;
+            var month = document.getElementById('birthmonth').value;
+            var year = document.getElementById('birthyear').value;
+            
+            if (day && month && year) {
+                var birthDateObj = new Date(year, month - 1, day);
+                var currentDate = new Date();
+                
+                var age = currentDate.getFullYear() - birthDateObj.getFullYear();
+                var monthDiff = currentDate.getMonth() - birthDateObj.getMonth();
+                if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < birthDateObj.getDate())) {
+                    age--;
+                }
+
+                if (age >= 18) {
+                    document.getElementById('agePopup').style.display = 'none';
+                } else {
+                    alert("Cette application est réservée aux utilisateurs majeurs.");
+                }
+            } else {
+                alert("Veuillez remplir tous les champs.");
+            }
+        }
+
+        window.onload = function() {
+            document.getElementById('agePopup').style.display = 'flex';
+        };
+    </script>
+
 </body>
 </html>

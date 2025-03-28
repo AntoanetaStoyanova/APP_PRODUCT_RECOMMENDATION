@@ -1,24 +1,7 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    <h1>Login page</h1>
-    <form method="POST" action="">
-        {{ form.hidden_tag() }}
-        {{ form.username}}
-        {{ form.password}}
-        {{ form.submit}}
-    </form>
-    <a href="{{url_for('main.register')}}">Vous n'avez pas un compte? Registrez-vous</a>
-</body>
-</html> -->
+
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,10 +16,11 @@
             margin: 0;
             flex-direction: column;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
         h1 {
             margin-bottom: 20px;
+            color: #247d7e;
         }
         form {
             display: flex;
@@ -62,8 +46,8 @@
             border-radius: 5px;
         }
         form button {
-            background-color: #007bff;
-            color: white;
+            background-color: #247d7e; /* Background color for the button */
+            color: #ffffff;
             border: none;
             cursor: pointer;
             font-size: 16px;
@@ -71,14 +55,15 @@
             transition: background-color 0.3s;
         }
         form button:hover {
-            background-color: #0056b3;
+            background-color: #216f70; /* Darker shade when hovering */
         }
         a {
             display: block;
             text-align: center;
             margin-top: 10px;
             text-decoration: none;
-            color: #007bff;
+            color: #216f70; 
+        
         }
         a:hover {
             text-decoration: underline;
@@ -111,7 +96,7 @@
     </style>
 </head>
 <body>
-    <h1>Login page</h1>
+    <h1>Connectez-vous</h1>
 
     <!-- Affichage des messages flash -->
     {% with messages = get_flashed_messages(with_categories=true) %}

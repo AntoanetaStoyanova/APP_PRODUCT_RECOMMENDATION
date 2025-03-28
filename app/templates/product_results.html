@@ -11,10 +11,12 @@
             padding: 0;
             background-color: #ffffff;
             text-align: center;
+            color: #247d7e;
         }
 
         h1 {
             text-align: center;
+            color: #247d7e;
         }
         
         pre {
@@ -99,21 +101,33 @@
         }
         .navbar {
             display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            align-items: center; /* Vertically align items */
+            justify-content: space-between; 
+            /* align-items: center; Vertically align items */
             padding: 10px; /* Add padding around the navbar */
             background-color: #ffffff; /* Dark background for the navbar */
         }
         .auth-links {
             display: flex;
+            align-items: center;
             gap: 15px; /* Espacement entre les liens de connexion et d'inscription */
+        
+        }
+        .auth-links a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
+        }
+        .back-link  {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .back-link a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
         }
 
-        .auth-links a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            font-size: 14px;
-        }
 
         .auth-links a:hover {
             text-decoration: underline;
@@ -133,10 +147,15 @@
         .user-info {
             display: flex;
             align-items: center; /* Align icon and text vertically */
-            justify-content: flex-end; /* Align them to the left */
+            justify-content: flex-end;
             gap: 10px; /* Space between username and icon */
             margin-left: 20px;
             
+        }
+       .user-info a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
         }
        
         /* Icon at the top right */
@@ -161,6 +180,7 @@
             width: fit-content; /* Ajuste la largeur au texte */
             max-width: 80%; /* Empêche qu'il soit trop large */
             padding: 10px; /* Ajoute un peu d'espace autour */
+            color: #113a3b;
             
            
             border-radius: 5px; /* Coins arrondis */
@@ -173,12 +193,20 @@
             justify-content: center;
             width: 100%;
         }
+
+        .back-link {
+            margin-right: auto; /* Pousse ce bloc vers la gauche */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Navbar with user icon and login/register links -->
     <div class="navbar">
+        <div class="back-link">
+            <a href="{{ url_for('main.index') }}">← Obtenez des recommandations personnalisées
+        </div>
+
         <div class="auth-links">
             <!-- Sinon, afficher les liens de connexion et d'inscription -->
             <a href="{{ url_for('main.login') }}">Se connecter</a>

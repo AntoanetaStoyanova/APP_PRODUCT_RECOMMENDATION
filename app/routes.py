@@ -30,7 +30,7 @@ import re
 from werkzeug.exceptions import HTTPException
 
 
-
+from datetime import datetime
 
 main_bp = Blueprint('main', __name__)
 
@@ -64,6 +64,7 @@ import openai
 
 
 from app.llm import llm
+
 from app.vectorstore import load_vectorstore, save_vectorstore
 
 from app.utils import search_for_flavor, add_metadata_to_documents
@@ -146,28 +147,38 @@ def test_connection():
         return jsonify({"status": "success", "message": "Connexion réussie au modèle LLM."})
     else:
         return jsonify({"status": "error", "message": "Échec de la connexion au modèle LLM."})
+    
+
+
+
 # Route principale
 @main_bp.route('/')
 def acceuil():
     return render_template('accueil.html')
 
+
+@main_bp.route('/check_age', methods=['POST'])
+def check_age():
+    birthdate = request.form.get('birthdate')
+    birth_date_obj = datetime.strptime(birthdate, '%Y-%m-%d')
+    current_date = datetime.now()
+    
+    # Calcul de l'âge
+    age = current_date.year - birth_date_obj.year
+    if current_date.month < birth_date_obj.month or (current_date.month == birth_date_obj.month and current_date.day < birth_date_obj.day):
+        age -= 1
+    
+    if age >= 18:
+        return redirect(url_for('main.accueil'))  # Vous pouvez rediriger ou renvoyer une réponse selon votre logique
+    else:
+        return "Cette application est réservée aux utilisateurs majeurs."
+
+
+
 @main_bp.route('/main')
 def index():
     return render_template('main.html')
 
-# @main_bp.route('/account/<int:user_id>')
-# @login_required
-# def account(user_id):
-#     # Vérifie que l'ID de l'utilisateur dans l'URL correspond à l'utilisateur connecté
-#     if current_user.id != user_id:
-#         flash("Vous n'avez pas accès à ces produits.", "danger")
-#         return redirect(url_for('auth.login'))  # Redirige vers la page de connexion
-
-#     # Si l'utilisateur est authentifié et a le bon ID, récupère les informations de l'utilisateur
-#     user = User.query.get_or_404(user_id)
-#     # Appeler la fonction pour récupérer les produits de cet utilisateur
-#     produits = get_user_products(user_id)
-#     return render_template('user_account.html', user=user, produits=produits)
 
 @main_bp.route('/account/<int:user_id>')
 @login_required
@@ -201,27 +212,6 @@ def login():
 
 
 
-# Route pour l'inscription
-# @main_bp.route('/register', methods=['GET', 'POST'])
-# def register():
-#     form = RegisterForm()
-#     if form.validate_on_submit():
-#         # Vérifier si le consentement a été donné
-#         if not form.consent.data:
-#             flash("Vous devez accepter les termes et conditions.", "danger")
-#             return render_template('register.html', form=form)
-#         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-#         new_user = User(
-#             username=form.username.data, 
-#             password=hashed_password,
-#             consent=form.consent.data
-#             )
-#         user_db.session.add(new_user)
-#         user_db.session.commit()
-#         flash(f"Utilisateur {new_user.username} créé avec succès !", "success")
-#         return redirect(url_for('main.login'))
-#     return render_template('register.html', form=form)
-# Route pour l'inscription
 @main_bp.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegisterForm()
@@ -388,8 +378,7 @@ def recommend():
             flavors_in_query = search_for_flavor(question)
             # Essayer d'obtenir la réponse
             response = qa_chain.invoke(question, 
-                                       filter={"saveur": flavors_in_query})
-            
+                                       filter={"saveur": flavors_in_query})  
             end_time = time.perf_counter()  # Fin du chrono
             execution_time = end_time - start_time
             logging.info(f"Temps d'exécution de la requête: {execution_time:.4f} secondes")
@@ -518,15 +507,7 @@ def recommend():
 
 @main_bp.route('/user_products/<int:user_id>')
 @login_required  # Assurez-vous que l'utilisateur est connecté
-# def user_products(user_id):
-#     # Récupérer l'utilisateur
-#     user = User.query.get_or_404(user_id)
-    
-    
-#     # Appeler la fonction pour récupérer les produits de cet utilisateur
-#     produits = get_user_products(user_id)
-#     # Passer les product_ids au template
-#     return render_template('user_products.html', user=user, produits=produits)
+
 
 def user_products(user_id):
     # Vérifie que l'ID de l'utilisateur dans l'URL correspond à l'utilisateur connecté

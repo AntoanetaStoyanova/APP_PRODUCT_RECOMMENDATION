@@ -12,7 +12,19 @@
             margin: 0;
             padding: 0;
             position: relative; 
+            color: #247d7e;
         }
+
+        .top-header {
+          
+            margin-top: 150px;
+            margin-bottom: 100px;
+            width: 100%;
+            text-align: center;
+            color: #247d7e;
+        }
+
+        
         h1 {
             margin-top: 20px;
         }
@@ -25,6 +37,7 @@
             gap: 20px;
             flex-wrap: wrap;
             margin-top: 30px;
+            margin-bottom: 100px;
         }
         .gout-item {
             cursor: pointer;
@@ -50,14 +63,14 @@
         button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #007bff;
+            background-color: #247d7e;
             color: white;
             border: none;
             cursor: pointer;
             border-radius: 5px;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color:#247d7e;
         }
         #response {
             margin-top: 20px;
@@ -69,6 +82,8 @@
             align-items: center; /* Vertically align items */
             padding: 10px; /* Add padding around the navbar */
             background-color: #ffffff; /* Dark background for the navbar */
+            margin-right: 207px;
+            margin-top: 20px;
         }
         .auth-links {
             display: flex;
@@ -76,9 +91,9 @@
         }
 
         .auth-links a {
-            color: rgb(0, 0, 0);
+            color:  #247d7e;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16x;
         }
 
         .auth-links a:hover {
@@ -100,7 +115,7 @@
             display: flex;
             align-items: center; /* Align icon and text vertically */
             justify-content: flex-end; /* Align them to the left */
-            gap: 10px; /* Space between username and icon */
+            gap: 15px; /* Space between username and icon */
             margin-left: 20px;
             
         }
@@ -116,6 +131,11 @@
             width: 60px; /* Adjusted image size */
             height: 60px; /* Adjusted image size */
             border-radius: 50%; /* Make the icon circular */
+        }
+        
+        a {
+            color: #247d7e;
+            text-decoration: none;
         }
         
     </style>
@@ -139,50 +159,46 @@
         </div>
         
     </div>
-    <!-- <a href="{{url_for('main.login')}}">Login Page</a><br>
-    <a href="{{url_for('main.register')}}">Register Page</a><br>
-    
-    <div class="user-info">
-        
-        <div class="top-right-icon">
-            <a href="{{ url_for('main.account', user_id=current_user.id) }}">
-                <div class="gout-item">
-                    <img src="{{ url_for('static', filename='gout_img/user.png') }}" alt="User account" width="40" height="40">
-                </div>
-            </a>
-        </div>
-    </div> -->
-    <!-- Interface de sélection de goût -->
-    <!-- <h2>Sélectionnez un goût</h2> -->
+
+
+    <div class="top-header">
+        <h1>Trouvez le e-liquide parfait pour vous</h1>
+       
+    </div>
+
+    <div class="selec-gout">
+         <h2>Quel est votre goût préféré?</h2>
+    </div>
+
     <div class="gout-selection">
         <a href="/produit?gout=fruit&page=1">
             <div class="gout-item">
-                <img src="{{ url_for('static', filename='gout_img/fruit.png') }}" alt="Fruit">
+                <img src="{{ url_for('static', filename='gout_img/fruit.png') }}" alt="Fruit" title="Fruit">
             </div>
         </a>
         <a href="/produit?gout=boisson&page=1">
             <div class="gout-item">
-                <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson">
+                <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson" title="Boisson">
             </div>
         </a>
         <a href="/produit?gout=classique&page=1">
             <div class="gout-item">
-                <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique">
+                <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique" title="Classique">
             </div>
         </a>
         <a href="/produit?gout=menthe&page=1">
             <div class="gout-item">
-                <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe">
+                <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe" title="Menthe">
             </div>
         </a>
         <a href="/produit?gout=dessert&page=1">
             <div class="gout-item">
-                <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert">
+                <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert" title="Dessert">
             </div>
         </a>
         <a href="/produit?gout=frais&page=1">
             <div class="gout-item">
-                <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais">
+                <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais" title="Frais">
             </div>
         </a>
     </div>
@@ -194,6 +210,8 @@
         <input type="text" id="question" name="question"><br><br>
         <button type="submit">Submit</button>
     </form> -->
+
+    <h2>Des suggestions personnalisées selon vos préférences</h2>
     <div id="response"></div>
     <form action="/recommend" method="POST">
         <label for="question">Décrivez le produit vous recherchez:</label><br><br>

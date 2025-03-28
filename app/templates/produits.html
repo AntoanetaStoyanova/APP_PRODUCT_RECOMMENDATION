@@ -11,7 +11,14 @@
             margin: 0;
             padding: 0;
         }
-
+        .top-header {
+          
+          margin-top: 150px;
+          margin-bottom: 100px;
+          width: 100%;
+          text-align: center;
+          color: #247d7e;
+      }
         .container {
             width: 80%;
             margin: 0 auto;
@@ -79,7 +86,7 @@
 
         .card h3 {
             margin-top: 15px;
-            font-size: 1.2em;
+            font-size: 20px;
             color: #333;
             height: 50px;  /* Fixe la hauteur du texte */
             overflow: hidden;
@@ -96,12 +103,13 @@
             justify-content: center;
             gap: 10px;
             margin-top: 20px;
+            margin-bottom: 50px;
         }
 
         .pagination a {
             text-decoration: none;
             padding: 8px 15px;
-            background-color: #007bff;
+            background-color:#247d7e;
             color: white;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -112,7 +120,7 @@
         }
 
         .pagination a.active {
-            background-color: #28a745;
+            background-color: #144747;
         }
 
         .pagination span {
@@ -122,21 +130,36 @@
         /* Navbar style to align elements on the same line */
         .navbar {
             display: flex;
-            justify-content: flex-end; /* Align items to the right */
-            align-items: center; /* Vertically align items */
+            justify-content: space-between; 
+            /* align-items: center; Vertically align items */
             padding: 10px; /* Add padding around the navbar */
             background-color: #ffffff; /* Dark background for the navbar */
         }
         .auth-links {
             display: flex;
+            align-items: center;
             gap: 15px; /* Espacement entre les liens de connexion et d'inscription */
+        
+        }
+        .auth-links a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
+        }
+        .back-link  {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .back-link a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
         }
 
-        .auth-links a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            font-size: 14px;
-        }
+       
+       
+        
 
         .auth-links a:hover {
             text-decoration: underline;
@@ -156,12 +179,16 @@
         .user-info {
             display: flex;
             align-items: center; /* Align icon and text vertically */
-            justify-content: flex-end; /* Align them to the left */
+            justify-content: flex-end;
             gap: 10px; /* Space between username and icon */
             margin-left: 20px;
             
         }
-       
+       .user-info a {
+            font-size: 14x;
+            color: #247d7e; /* Ajuste la couleur du texte */
+            text-decoration: none;
+        }
         /* Icon at the top right */
         .top-right-icon {
             font-size: 5px;
@@ -174,6 +201,33 @@
             height: 60px; /* Adjusted image size */
             border-radius: 50%; /* Make the icon circular */
         }
+
+        /* Cacher la div alt-text par défaut */
+        .alt-text {
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Conteneur de la carte pour une position relative */
+        .card {
+            position: relative;
+        }
+
+        /* Lorsque l'image est survolée, afficher le texte */
+        .card:hover .alt-text {
+            display: block;
+        }
+        
+        .back-link {
+            margin-right: auto; /* Pousse ce bloc vers la gauche */
+        }
+
         
     </style>
 </head>
@@ -181,6 +235,10 @@
     <div class="container">
         <!-- Navbar with user icon and login/register links -->
     <div class="navbar">
+        <div class="back-link">
+            <a href="{{ url_for('main.index') }}">← Obtenez des recommandations personnalisées
+        </div>
+
         <div class="auth-links">
             <!-- Sinon, afficher les liens de connexion et d'inscription -->
             <a href="{{ url_for('main.login') }}">Se connecter</a>
@@ -198,37 +256,41 @@
         
     </div>
       
+    <div class="top-header">
+        <h1>Les produits séléctionnés par le goût choisit</h1>
+        
+    </div>
 
         <!-- Section pour sélectionner le goût en cliquant sur une image -->
         <div class="gout-selection">
             <a href="/produit?gout=fruit&page=1">
                 <div class="gout-item">
-                    <img src="{{ url_for('static', filename='gout_img/fruit.png') }}" alt="Fruit">
+                    <img src="{{ url_for('static', filename='gout_img/fruit.png') }}" alt="Fruit" title="Fruit">
                 </div>
             </a>
             <a href="/produit?gout=boisson&page=1">
                 <div class="gout-item">
-                    <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson">
+                    <img src="{{ url_for('static', filename='gout_img/boisson.png') }}" alt="Boisson" title="Boisson">
                 </div>
             </a>
             <a href="/produit?gout=classique&page=1">
                 <div class="gout-item">
-                    <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique">
+                    <img src="{{ url_for('static', filename='gout_img/classique.png') }}" alt="Classique" title="Classique">
                 </div>
             </a>
             <a href="/produit?gout=menthe&page=1">
                 <div class="gout-item">
-                    <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe">
+                    <img src="{{ url_for('static', filename='gout_img/menthes.png') }}" alt="Menthe" title="Menthe">
                 </div>
             </a>
             <a href="/produit?gout=dessert&page=1">
                 <div class="gout-item">
-                    <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert">
+                    <img src="{{ url_for('static', filename='gout_img/dessert.png') }}" alt="Dessert" title="Dessert">
                 </div>
             </a>
             <a href="/produit?gout=frais&page=1">
                 <div class="gout-item">
-                    <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais">
+                    <img src="{{ url_for('static', filename='gout_img/frais.png') }}" alt="Frais" title="Frais">
                 </div>
             </a>
         </div>
@@ -238,8 +300,9 @@
         <div class="card-container">
             {% for id_produit, img_produit, nom_produit, url in produits %}
                 <div class="card">
-                    <a href="{{ url }}" target="_blank">
-                        <img src="{{ img_produit }}" alt="{{ nom_produit }}">
+                    <a href="{{ url }}" target="_blank" >
+                        <img src="{{ img_produit }}" alt="{{ nom_produit }}" class="product-image">
+                        <div class="alt-text"></div>
                     </a>
                     <h3>{{ nom_produit }}</h3>
                 </div>
@@ -247,7 +310,7 @@
                 <p>Aucun produit associé.</p>
             {% endfor %}
         </div>
-
+       
         <!-- Pagination -->
         <div class="pagination">
             {% if page > 1 %}
@@ -280,5 +343,31 @@
             {% endif %}
         </div>
     </div>
+
+
+    <script>
+        // Sélectionner toutes les images des produits
+        const productImages = document.querySelectorAll('.product-image');
+    
+        // Ajouter un événement pour chaque image au survol
+        productImages.forEach(image => {
+            image.addEventListener('mouseover', function() {
+                // Récupérer l'attribut alt de l'image
+                const altText = this.getAttribute('alt');
+                // Afficher cet attribut dans le div alt-text associé
+                const card = this.closest('.card');
+                const altDiv = card.querySelector('.alt-text');
+                altDiv.textContent = altText; // Ajouter le texte à la div
+            });
+    
+            // Ajouter un événement 'mouseout' pour réinitialiser le texte
+            image.addEventListener('mouseout', function() {
+                const card = this.closest('.card');
+                const altDiv = card.querySelector('.alt-text');
+                altDiv.textContent = ''; // Effacer le texte lorsqu'on quitte l'image
+            });
+        });
+    </script>
+    
 </body>
 </html>
