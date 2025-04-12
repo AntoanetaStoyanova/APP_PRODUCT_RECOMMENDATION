@@ -12,7 +12,7 @@ app/READMEE.md
 ';d public.produits;'
 er
 RGBD/sql1.py
-RGBD/sql.py
+RGBD/sql.ipynb
 RGBD/img_table
 'e -i 7137b0b'
 'h origin main'
