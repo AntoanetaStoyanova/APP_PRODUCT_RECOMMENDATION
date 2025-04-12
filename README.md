@@ -62,7 +62,7 @@ pip install -r requirements.txt
 ```powershell
 tree /F
 ```
-
+```powershell
 .
 │   .env
 │   .gitignore
@@ -202,7 +202,7 @@ tree /F
 │       test_vectorestore.py
 │       __init__.py
 
-
+```
 
 
 ## Connection avec la DB
