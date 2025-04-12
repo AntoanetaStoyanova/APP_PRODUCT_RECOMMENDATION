@@ -212,7 +212,7 @@ tree /F
 psql -h localhost -U postgres -d postgres
 ```
 * Création de la table produit
-
+```psql
 CREATE TABLE IF NOT EXISTS public.produits (
     url VARCHAR,
     nom_produit VARCHAR,
@@ -230,14 +230,17 @@ CREATE TABLE IF NOT EXISTS public.produits (
     info_brand VARCHAR,
     id_produit INT PRIMARY KEY
 );
-
+```
 * envoyer les données scrapper dans la table produits
-
+```psql
 \COPY public.produits(url, nom_produit, img_produit, prix_produit, contenance, pg_vg, origine, frais, surbooste, saveur, description, brand, gout, info_brand, id_produit)
 FROM 'RGBD/table_produits/produits.csv' DELIMITER ',' CSV HEADER;
+```
 
-- \dt (pour voir table)
-
+-  (pour voir table)
+```psql
+\dt
+```
 
 
 ## Exécution
