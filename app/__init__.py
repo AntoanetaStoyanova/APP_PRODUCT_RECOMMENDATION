@@ -5,7 +5,7 @@ from flask_login import LoginManager
 from flask_bcrypt import Bcrypt
 from .models import user_db
 import os
-# bcrypt = Bcrypt()
+bcrypt = Bcrypt()
 # Initializer for extensions
 login_manager = LoginManager()
 

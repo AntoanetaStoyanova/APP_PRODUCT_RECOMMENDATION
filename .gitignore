@@ -1,5 +1,5 @@
 .env
-er_produit up
+
 
 config.py
 mlruns/
@@ -9,13 +9,8 @@ app/instance/
 app/READMEE.md
 
 
-';d public.produits;'
-er
-RGBD/sql1.py
-RGBD/sql.ipynb
-RGBD/img_table
-'e -i 7137b0b'
-'h origin main'
+sql/
+
 
 app/model.py
 app/embeddings.log
