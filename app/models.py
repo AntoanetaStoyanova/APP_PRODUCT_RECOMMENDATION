@@ -7,7 +7,6 @@ from config import Config
 app = Flask(__name__)
 
 
-from flask_sqlalchemy import SQLAlchemy
 
 
 app.config.from_object(Config)
