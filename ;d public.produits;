@@ -1,0 +1,11 @@
+              Table "public.user_produit"
+   Column   |  Type   | Collation | Nullable | Default 
+------------+---------+-----------+----------+---------
+ user_id    | integer |           | not null | 
+ product_id | integer |           | not null | 
+Indexes:
+    "user_produit_pkey" PRIMARY KEY, btree (user_id, product_id)
+Foreign-key constraints:
+    "user_produit_product_id_fkey" FOREIGN KEY (product_id) REFERENCES produits(id_produit) ON DELETE CASCADE
+    "user_produit_user_id_fkey" FOREIGN KEY (user_id) REFERENCES "user"(id) ON DELETE CASCADE
+

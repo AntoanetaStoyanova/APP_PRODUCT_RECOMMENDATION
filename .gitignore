@@ -1,23 +1,22 @@
 .env
 er_produit up
-;d public.produits;
+
 config.py
 mlruns/
 instance/
 getsql/
 app/instance/
 app/READMEE.md
-'udo systemctl status postgresql'
-'h origin main'
+
+
 ';d public.produits;'
-'e -i 7137b0b'
 er
 RGBD/sql1.py
 RGBD/sql.py
 RGBD/img_table
-e -i 7137b0b
-h origin main
-udo systemctl status postgresql
+'e -i 7137b0b'
+'h origin main'
+
 app/model.py
 app/embeddings.log
 app/database.db

@@ -1,6 +1,217 @@
-put donnee dans base de donnees
-terminal
+# Recommandation d'e-liquides basée sur les goûts utilisateurs
+
+## Introduction:
+
+Ce projet vise à faciliter la recherche et la recommandation de produits e-liquides en fonction des goûts de l’utilisateur. Il s'agit d'une application locale développée principalement en Python, intégrant le web scraping, le traitement de données, l'intelligence artificielle et une base de données PostgreSQL pour offrir une expérience personnalisée.
+
+## Fonctionnalités principales
+
+- Récupération de données via le scraping du site spécialisé [Aromes et Liquides](https://www.aromes-et-liquides.fr/).
+- Nettoyage, structuration et stockage des données dans une base de données PostgreSQL.
+- Interface utilisateur simple pour obtenir des recommandations personnalisées basées sur les préférences de goût de l'utilisateur.
+- Utilisation d'un modèle RAG intégré pour améliorer les recommandations.
+
+- Création et connexion à un compte utilisateur.
+- Choix d’un goût préféré (fruit, menthe, dessert, etc.) pour filtrer les produits.
+- Visualisation des produits associés à un goût ou une demande spécifique.
+- Possibilité d’entrer une requête libre du type : "Je cherche un produit au citron vert".
+- Réponse générée de manière intelligente grâce au modèle Azure OpenAI.
+
+
+## Technologies Utilisées
+
+Le projet a été entièrement développé en **Python** avec l’utilisation des bibliothèques telles que0 :
+
+- **BeautifulSoup** & **Selenium** : pour le scraping web des données produits.
+- **Requests** : pour les appels HTTP aux pages web.
+- **Pandas** : pour la manipulation et la visualisation des données.
+- **Logging** : pour tracer les événements importants de l'application.
+- **FAISS** : pour l’indexation vectorielle des embeddings générés.
+- **ChatPromptTemplate** *(Langchain)* : pour générer dynamiquement des prompts pour le modèle de langage.
+- **Flask** : pour la création de l’application web et la définition des routes.
+- **SQLAlchemy** : pour la gestion de la base de données et des tables.
+- **AzureChatOpenAI** : pour l’utilisation du modèle GPT via Azure OpenAI.
+etc...
+
+
+## Prérequis
+
+- **Python** version : `3.10.6`
+- `pip` ou `pipenv` installé localement
+
+---
+
+## Installation du projet
+```bash
+git clone https://github.com/AntoanetaStoyanova/APP_PRODUCT_RECOMMENDATION.git
+cd APP_PRODUCT_RECOMMENDATION
+```
+
+### Option 1 : avec Pipenv
+```bash
+pip install pipenv
+pipenv install
+pipenv shell
+```
+### Option 2 : avec pip
+```bash
+pip install -r requirements.txt
+```
+
+## Structure du projet
+```powershell
+tree /F
+```
+
+.
+│   .env
+│   .gitignore
+│   config.py
+│   Pipfile
+│   Pipfile.lock
+│   requirements.txt
+│   run.py
+│
+├───.github
+│   └───workflows
+│           monitoring_metrics.yml
+│           test.yml
+│           test_csv.yml
+│           test_rag.yml
+│
+├───app
+│   │   db.py
+│   │   embeddings.py
+│   │   forms.py
+│   │   llm.py
+│   │   llm_connection.py
+│   │   models.py
+│   │   prompt.py
+│   │   rag_csv.csv
+│   │   README.md
+│   │   recommendations.csv
+│   │   retriever.py
+│   │   routes.py
+│   │   utils.py
+│   │   vectorstore.py
+│   │   __init__.py
+│   │
+│   ├───faiss_vector_store
+│   │       index.faiss
+│   │       index.pkl
+│   │
+│   ├───instance
+│   │       database.db
+│   │
+│   ├───rag_eval
+│   │       eval_rag.py
+│   │       eval_utils.py
+│   │       monitoring.csv
+│   │       monitoring.py
+│   │       QA_test_samples.csv
+│   │       rag.ipynb
+│   │       rag_eval.ipynb
+│   │       rag_monitoring.py
+│   │
+│   ├───static
+│   │   └───gout_img
+│   │           age-limit-18-icon.png
+│   │           boisson.png
+│   │           classique.png
+│   │           dessert.png
+│   │           frais.png
+│   │           fruit.png
+│   │           menthes.png
+│   │           user.png
+│   │
+│   ├───templates
+│   │       accueil.html
+│   │       dashboard.html
+│   │       delete_account.html
+│   │       error_page.html
+│   │       index.html
+│   │       index_produit.html
+│   │       login.html
+│   │       main.html
+│   │       product_results.html
+│   │       produits.html
+│   │       recherche.html
+│   │       register.html
+│   │       resultats_recherche.html
+│   │       test.html
+│   │       user_account.html
+│   │       user_products.html
+│   │
+│
+├───instance
+├───logs
+│       llm_connection.log
+│       model_performance.log
+│
+├───RGBD
+│   │   tables.ipynb
+│   │
+│   └───table_produits
+│           produits.csv
+│
+├───scrap_final
+│   │   produits_eliquide.csv
+│   │   produits_eliquide_avec_details.csv
+│   │   produits_eliquide_filtrés.csv
+│   │   scrapboissonA&L.ipynb
+│   │   scrapclassiqueA&L.ipynb
+│   │   scrapdessertA&L.ipynb
+│   │   scrapfraisA&L.ipynb
+│   │   scrapfruitA&L.ipynb
+│   │   scrapfruitpetitvap.ipynb
+│   │   scrapmenthesA&L.ipynb
+│   │   traitement.ipynb
+│   │
+│   ├───csv_clean
+│   │       A&L.csv
+│   │
+│   ├───donnees_scrappes
+│   │       produits_boisson_A&L.csv
+│   │       produits_classique_A&L.csv
+│   │       produits_dessert_A&L.csv
+│   │       produits_frais_A&L.csv
+│   │       produits_fruit_A&L.csv
+│   │       produits_menthe_A&L.csv
+│   │
+│   └───links
+│           link_produits_boissons_a&i.csv
+│           link_produits_classiques_a&i.csv
+│           link_produits_desserts_a&i.csv
+│           link_produits_frais_a&i.csv
+│           link_produits_fruits_a&i.csv
+│           link_produits_menthes_a&i.csv
+│
+├───tests
+│       test_azure_chat_openai.py
+│       test_csv.py
+│       test_db.py
+│       test_py_config.py
+│       test_py_db.py
+│       test_py_produit.py
+│       test_py_query.py
+│       test_py_routes.py
+│       test_retriever.py
+│       test_routes.py
+│       test_routes_api.py
+│       test_routes_recommend.py
+│       test_vectorestore.py
+│       __init__.py
+
+
+
+
+## Connection avec la DB
+
+- configurer la connection 
+```bash
 psql -h localhost -U postgres -d postgres
+```
+* Création de la table produit
 
 CREATE TABLE IF NOT EXISTS public.produits (
     url VARCHAR,
@@ -17,183 +228,21 @@ CREATE TABLE IF NOT EXISTS public.produits (
     brand VARCHAR,
     gout VARCHAR,
     info_brand VARCHAR,
-    id_produit INT
+    id_produit INT PRIMARY KEY
 );
-faut dire que id_produit est clé unique 
-ALTER TABLE public.produits ADD PRIMARY KEY (id_produit);
 
+* envoyer les données scrapper dans la table produits
 
 \COPY public.produits(url, nom_produit, img_produit, prix_produit, contenance, pg_vg, origine, frais, surbooste, saveur, description, brand, gout, info_brand, id_produit)
 FROM 'RGBD/table_produits/produits.csv' DELIMITER ',' CSV HEADER;
 
-\dt pour voir table
-
-from flask import Flask, render_template
-import psycopg2
-
-app = Flask(__name__)
-
-# Configuration de la connexion à PostgreSQL
-POSTGRESQL_URI = 'postgresql://postgres:Kandinsky_95@localhost:5432/postgres'
-
-try:
-    # Connexion à la base de données PostgreSQL
-    connection = psycopg2.connect(POSTGRESQL_URI)
-    print("Connexion à la base de données PostgreSQL réussie!")
-except psycopg2.OperationalError as e:
-    print(f"Erreur de connexion : {e}")
-
-@app.route("/produit")
-def show_produit():
-    with connection:
-        with connection.cursor() as cursor:
-            cursor.execute('SELECT nom_produit FROM public.pdt;')
-
-            produits = cursor.fetchall()
-            produits_list = [produit[0] for produit in produits]  # Extracting product names from fetchall result
-    return render_template('produits.html', produits=produits_list)
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-
-----------------
-
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-import psycopg2
-
-app = FastAPI()
-
-# Configuration de la connexion à PostgreSQL
-POSTGRESQL_URI = 'postgresql://postgres:Kandinsky_95@localhost:5432/postgres'
-
-try:
-    # Connexion à la base de données PostgreSQL
-    connection = psycopg2.connect(POSTGRESQL_URI)
-    print("Connexion à la base de données PostgreSQL réussie!")
-except psycopg2.OperationalError as e:
-    print(f"Erreur de connexion : {e}")
-
-# Pydantic model pour valider les données de la requête
-class GoutRequest(BaseModel):
-    gout: str
-
-@app.get("/produit")
-def get_produits(gout: str):
-    """ Récupère les produits correspondant au goût spécifié """
-    with connection:
-        with connection.cursor() as cursor:
-            cursor.execute('SELECT nom_produit, gout FROM public.pdt WHERE gout = %s;', (gout,))
-            produits = cursor.fetchall()
-
-            if not produits:
-                raise HTTPException(status_code=404, detail="Aucun produit trouvé pour ce goût")
-
-            # Création d'une liste de produits
-            produits_list = [{"nom_produit": produit[0], "gout": produit[1]} for produit in produits]
-            
-    return {"produits": produits_list}
-
-@app.post("/produit")
-def post_produits(gout_request: GoutRequest):
-    """ Recevoir un goût dans le corps de la requête et retourner les produits """
-    gout = gout_request.gout
-    with connection:
-        with connection.cursor() as cursor:
-            cursor.execute('SELECT nom_produit, gout FROM public.pdt WHERE gout = %s;', (gout,))
-            produits = cursor.fetchall()
-
-            if not produits:
-                raise HTTPException(status_code=404, detail="Aucun produit trouvé pour ce goût")
-
-            # Création d'une liste de produits
-            produits_list = [{"nom_produit": produit[0], "gout": produit[1]} for produit in produits]
-            
-    return {"produits": produits_list}
-
-# uvicorn app:app --host localhost --port 8000 --reload
---------
-
-from fastapi import FastAPI, HTTPException, Request
-from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse
-import psycopg2
-
-# Initialisation de l'application FastAPI
-app = FastAPI()
-
-# Configuration de la connexion à PostgreSQL
-POSTGRESQL_URI = "postgresql://postgres:Kandinsky_95@localhost:5432/postgres"
-
-try:
-    # Connexion à PostgreSQL
-    connection = psycopg2.connect(POSTGRESQL_URI)
-    print("Connexion réussie à la base de données PostgreSQL!")
-except psycopg2.OperationalError as e:
-    print(f"Erreur de connexion à PostgreSQL: {e}")
-
-# Configuration de Jinja2 pour le dossier des templates
-templates = Jinja2Templates(directory="templates")
-
-@app.get("/produit", response_class=HTMLResponse)
-def get_produits(gout: str, request: Request):
-    """
-    Endpoint pour afficher les produits correspondant au goût donné.
-    """
-    with connection:
-        with connection.cursor() as cursor:
-            # Requête pour récupérer les produits correspondant au goût
-            cursor.execute(
-                "SELECT nom_produit, gout, img_produit FROM public.pdt WHERE gout = %s;",
-                (gout,)
-            )
-            produits = cursor.fetchall()
-
-            # Vérification si aucun produit n'est trouvé
-            if not produits:
-                raise HTTPException(status_code=404, detail="Aucun produit trouvé pour ce goût.")
-
-            # Transformer les résultats en une liste de dictionnaires
-            produits_list = [
-                {"nom_produit": produit[0], "gout": produit[1], "img_produit": produit[2]}
-                for produit in produits
-            ]
-
-    # Retourner la page HTML avec les produits
-    return templates.TemplateResponse(
-        "produits.html",
-        {"request": request, "produits": produits_list, "gout": gout}
-    )
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=5000)
+- \dt (pour voir table)
 
 
 
+## Exécution
 
-
-regarde les correction de test.py 
-good model model_openai.ipynb
-
-
-run python run.py
-
-
-
-
-user logging 
-https://www.youtube.com/watch?v=71EU8gnZqZQ
-user get to see it's search ( produit) 
-
-
-table user ( id, username, password)
-psql -h localhost -U postgres -d postgres
-\dt
-SELECT * FROM "user" WHERE username = 'coco';
-\q
-
-
-ALTER TABLE users ADD COLUMN consent BOOLEAN DEFAULT FALSE;
-test - pytest tests/test_vectoristore.py et pytest tests/test_azure_chat_openai.py
+```bash
+pipenv shell
+python run.py
+```
