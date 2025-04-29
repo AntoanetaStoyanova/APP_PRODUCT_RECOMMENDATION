@@ -38,11 +38,8 @@ jobs:
           echo "AZURE_OPENAI_API_ENDPOINT_4= ${{ secrets.OPENAI_API_ENDPOINT_4 }}" >> $GITHUB_ENV
           echo "AZURE_DEPLOYMENT_NAME_4= ${{ secrets.AZURE_DEPLOYMENT_NAME_4 }}" >> $GITHUB_ENV
 
-      
-      
       - name: Vérifier les variables d'environnement (sans afficher les valeurs sensibles)
-       run: |
-          
+        run: |
             echo "SECRET_KEY chargé"
             echo "AZURE_OPENAI_API_KEY_4 chargé"
             echo "AZURE_OPENAI_API_ENDPOINT_4 chargé"
