@@ -15,9 +15,9 @@ import sys
 
 
 embeddings = AzureOpenAIEmbeddings(
-    openai_api_key=AZURE_OPENAI_API_KEY_4,
-    azure_deployment='text-embedding-3-large',
-    azure_endpoint=AZURE_OPENAI_API_ENDPOINT_4,
+    openai_api_key=os.environ.get("AZURE_OPENAI_API_KEY_4"),
+    azure_deployment="text-embedding-3-large",
+    azure_endpoint=os.environ.get("AZURE_OPENAI_API_ENDPOINT_4"),
     openai_api_version="2023-05-15",
     chunk_size=500
 )
