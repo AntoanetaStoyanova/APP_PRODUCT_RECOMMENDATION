@@ -8,12 +8,6 @@ from langchain_openai import AzureOpenAIEmbeddings
 import sys
 
 
-# Ajouter le dossier parent au chemin pour pouvoir importer config.py
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-
-from config import Config
-
-
 
 
 
@@ -21,9 +15,9 @@ from config import Config
 
 
 embeddings = AzureOpenAIEmbeddings(
-    openai_api_key=Config.AZURE_OPENAI_API_KEY,
+    openai_api_key=AZURE_OPENAI_API_KEY_4,
     azure_deployment='text-embedding-3-large',
-    azure_endpoint=Config.AZURE_OPENAI_ENDPOINT,
+    azure_endpoint=AZURE_OPENAI_API_ENDPOINT_4,
     openai_api_version="2023-05-15",
     chunk_size=500
 )
@@ -58,7 +52,7 @@ for query, response, source in zip(queries, responses, sources):
     # similarity_response_source = cosine_similarity([embeddings[1]], [embeddings[2]])[0][0]
     similarity_query_response = cosine_similarity([embedding_vectors[0]], [embedding_vectors[1]])[0][0]
     similarity_response_source = cosine_similarity([embedding_vectors[1]], [embedding_vectors[2]])[0][0]
-    
+
     end_time = time.time()  
     latency = (end_time - start_time) * 1000  
 
