@@ -32,10 +32,10 @@ jobs:
         run: |
           echo "RECOMMENDATIONS_CSV=app/recommendations.csv" >> $GITHUB_ENV  # Chemin vers ton CSV local
           echo "MONITORING_CSV=app/rag_eval/monitoring.csv" >> $GITHUB_ENV
-          echo "SECRET_KEY= ${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
-          echo "AZURE_OPENAI_API_KEY_4= ${{ secrets.AZURE_OPENAI_API_KEY_4 }}" >> $GITHUB_ENV
-          echo "AZURE_OPENAI_API_ENDPOINT_4= ${{ secrets.OPENAI_API_ENDPOINT_4 }}" >> $GITHUB_ENV
-          echo "AZURE_DEPLOYMENT_NAME_4= ${{ secrets.AZURE_DEPLOYMENT_NAME_4 }}" >> $GITHUB_ENV
+          echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
+          echo "AZURE_OPENAI_API_KEY_4=${{ secrets.AZURE_OPENAI_API_KEY_4 }}" >> $GITHUB_ENV
+          echo "AZURE_OPENAI_API_ENDPOINT_4=${{ secrets.OPENAI_API_ENDPOINT_4 }}" >> $GITHUB_ENV
+          echo "AZURE_DEPLOYMENT_NAME_4=${{ secrets.AZURE_DEPLOYMENT_NAME_4 }}" >> $GITHUB_ENV
       
       - name: Run monitoring data script
         run: |
